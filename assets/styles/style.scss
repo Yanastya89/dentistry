@@ -144,7 +144,6 @@ color: $darkgr;
     }
     &__number:hover{
         color: $hover;
-
     }
 }
 } 
@@ -159,7 +158,6 @@ color: $darkgr;
     
 }
 }
-
 .welcomepage{
   background-image: url(../images/Fonblock1.png);
   max-width: 100%;
@@ -167,7 +165,6 @@ color: $darkgr;
   height: auto;
   margin-top:31px;
  
-
   &__treatment{
 
 .treatment{
@@ -203,13 +200,9 @@ color: $darkgr;
        flex-direction: row;
        gap:6px;
        margin-top: 76px;
-      
-      
-
-  .benefits { 
+   .benefits { 
  
-
-  &__doctor { background-color:rgba(255, 255, 255, 0.4);
+    &__doctor { background-color:rgba(255, 255, 255, 0.4);
     display: flex;  align-items: center;
   
         flex: 2 1 auto;
