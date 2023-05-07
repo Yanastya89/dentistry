@@ -203,4 +203,144 @@ html {
 .welcomepage__benefits .benefits__location .location__title {
   text-decoration: none;
   color: #4B4B4B;
+}
+
+@font-face {
+  font-family: "Panton";
+  src: url("assets/fonts/Panton-Bold.ttf");
+}
+.main-2 {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+.main-2 .main-2__services {
+  margin-top: 77px;
+  margin-left: 130px;
+}
+.main-2 .main-2__services_heading {
+  font-family: "Panton";
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #12354B;
+}
+.main-2 .main-2__services_paragraph {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #737373;
+  margin-top: 14px;
+}
+.main-2 .main-2__types {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(5, 20%);
+  width: 1920px;
+  margin-left: 90px;
+}
+.main-2 .main-2__types_service {
+  text-align: center;
+  width: 298px;
+  height: 237px;
+  margin: 40px;
+  background-color: #FBFBFB;
+}
+.main-2 .main-2__types_service:hover {
+  background: lightblue;
+  box-shadow: 0 0 10px #38BCEA;
+}
+.main-2 .main-2__types_service-btn {
+  text-align: center;
+  width: 298px;
+  height: 195px;
+  margin: 40px;
+  background-color: #38BCEA;
+  box-shadow: 0px 20px 50px 0px rgba(165, 165, 165, 0.2);
+  border-radius: 5px;
+}
+.main-2 .main-2__types_tooth {
+  padding: 50px;
+}
+.main-2 .vinir {
+  grid-column: 2/3;
+}
+.main-2 a {
+  text-decoration: none;
+  display: inline-block;
+  color: #454545;
+  font-family: "Panton";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.main-2 .main-2__types_text {
+  color: white;
+}
+.main-2 a:after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #6591dd;
+  transition: width 0.4s ease-in-out;
+}
+.main-2 a:hover:after,
+.main-2 a:focus:after {
+  width: 100%;
+}
+.main-2 a:hover {
+  color: #6591dd;
+}
+
+.main-3 {
+  margin-left: 124px;
+  width: 1920px;
+}
+.main-3 .main-3__heading {
+  font-family: "Panton";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #272727;
+}
+.main-3 .main-3__advantages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main-3 .main-3__advantages_service {
+  text-align: start;
+  width: 525px;
+  height: 334px;
+  margin: 40px;
+}
+.main-3 .main-3__card {
+  margin-left: 37px;
+  margin-top: 58px;
+}
+.main-3 .paragraph-3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #292929;
+}
+.main-3 h3 {
+  font-family: "Panton";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #222222;
 }/*# sourceMappingURL=style.css.map */
