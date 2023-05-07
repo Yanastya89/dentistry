@@ -1,1 +1,346 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.welcomepage__treatment .treatment__btn, .header__btn {
+  background-color: #38BCEA;
+  color: #FFFFFF;
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+  border-color: transparent;
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+}
+
+.wrapper {
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 31px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header__logo {
+  margin-right: 55px;
+  border: 1px solid transparent;
+}
+.header__logo:hover {
+  border: 1px solid #01678A;
+}
+.header__social a:nth-child(2) {
+  margin: 0 15px;
+}
+.header__social .social__link {
+  border: 1px solid transparent;
+}
+.header__social .social__link:hover {
+  border: 1px solid #01678A;
+}
+.header__nav {
+  margin-left: 70px;
+}
+.header__nav .nav__link {
+  text-decoration: none;
+  margin-right: 35px;
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  color: #AAAAAA;
+}
+.header__nav .nav__link:last-child {
+  margin-right: 0px;
+}
+.header__nav .nav__link:hover {
+  color: #01678A;
+}
+.header__address {
+  max-width: 176px;
+  margin-left: 3rem;
+  color: #474747;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.header__address .address__link {
+  border: 1px solid transparent;
+}
+.header__address .address__link:hover {
+  border: 1px solid #01678A;
+}
+.header__calendar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 19px;
+  gap: 9px;
+}
+.header__calendar .calendar__link {
+  border: 1px solid transparent;
+}
+.header__calendar .calendar__link:hover {
+  border: 1px solid #01678A;
+}
+.header__calendar .calendar__hours {
+  /*   font-family: */
+  color: #12354B;
+}
+.header__calendar .calendar__datas {
+  color: #909090;
+}
+.header__phone {
+  margin-left: 41px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.header__phone .phone__link {
+  border: 1px solid transparent;
+}
+.header__phone .phone__link:hover {
+  border: 1px solid #01678A;
+}
+.header__phone .phone__number {
+  text-decoration: none;
+  color: #3C3C3C;
+}
+.header__phone .phone__number:hover {
+  color: #01678A;
+}
+.header__btn {
+  margin-left: 20px;
+}
+.header__btn:hover {
+  background-color: #FFFFFF;
+  color: #01678A;
+  border-color: #01678A;
+}
+
+.welcomepage {
+  background-image: url(../images/Fonblock1.png);
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-top: 31px;
+}
+.welcomepage__treatment .treatment__dentistry {
+  padding-top: 146px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #4E4E4E;
+}
+.welcomepage__treatment .treatment__title {
+  margin-top: 17px;
+  font-size: 48px;
+  max-width: 351px;
+  color: #1A3444;
+}
+.welcomepage__treatment .treatment__consultation {
+  color: #6F6F6F;
+  margin-top: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  max-width: 460px;
+}
+.welcomepage__treatment .treatment__btn {
+  margin-top: 17px;
+}
+.welcomepage__benefits {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  margin-top: 76px;
+}
+.welcomepage__benefits .benefits__doctor {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  flex: 2 1 auto;
+  justify-content: right;
+  gap: 19px;
+}
+.welcomepage__benefits .benefits__doctor .doctor__title {
+  text-decoration: none;
+  color: #4B4B4B;
+}
+.welcomepage__benefits .benefits__cabinet {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  justify-content: center;
+  gap: 19px;
+}
+.welcomepage__benefits .benefits__cabinet .cabinet__title {
+  text-decoration: none;
+  color: #4B4B4B;
+}
+.welcomepage__benefits .benefits__location {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  flex: 2 1 auto;
+  gap: 19px;
+}
+.welcomepage__benefits .benefits__location .location__title {
+  text-decoration: none;
+  color: #4B4B4B;
+}
+
+@font-face {
+  font-family: "Panton";
+  src: url("assets/fonts/Panton-Bold.ttf");
+}
+.main-2 {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+.main-2 .main-2__services {
+  margin-top: 77px;
+  margin-left: 130px;
+}
+.main-2 .main-2__services_heading {
+  font-family: "Panton";
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #12354B;
+}
+.main-2 .main-2__services_paragraph {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #737373;
+  margin-top: 14px;
+}
+.main-2 .main-2__types {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(5, 20%);
+  width: 1920px;
+  margin-left: 90px;
+}
+.main-2 .main-2__types_service {
+  text-align: center;
+  width: 298px;
+  height: 237px;
+  margin: 40px;
+  background-color: #FBFBFB;
+}
+.main-2 .main-2__types_service:hover {
+  background: lightblue;
+  box-shadow: 0 0 10px #38BCEA;
+}
+.main-2 .main-2__types_service-btn {
+  text-align: center;
+  width: 298px;
+  height: 195px;
+  margin: 40px;
+  background-color: #38BCEA;
+  box-shadow: 0px 20px 50px 0px rgba(165, 165, 165, 0.2);
+  border-radius: 5px;
+}
+.main-2 .main-2__types_tooth {
+  padding: 50px;
+}
+.main-2 .vinir {
+  grid-column: 2/3;
+}
+.main-2 a {
+  text-decoration: none;
+  display: inline-block;
+  color: #454545;
+  font-family: "Panton";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.main-2 .main-2__types_text {
+  color: white;
+}
+.main-2 a:after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #6591dd;
+  transition: width 0.4s ease-in-out;
+}
+.main-2 a:hover:after,
+.main-2 a:focus:after {
+  width: 100%;
+}
+.main-2 a:hover {
+  color: #6591dd;
+}
+
+.main-3 {
+  margin-left: 124px;
+  width: 1920px;
+}
+.main-3 .main-3__heading {
+  font-family: "Panton";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #272727;
+}
+.main-3 .main-3__advantages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main-3 .main-3__advantages_service {
+  text-align: start;
+  width: 525px;
+  height: 334px;
+  margin: 40px;
+}
+.main-3 .main-3__card {
+  margin-left: 37px;
+  margin-top: 58px;
+}
+.main-3 .paragraph-3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #292929;
+}
+.main-3 h3 {
+  font-family: "Panton";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #222222;
+}/*# sourceMappingURL=style.css.map */
