@@ -27,7 +27,7 @@ html {
   font-size: 15px;
 }
 
-footer .polyci, footer .licence, .certificates .certificates__title, .doctors__card-experience, .doctors__card-prof, .doctors__card-name, .doctitle__main, .doctitle__header {
+footer .polyci, footer .licence, .consultation .consultation__agreement, .consultation .consultation__inputs .consultation__inputs-button, .consultation .consultation__inputs .consultation__inputs-tel, .consultation .consultation__phone, .consultation .consultation__subtitle, .consultation .consultation__title, .certificates .certificates__title, .doctors__card-experience, .doctors__card-prof, .doctors__card-name, .doctitle__main, .doctitle__header {
   line-height: 100%;
   vertical-align: top;
 }
@@ -365,6 +365,7 @@ footer .polyci, footer .licence, .certificates .certificates__title, .doctors__c
   padding: 0 3% 0 3%;
   width: 40%;
   padding-bottom: 3%;
+  margin-top: 40%;
 }
 
 .doctitle__header {
@@ -475,6 +476,80 @@ footer .polyci, footer .licence, .certificates .certificates__title, .doctors__c
   max-width: 100%;
 }
 
+.consultation {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr 1fr 1fr 2fr 2fr;
+  background-image: url("../images/dentist2.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+}
+.consultation .consultation__title {
+  display: grid;
+  font-family: "Panton", Arial, Helvetica, sans-serif;
+  font-size: 2.5vw;
+  max-width: 50%;
+  margin: 10% 0 3% 3%;
+}
+.consultation .consultation__subtitle {
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2vw;
+  max-width: 35%;
+  margin-left: 3%;
+}
+.consultation .consultation__phone {
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2vw;
+  max-width: 35%;
+  margin-left: 3%;
+}
+.consultation .consultation__phone .consultation__phone-number {
+  color: #0079FF;
+  text-decoration: none;
+}
+.consultation .consultation__inputs {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: 1fr;
+  max-width: 50%;
+  margin-left: 3%;
+}
+.consultation .consultation__inputs .consultation__inputs-tel {
+  border: none;
+  max-width: 90%;
+  color: #BBBBBB;
+  text-align: center;
+  align-items: center;
+  margin: 5% 0 5% 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1vw;
+}
+.consultation .consultation__inputs .consultation__inputs-button {
+  background-color: #38BCEA;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding-top: 4%;
+  margin: 3% 0 3% 0;
+  max-width: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1vw;
+}
+.consultation .consultation__agreement {
+  display: grid;
+  max-width: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+.consultation .consultation__agreement .consultation__agreement-href {
+  color: black;
+}
+
 footer {
   display: grid;
   grid-template-columns: 2fr 4fr 2fr 1fr;
@@ -495,14 +570,14 @@ footer .licence {
   display: grid;
   padding: 0 12% 0 12%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1vw;
+  font-size: 1vw;
   text-align: center;
 }
 footer .polyci {
   display: grid;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1vw;
+  font-size: 1vw;
 }
 footer .polyci:hover {
   color: rgb(19, 151, 168);

@@ -38,6 +38,7 @@ $bl1graylight2: #4B4B4B;
     font-family: 'Roboto Slab', serif;
     font-size: 15px;
 }
+
 $fontarial: Arial, Helvetica, sans-serif;
 $fontpan: 'Panton', Arial, Helvetica, sans-serif;
 $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
@@ -504,6 +505,7 @@ $white: #FBFBFB;
     padding: 0 3% 0 3%;
     width: 40%;
     padding-bottom: 3%;
+    margin-top: 40%;
 }
 
 .doctitle__header {
@@ -660,6 +662,103 @@ $white: #FBFBFB;
     }
 }
 
+.consultation {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 1fr 1fr 2fr 2fr;
+    background-image: url("../images/dentist2.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+
+
+    .consultation__title {
+        display: grid;
+        font-family: $fontpan;
+        font-size: 2.5vw;
+        @extend %font-align;
+        max-width: 50%;
+        margin: 10% 0 3% 3%;
+
+    }
+
+    .consultation__subtitle {
+        display: grid;
+        font-family: $fontarial;
+        font-size: 1.2vw;
+        @extend %font-align;
+        max-width: 35%;
+        margin-left: 3%;
+    }
+
+    .consultation__phone {
+        display: grid;
+
+        font-family: $fontarial;
+        font-size: 1.2vw;
+        @extend %font-align;
+        max-width: 35%;
+        margin-left: 3%;
+
+        .consultation__phone-number {
+            color: #0079FF;
+            text-decoration: none;
+        }
+    }
+
+    .consultation__inputs {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        grid-template-rows: 1fr;
+        max-width: 50%;
+        margin-left: 3%;
+
+        .consultation__inputs-tel {
+            border: none;
+            max-width: 90%;
+            color: #BBBBBB;
+            text-align: center;
+            align-items: center;
+            margin: 5% 0 5% 0;
+            font-family: $fontarial;
+            font-size: 1.1vw;
+            @extend %font-align;
+        }
+
+        .consultation__inputs-button {
+            background-color: #38BCEA;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+
+            padding-top: 4%;
+            margin: 3% 0 3% 0;
+            max-width: 60%;
+            font-family: $fontarial;
+            font-size: 1.1vw;
+            @extend %font-align;
+        }
+    }
+
+    .consultation__agreement {
+        display: grid;
+
+        max-width: 30%;
+        font-family: $fontarial;
+        font-size: 1vw;
+        @extend %font-align;
+        margin-left: 3%;
+        margin-top: 1%;
+
+
+        .consultation__agreement-href {
+            color: black;
+        }
+    }
+
+}
+
+
 footer {
     display: grid;
     grid-template-columns: 2fr 4fr 2fr 1fr;
@@ -684,7 +783,7 @@ footer {
         padding: 0 12% 0 12%;
         font-family: $fontarial;
         @extend %font-align;
-        font-size: 1.1vw;
+        font-size: 1vw;
         text-align: center;
 
 
@@ -695,7 +794,7 @@ footer {
         color: black;
         font-family: $fontarial;
         @extend %font-align;
-        font-size: 1.1vw;
+        font-size: 1vw;
 
 
     }
@@ -709,94 +808,110 @@ footer {
         padding-left: 25%;
     }
 }
-@font-face{
+
+@font-face {
     font-family: 'Panton';
     src: url('../fonts/Panton-Bold.ttf');
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-$tel:#BBBBBB; 
-$colorbutton:#38BCEA;
-$colorbuttongr:#F9F9F9;
+$tel: #BBBBBB;
+$colorbutton: #38BCEA;
+$colorbuttongr: #F9F9F9;
 $bacgrimg: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
 $bacgrcont: #FBFBFB;
 
 
 
 
-*{
+* {
     margin: 0;
-    padding:0;
-   box-sizing: border-box;
- }
- html,
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
 body {
     height: 100%;
 }
-html{
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
-.button{
+
+.button {
     font-size: 15px;
     text-decoration: none;
-    background-color:$colorbutton;
+    background-color: $colorbutton;
     color: white;
     display: inline-block;
     padding: 10px 15px;
 }
-.tel{
+
+.tel {
     color: #9b2020;
     border: 0;
 }
-.controltitle{
+
+.controltitle {
     padding-left: 100px;
     margin-top: 135px;
-    background-color:$bacgrcont;
+    background-color: $bacgrcont;
 }
-.title{
+
+.title {
     padding-top: 62px;
     position: relative;
 
 }
-.subtitle{
+
+.subtitle {
     width: 50%;
     padding-top: 35px;
     padding-bottom: 38px;
 }
-.personal{
+
+.personal {
     width: 50%;
     display: grid;
     grid-template-columns: 30% 30%;
     gap: 5%;
     padding-bottom: 33px;
-    }
-    .checkbox{
-        padding-bottom: 63px;
-    }
-.title-img{
+}
+
+.checkbox {
+    padding-bottom: 63px;
+}
+
+.title-img {
     position: absolute;
     bottom: 0px;
     right: 0px;
     width: 600px;
     height: 600px;
- 
+
 }
-h1{
+
+
+
+h1 {
     font-family: 'Panton';
     font-style: normal;
     font-size: 50px;
-    
+
 }
 
-.imgclinic{
+.imgclinic {
     bottom: 5px;
     right: 0px;
     width: 650px;
     height: 400px;
 }
-.controlcontriner{
+
+.controlcontriner {
 
     padding-left: 100px;
     margin-top: 135px;
@@ -804,50 +919,56 @@ h1{
     grid-template-columns: 50% 50%;
 
 }
-    .controlcontriner__content{
-        display: grid;
-        grid-template-rows: 25% 25% 25% 25%;
-        
-    }
 
-.content__servicescontainer__servbutton{
+.controlcontriner__content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    margin-bottom: 20px;
-    gap: 5px;
-   
+    grid-template-rows: 25% 25% 25% 25%;
+
 }
 
-.content__logocontainer{
+.content__servicescontainer__servbutton {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+    gap: 5px;
+
+}
+
+.content__logocontainer {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     align-items: center;
 }
-.content__bastitle{
+
+.content__bastitle {
     font-family: 'Panton';
     font-size: 50px;
 }
-.content__text{
+
+.content__text {
     font-size: 24px;
 }
+
 .content__text,
 .content__text,
-.content__text{
+.content__text {
     font-size: 20px;
 }
+
 .buttonA,
 .buttonB,
 .buttonC,
 .buttonD,
-.buttonE{ 
+.buttonE {
     text-decoration: none;
-    background-color:#F9F9F9;
+    background-color: #F9F9F9;
     color: rgb(5, 5, 5);
-    padding: 10px 15px;}
+    padding: 10px 15px;
+}
 
-    .controlcontriner__contimg{
-        position: relative;
-        display: grid;
-        justify-content: center;
-        align-content: end;
-    }
+.controlcontriner__contimg {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: end;
+}
