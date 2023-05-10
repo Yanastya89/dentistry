@@ -13,6 +13,7 @@
 </head>
 
 <body>
+      <!--  Начало блока 1 Кострик Анастасия-->
   <div class="wrapper">
     <header class="header">
       <a href="#"><img src="./assets/images/logo.png" alt="logo" class="header__logo" /></a>
@@ -69,30 +70,28 @@
             <a href="#" class="cabinet__title"> 3 стоматологических кабинета </a>
           </div>
           <div class="benefits__location location">
-            <a href="#"><img src="./assets/images/location.png" alt="location" class="location__img" /></a>
-            <a href="#" class="location__title"> Удобное расположение </a>
+            <a href="#"><img src="./assets/images/location.png" alt="location" class="location__img" /> </a>
+            <a href="#" class="location__title"> Удобное расположение </a>  <!-- надо подумать как сделать одним блоком ссылку -->
           </div>
         </div>
 
       </div>
-      /!--Начало блока 2 Добровольская Анастасия--/
-      <div class="main-2">
-        <div class="main-2__services">
-          <div class="main-2__services_heading">
-            <h2>Услуги</h2>
-          </div>
-          <div class="main-2__services_paragraph">
-            <p>Мы постарались сделать прайс <br> максимально простым и понятным. </p>
+       <!--  Конец блока 1 Кострик Анастасия-->
+
+    <!--  Начало блока 2 Добровольская Анастасия-->
+      <div class="main-2"> <!--кот сказал не очень хорошо, если Классы содержат цифры -->
+        <div class="main-2__services"> <!-- классы чаще всего не содержат в названии содержание блока, они больше описывают логику. В данном случае уместно main-2__wrapper, то есть обертка для блока  -->
+          <div class="main-2__services_heading"> <!-- удалить div -->
+            <h2>Услуги</h2> <!-- для всех заголовков сделаем отдкльный класс class="title" и вынесем его отдельно -->
+          </div> 
+          <div class="main-2__services_paragraph"> <!-- удалить div -->
+            <p>Мы постарались сделать прайс <br> максимально простым и понятным. </p> <!--элемент должен содержать класс-->
           </div>
         </div>
-        <div class="main-2__types">
-          <div class="main-2__types_service-btn">
-            <img src="assets/images/tooth1.png" alt="tooth" class="main-2__types_tooth">
-            <p> <a class="main-2__types_text" href="">Лечение зубов</a> </p>
-          </div>
-          <div class="main-2__types_service">
-            <img src="assets/images/tooth2.png" alt="tooth" class="main-2__types_tooth">
-            <p> <a href="">Гигиена</a> </p>
+         
+          <div class="main-2__types_service">  <!-- классы через пробел пишем main-2__cards cards -->
+            <img src="assets/images/tooth2.png" alt="tooth" class="main-2__types_tooth"> <!-- cards__img -->
+            <p> <a href="">Гигиена</a> </p> <!-- зачем ссылку в парвграф оборачивать просто присвой dispay block --><!-- cards__link -->
           </div>
           <div class="main-2__types_service">
             <img src="assets/images/tooth3.png" alt="tooth" class="main-2__types_tooth">
@@ -121,11 +120,11 @@
         </div>
       </div>
       <div class="main-3">
-        <div class="main-3__heading">
-          <h2>Нам доверяют пациенты</h2>
+        <div class="main-3__heading"> <!--  -->
+          <h2>Нам доверяют пациенты</h2> <!-- для всех заголовков сделаем отдкльный класс class="title" и вынесем его отдельно -->
         </div>
         <div class="main-3__advantages">
-          <div class="main-3__advantages_service">
+          <div class="main-3__advantages_service"> <!-- пересмотри наименование классов, а так все гуд, класс как и полагается  переиспользуктся для карточек -->
             <div class="main-3__card">
               <img src="assets/images/1.png" alt="number">
               <h3>Честные цены, без <br> хитрых уловок</h3>
@@ -153,8 +152,7 @@
           </div>
         </div>
       </div>
-
-
+      <!--  Конец блока Добровольская Анастасия-->
 
 
       <section class="doctitle">

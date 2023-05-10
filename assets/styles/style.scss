@@ -38,20 +38,6 @@ $bl1graylight2: #4B4B4B;
     font-family: 'Roboto Slab', serif;
     font-size: 15px;
 }
-$fontarial: Arial, Helvetica, sans-serif;
-$fontpan: 'Panton', Arial, Helvetica, sans-serif;
-$shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
-
-%font-align {
-    line-height: 100%;
-    vertical-align: top;
-}
-
-%card-size {
-    display: grid;
-    max-width: 100%;
-    border-radius: 2px;
-}
 
 .wrapper {
     max-width: 1650px;
@@ -312,10 +298,9 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
 }
 
-/*Начало блока 2 Анастасия Добровольская*/
 @font-face {
     font-family: 'Panton';
-    src: url('../fonts/Panton-Bold.woff');
+    src: url('assets/fonts/Panton-Bold.ttf');
 }
 
 $darkblue: #12354B;
@@ -337,8 +322,7 @@ $white: #FBFBFB;
 
     .main-2__services {
         margin-top: 77px;
-
-
+        margin-left: 130px;
     }
 
     .main-2__services_heading {
@@ -366,8 +350,8 @@ $white: #FBFBFB;
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: repeat(5, 20%);
-        width: 1650px;
-
+        width: 1920px;
+        margin-left: 90px;
     }
 
     .main-2__types_service {
@@ -391,12 +375,10 @@ $white: #FBFBFB;
         background-color: $blue;
         box-shadow: 0px 20px 50px 0px #A5A5A533;
         border-radius: 5px;
-        margin-left: auto;
     }
 
     .main-2__types_tooth {
         padding: 50px;
-
     }
 
     .vinir {
@@ -439,7 +421,8 @@ $white: #FBFBFB;
 }
 
 .main-3 {
-    width: 1650px;
+    margin-left: 124px;
+    width: 1920px;
 
     .main-3__heading {
         font-family: 'Panton';
@@ -454,19 +437,17 @@ $white: #FBFBFB;
     .main-3__advantages {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 38px;
-
     }
 
     .main-3__advantages_service {
         text-align: start;
-        width: 500px;
+        width: 525px;
         height: 334px;
         margin: 40px;
-
     }
 
     .main-3__card {
+        margin-left: 37px;
         margin-top: 58px;
     }
 
@@ -488,224 +469,5 @@ $white: #FBFBFB;
         letter-spacing: 0em;
         text-align: left;
         color: $black;
-    }
-}
-
-
-
-
-/*Конец блока 2 Анастасия Добровольская*/
-
-
-.doctitle {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-    padding: 0 3% 0 3%;
-    width: 40%;
-    padding-bottom: 3%;
-}
-
-.doctitle__header {
-    font-family: $fontpan;
-    font-size: 2.5vw;
-    @extend %font-align;
-    padding-bottom: 5%;
-}
-
-.doctitle__main {
-    font-family: $fontarial;
-    font-size: 1.5vw;
-    @extend %font-align;
-}
-
-.doctors__card-name {
-    font-family: $fontpan;
-    font-size: 1.5vw;
-    @extend %font-align;
-    max-width: 60%;
-}
-
-.doctors__card-prof {
-    font-family: $fontarial;
-    @extend %font-align;
-    font-size: 1.1vw;
-
-}
-
-.doctors__card-experience {
-    font-family: $fontarial;
-    font-size: 1.1vw;
-    @extend %font-align;
-}
-
-.doctors {
-    display: grid;
-    gap: 4%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
-    max-width: 100vw;
-    padding: 0 3% 0 3%;
-
-    .doctors__card {
-        display: grid;
-        max-width: 60%;
-        max-height: 50%;
-        padding: 5% 0 0 5%;
-    }
-
-
-
-    .doctors__firstphoto {
-
-        grid-area: 1/1/2/2;
-
-        @extend %card-size;
-        box-shadow: $shadow;
-    }
-
-    .doctors__firstcard {
-        @extend %card-size;
-        grid-area: 1/1/2/2;
-
-    }
-
-    .doctors__secondphoto {
-        @extend %card-size;
-        grid-area: 1/2/2/3;
-
-        box-shadow: $shadow;
-    }
-
-    .doctors__secondcard {
-
-        grid-area: 1/2/2/3;
-        @extend %card-size;
-    }
-
-    .doctors__thirdphoto {
-        @extend %card-size;
-        grid-area: 2/1/3/2;
-
-        box-shadow: $shadow;
-    }
-
-    .doctors__thirdcard {
-
-        grid-area: 2/1/3/2;
-        @extend %card-size;
-    }
-
-    .doctors__fourthphoto {
-        @extend %card-size;
-        grid-area: 2/2/3/3;
-
-        box-shadow: $shadow;
-    }
-
-    .doctors__fourthcard {
-        @extend %card-size;
-        grid-area: 2/2/3/3;
-
-    }
-
-    .doctors__fifthphoto {
-        @extend %card-size;
-        grid-area: 3/1/4/2;
-
-        box-shadow: $shadow;
-    }
-
-    .doctors__fifthcard {
-        @extend %card-size;
-        grid-area: 3/1/4/2;
-
-    }
-}
-
-.certificates {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-    max-width: 100vw;
-
-    .certificates__title {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin: 15% 3% 0 3%;
-        font-family: $fontpan;
-        font-size: 2.5vw;
-        @extend %font-align;
-    }
-
-    .certificates__carousel {
-        display: grid;
-        grid-template-columns: 1fr 12fr 12fr 12fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 1%;
-        align-items: center;
-        padding: 5% 0 10% 0;
-
-        .certificates__doc {
-            display: grid;
-            max-width: 100%;
-        }
-
-        .certificates__arrow {
-            display: grid;
-            max-width: 100%;
-        }
-    }
-}
-
-footer {
-    display: grid;
-    grid-template-columns: 2fr 4fr 2fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-
-    max-width: 100vw;
-    background-color:
-        #F2F3F5;
-    padding: 3% 0 3% 0;
-
-    .nets {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        justify-content: center;
-        padding: 0 15% 0 15%;
-    }
-
-    .licence {
-        display: grid;
-        padding: 0 12% 0 12%;
-        font-family: $fontarial;
-        @extend %font-align;
-        font-size: 1.1vw;
-        text-align: center;
-
-
-    }
-
-    .polyci {
-        display: grid;
-        color: black;
-        font-family: $fontarial;
-        @extend %font-align;
-        font-size: 1.1vw;
-
-
-    }
-
-    .polyci:hover {
-        color: rgb(19, 151, 168);
-    }
-
-    .logo {
-        display: grid;
-        padding-left: 25%;
     }
 }
