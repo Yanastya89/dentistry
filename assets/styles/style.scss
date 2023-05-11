@@ -36,18 +36,13 @@ $bl1graylight2: #4B4B4B;
     border-radius: 3px;
     border-color: $transparent;
     font-family: 'Roboto Slab', serif;
-
-    font-size: 15px;
 }
 
-
-    
-
 .btn:hover {
-        background-color: $white;
-        color: $hover;
-        border-color: $hover;
-    }
+    background-color: $white;
+    color: $hover;
+    border-color: $hover;
+}
 
 $fontarial: Arial, Helvetica, sans-serif;
 $fontpan: 'Panton', Arial, Helvetica, sans-serif;
@@ -66,7 +61,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
 .title {
     font-family: $fontpan;
-    font-weight:700;
+    font-weight: 700;
     font-size: 3rem;
     color: $bl1darkblue;
 }
@@ -75,17 +70,40 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     max-width: 1650px;
     margin: 0 auto;
 }
-
+ 
+.header:before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:white;
+       }
+       
 .header {
-    &__wrapper{
-    padding-top: 31px;
-    display: flex;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+
+    &__container{
+        position: relative;
+        z-index: 2; 
+        display: flex;
     flex-direction: row;
-    align-items: center;}
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
 
     &__logo {
         margin-right: 55px;
         border: 1px solid $transparent;
+        max-width: 100%; 
     }
 
     &__logo:hover {
@@ -192,13 +210,16 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             &__link {
                 border: 1px solid $transparent;
             }
+
             &__link:hover {
                 border: 1px solid $hover;
             }
+
             &__number {
                 text-decoration: none;
                 color: $lightblack;
             }
+
             &__number:hover {
                 color: $hover;
             }
@@ -214,10 +235,11 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 .welcomepage {
     background-image: url(../images/Fonblock1.png);
     background-repeat: no-repeat;
+    margin-top: 80px;
     max-width: 100%;
     width: 100%;
     height: auto;
-  
+
     &__text {
         padding-top: 146px;
 
@@ -226,23 +248,25 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 20px;
                 color: $bl1gray;
-                padding-bottom: 17px ;
-                
+                padding-bottom: 17px;
+
             }
+
             &__item-2 {
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 20px;
                 color: $bl1graylight;
                 padding-top: 17px;
-                padding-bottom: 37px ;
+                padding-bottom: 37px;
                 max-width: 460px;
             }
- }
-            .btn_size_average {
-                font-size: 20px;
-                margin-top: 17px;
-            }
-       
+        }
+
+        .btn_size_average {
+            font-size: 20px;
+            margin-top: 17px;
+        }
+
     }
 
     &__row {
@@ -258,35 +282,33 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
                 align-items: center;
                 gap: 19px;
 
-                   .content {
+                .content {
                     &__title {
                         text-decoration: none;
                         color: $bl1graylight2;
                     }
                 }
             }
-            &__content_position_left{
+
+            &__content_position_left {
                 flex: 2 1 auto;
-                justify-content: right;}
+                justify-content: right;
+            }
 
-                &__content_position_center{
-                    flex: 1 1 auto;
-                justify-content: center;}
-             
-                &__content_position_right{
-                    
-                    flex: 2 1 auto;
-                }
-        } 
-                   }
+            &__content_position_center {
+                flex: 1 1 auto;
+                justify-content: center;
+            }
+
+            &__content_position_right {
+
+                flex: 2 1 auto;
+            }
+        }
     }
-
-/*Начало блока 2 Анастасия Добровольская*/
-@font-face {
-    font-family: 'Panton';
-    src: url('../fonts/Panton-Bold.woff');
 }
 
+/*Начало блока 2 Анастасия Добровольская*/
 $darkblue: #12354B;
 $gray: #737373;
 $dark: #454545;
@@ -295,23 +317,22 @@ $darkgray: #272727;
 $black: #222222;
 $lightblack: #292929;
 $white: #FBFBFB;
+$lgray: #D5D5D5;
 
 
 
-.main-2 {
+.main-links {
     display: grid;
     grid-template-rows: 1fr 2fr;
+    max-width: 1650px;
+    height: 900px;
 
-
-
-    .main-2__services {
+    &__text {
         margin-top: 77px;
-
-
     }
 
-    .main-2__services_heading {
-        font-family: 'Panton';
+    .text__services {
+        font-family: $fontpan;
         font-size: 3em;
         font-weight: 700;
         line-height: 59px;
@@ -320,8 +341,8 @@ $white: #FBFBFB;
         color: $darkblue;
     }
 
-    .main-2__services_paragraph {
-        font-family: Arial, Helvetica, sans-serif;
+    .text__price {
+        font-family: $fontarial;
         font-size: 1.5em;
         font-weight: 400;
         line-height: 28px;
@@ -331,52 +352,35 @@ $white: #FBFBFB;
         margin-top: 14px;
     }
 
-    .main-2__types {
+    .main-links__treatment {
         display: grid;
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: repeat(5, 20%);
-        width: 1650px;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2.4% 2.4%;
 
     }
 
-    .main-2__types_service {
+    .treatment__cards {
         text-align: center;
-        width: 298px;
-        height: 237px;
-        margin: 40px;
-        background-color: $white;
+        width: 100%;
+        height: 82%;
+        position: relative;
+        display: inline-block;
     }
 
-    .main-2__types_service:hover {
-        background: lightblue;
-        box-shadow: 0 0 10px $blue;
-    }
-
-    .main-2__types_service-btn {
-        text-align: center;
-        width: 298px;
-        height: 195px;
-        margin: 40px;
-        background-color: $blue;
-        box-shadow: 0px 20px 50px 0px #A5A5A533;
+    .cards {
+        background-color: $lgray;
         border-radius: 5px;
-        margin-left: auto;
-    }
-
-    .main-2__types_tooth {
         padding: 50px;
-
     }
 
-    .vinir {
-        grid-column: 2/3;
-    }
-
-    a {
+    .cards__link {
+        font-size: 20px;
+        margin: 0 auto 0;
         text-decoration: none;
         display: inline-block;
         color: $dark;
-        font-family: 'Panton';
+        font-family: $fontpan;
         font-size: 26px;
         font-weight: 700;
         line-height: 32px;
@@ -384,63 +388,95 @@ $white: #FBFBFB;
         text-align: center;
     }
 
-    .main-2__types_text {
-        color: white;
+    .cards:hover {
+        background: $blue;
+        box-shadow: 0 0 10px $blue;
     }
 
-    a:after {
+    .cards:hover .cards__link {
+        color: $white;
+    }
+
+    .vinir {
+        grid-column: 2/3;
+    }
+
+    .cards__link:after {
         display: block;
         content: "";
         height: 3px;
         width: 0%;
-        background-color: #6591dd;
+        background-color: $white;
         transition: width 0.4s ease-in-out;
     }
 
-    a:hover:after,
-    a:focus:after {
+    .cards__link:hover:after,
+    .cards__link:focus:after {
         width: 100%;
     }
 
-    a:hover {
-        color: #6591dd;
+    .cards__link:hover {
+        color: $white;
+    }
+
+    .treatment__butn {
+        width: 100%;
+        height: 48px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .butn__bottom {
+        width: 298px;
+        height: 48px;
+        color: $lgray;
+        border: none;
+        cursor: pointer;
+        background-color: $lgray;
+    }
+
+    .butn__bottom:hover {
+        color: $blue;
     }
 }
 
-.main-3 {
-    width: 1650px;
+.main-benefits {
+    max-width: 1650px;
+    height: 700px;
 
-    .main-3__heading {
-        font-family: 'Panton';
+    .main-benefits__heading {
+        font-family: $fontpan;
         font-size: 48px;
         font-weight: 700;
         line-height: 59px;
         letter-spacing: 0em;
         text-align: left;
         color: $darkgray;
+        padding-top: 124px;
     }
 
-    .main-3__advantages {
+    .main-benefits__advantages {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 38px;
-
+        grid-template-columns: repeat(3, 33%);
     }
 
-    .main-3__advantages_service {
+    .advantages__accents {
         text-align: start;
-        width: 500px;
-        height: 334px;
-        margin: 40px;
-
+        width: 100%;
+        height: 80%;
+        margin: 3%;
     }
 
-    .main-3__card {
+    .accents__card {
         margin-top: 58px;
     }
 
-    .paragraph-3 {
-        font-family: Arial, Helvetica, sans-serif;
+    .card__paragraph {
+        font-family: $fontarial;
         font-size: 24px;
         font-weight: 400;
         line-height: 28px;
@@ -449,8 +485,8 @@ $white: #FBFBFB;
         color: $lightblack;
     }
 
-    h3 {
-        font-family: 'Panton';
+    .card__title {
+        font-family: $fontpan;
         font-size: 36px;
         font-weight: 700;
         line-height: 44px;
@@ -461,8 +497,6 @@ $white: #FBFBFB;
 }
 
 
-
-
 /*Конец блока 2 Анастасия Добровольская*/
 
 /*Начало блока Анна Мычко*/
@@ -471,7 +505,6 @@ $white: #FBFBFB;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-
     width: 40%;
     padding-bottom: 3%;
 }
@@ -664,7 +697,6 @@ $white: #FBFBFB;
 
     .consultation__phone {
         display: grid;
-
         font-family: $fontarial;
         font-size: 1.2vw;
         @extend %font-align;
@@ -735,7 +767,7 @@ footer {
     grid-template-rows: 2fr 4fr 2fr;
     align-items: center;
 
-   /*  max-width: 100vw; */
+    /*  max-width: 100vw; */
     background-color:
         #F2F3F5;
 
@@ -787,107 +819,129 @@ footer {
 
 /*Конец блока Анна Мычко*/
 
-@font-face{
+@font-face {
     font-family: 'Panton';
     src: url('../fonts/Panton-Bold.ttf');
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-$tel:#BBBBBB; 
-$colorbutton:#38BCEA;
-$colorbuttongr:#F9F9F9;
+$tel: #BBBBBB;
+$colorbutton: #38BCEA;
+$colorbuttongr: #F9F9F9;
 $bacgrimg: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
 $bacgrcont: #FBFBFB;
 
-%btn-1{background: rgba(0,0,0,0);
-color: #3a7999;
-box-shadow: inset 0 0 0 3px #3a7999;}
+%btn-1 {
+    background: rgba(0, 0, 0, 0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+}
 
 
 
 
-*{
+* {
     margin: 0;
-    padding:0;
-   box-sizing: border-box;
- }
- html,
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
 body {
     height: 100%;
 }
-html{
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-}
 
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.button{
+    font-size: 15px;
+    text-decoration: none;
+    background-color:$colorbutton;
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+}
 .tel{
     color: #616269;
     border: 0;
 }
-.controltitle{
+
+.controltitle {
     padding-left: 100px;
     margin-top: 135px;
     background-color:$bacgrcont;
-    font-size: 20px;
 }
- .title-pade{      
+/* .title{      
     padding-top: 62px;
     position: relative;
-} 
+ Удалить этот блок. Для всех заголовков создан класс title. присвоить своим заголовкам класс title
+} */
 .subtitle{
     width: 50%;
     padding-top: 35px;
     padding-bottom: 38px;
 }
-.personal{
+
+.personal {
     width: 50%;
     display: grid;
     grid-template-columns: 30% 30%;
     gap: 5%;
     padding-bottom: 33px;
-    }
-    .checkbox{
-        padding-bottom: 63px;
-    }
-.title-img{
+}
+
+.checkbox {
+    padding-bottom: 63px;
+}
+
+.title-img {
     position: absolute;
     bottom: 0px;
     right: 0px;
     width: 600px;
     height: 600px;
 }
+h1{
+    font-family: 'Panton';
+    font-style: normal;
+    font-size: 50px;
+    
+}
 
-
-.imgclinic{
+.imgclinic {
     bottom: 5px;
     right: 0px;
     width: 650px;
     height: 400px;
 }
-.controlcontriner{
+
+.controlcontriner {
 
     padding-left: 100px;
     margin-top: 135px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50% ;
+    grid-template-rows: 50% 50%;
     justify-content: space-around;
     gap: 40px;
-    background-color:#FBFBFB;
+    background-color: #FBFBFB;
     position: relative;
-    font-size: 20px;
     
     &__content{
         display: grid;
         grid-template-rows: 25% 25% 25% 25%;
-        
-        
-    }}
 
-.content__servicescontainer__link-doc{
+
+    }
+}
+
+.content__servicescontainer__servbutton{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 20px;
     gap: 5px;
     
@@ -899,22 +953,36 @@ html{
     padding: 10px 15px;
  }
 
-.content__logocontainer{
+.content__logocontainer {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     align-items: center;
 }
-
+.content__bastitle{
+    font-family: 'Panton';
+    font-size: 50px;
+}
 .content__text{
     font-size: 28px;
 }
 
-    .controlcontriner__contimg{
-  
+
+.buttons{ 
+    text-decoration: none;
+    background-color:$colorbuttongr;
+    color: rgb(5, 5, 5);
+    padding: 10px 15px;
+ }
+
+.buttons:hover {
+	@extend%btn-1;
+}
+
+.controlcontriner__contimg {
+
     position: absolute;
     bottom: -150px;
     right: 50px;
     width: 600px;
     height: 600px;
-    }
-    
+}
