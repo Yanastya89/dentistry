@@ -722,7 +722,7 @@ html{
     margin-top: 135px;
     background-color:$bacgrcont;
 }
-.title{
+.title-pade{
     padding-top: 62px;
     position: relative;
 
@@ -749,10 +749,10 @@ html{
     width: 600px;
     height: 600px;
 }
-h1{
+title{
     font-family: 'Panton';
     font-style: normal;
-    font-size: 50px;
+    font-size: 24px;
     
 }
 
@@ -793,10 +793,7 @@ h1{
     grid-template-columns: 33% 33% 33%;
     align-items: center;
 }
-.content__bastitle{
-    font-family: 'Panton';
-    font-size: 50px;
-}
+
 .content__text{
     font-size: 28px;
 }

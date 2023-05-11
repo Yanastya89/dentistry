@@ -50,17 +50,6 @@ footer .polyci, footer .licence, .certificates .certificates__title, .doctors__c
   color: #1A3444;
 }
 
-footer .polyci, footer .licence, .certificates .certificates__title, .doctors__card-experience, .doctors__card-prof, .doctors__card-name, .doctitle__main, .doctitle__header {
-  line-height: 100%;
-  vertical-align: top;
-}
-
-.doctors .doctors__fifthcard, .doctors .doctors__fifthphoto, .doctors .doctors__fourthcard, .doctors .doctors__fourthphoto, .doctors .doctors__thirdcard, .doctors .doctors__thirdphoto, .doctors .doctors__secondcard, .doctors .doctors__secondphoto, .doctors .doctors__firstcard, .doctors .doctors__firstphoto {
-  display: grid;
-  max-width: 100%;
-  border-radius: 2px;
-}
-
 .wrapper {
   max-width: 1650px;
   margin: 0 auto;
@@ -519,6 +508,12 @@ footer .logo {
   font-family: "Panton";
   src: url("../fonts/Panton-Bold.ttf");
 }
+.buttons:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #3a7999;
+  box-shadow: inset 0 0 0 3px #3a7999;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -546,7 +541,7 @@ html {
 }
 
 .tel {
-  color: #9b2020;
+  color: #616269;
   border: 0;
 }
 
@@ -556,7 +551,7 @@ html {
   background-color: #FBFBFB;
 }
 
-.title {
+.title-pade {
   padding-top: 62px;
   position: relative;
 }
@@ -587,10 +582,10 @@ html {
   height: 600px;
 }
 
-h1 {
+title {
   font-family: "Panton";
   font-style: normal;
-  font-size: 50px;
+  font-size: 24px;
 }
 
 .imgclinic {
@@ -605,8 +600,12 @@ h1 {
   margin-top: 135px;
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  justify-content: space-around;
+  gap: 40px;
+  background-color: #FBFBFB;
+  position: relative;
 }
-
 .controlcontriner__content {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
@@ -625,26 +624,11 @@ h1 {
   align-items: center;
 }
 
-.content__bastitle {
-  font-family: "Panton";
-  font-size: 50px;
-}
-
 .content__text {
-  font-size: 24px;
+  font-size: 28px;
 }
 
-.content__text,
-.content__text,
-.content__text {
-  font-size: 20px;
-}
-
-.buttonA,
-.buttonB,
-.buttonC,
-.buttonD,
-.buttonE {
+.buttons {
   text-decoration: none;
   background-color: #F9F9F9;
   color: rgb(5, 5, 5);
@@ -652,8 +636,9 @@ h1 {
 }
 
 .controlcontriner__contimg {
-  position: relative;
-  display: grid;
-  justify-content: center;
-  align-content: end;
+  position: absolute;
+  bottom: -200px;
+  right: 0px;
+  width: 600px;
+  height: 600px;
 }/*# sourceMappingURL=style.css.map */
