@@ -585,12 +585,6 @@ footer .logo {
   font-family: "Panton";
   src: url("../fonts/Panton-Bold.ttf");
 }
-.buttons:hover {
-  background: rgba(0, 0, 0, 0);
-  color: #3a7999;
-  box-shadow: inset 0 0 0 3px #3a7999;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -608,23 +602,6 @@ html {
   font-weight: 600;
 }
 
-.button {
-  background-color: #38BCEA;
-  color: #FBFBFB;
-  padding: 0.7rem 1rem;
-  border-radius: 3px;
-  border-color: transparent;
-  font-family: "Roboto Slab", serif;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.button:hover {
-  background-color: #FBFBFB;
-  color: #01678A;
-  border-color: #01678A;
-}
-
 .tel {
   color: #616269;
   border: 0;
@@ -634,6 +611,7 @@ html {
   padding-left: 100px;
   margin-top: 135px;
   background-color: #FBFBFB;
+  font-size: 20px;
 }
 
 .title-pade {
@@ -684,17 +662,25 @@ html {
   gap: 40px;
   background-color: #FBFBFB;
   position: relative;
+  font-size: 20px;
 }
 .controlcontriner__content {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
 }
 
-.content__servicescontainer__servbutton {
+.content__servicescontainer__link-doc {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 20px;
   gap: 5px;
+}
+
+.links {
+  text-decoration: none;
+  background-color: #F9F9F9;
+  color: rgb(5, 5, 5);
+  padding: 10px 15px;
 }
 
 .content__logocontainer {
@@ -705,13 +691,6 @@ html {
 
 .content__text {
   font-size: 28px;
-}
-
-.buttons {
-  text-decoration: none;
-  background-color: #F9F9F9;
-  color: rgb(5, 5, 5);
-  padding: 10px 15px;
 }
 
 .controlcontriner__contimg {
