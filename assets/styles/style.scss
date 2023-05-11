@@ -672,3 +672,153 @@ footer {
         padding-left: 25%;
     }
 }
+@font-face{
+    font-family: 'Panton';
+    src: url('../fonts/Panton-Bold.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+$tel:#BBBBBB; 
+$colorbutton:#38BCEA;
+$colorbuttongr:#F9F9F9;
+$bacgrimg: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
+$bacgrcont: #FBFBFB;
+
+%btn-1{background: rgba(0,0,0,0);
+color: #3a7999;
+box-shadow: inset 0 0 0 3px #3a7999;}
+
+
+
+
+*{
+    margin: 0;
+    padding:0;
+   box-sizing: border-box;
+ }
+ html,
+body {
+    height: 100%;
+}
+html{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.button{
+    font-size: 15px;
+    text-decoration: none;
+    background-color:$colorbutton;
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+}
+.tel{
+    color: #616269;
+    border: 0;
+}
+.controltitle{
+    padding-left: 100px;
+    margin-top: 135px;
+    background-color:$bacgrcont;
+}
+.title{
+    padding-top: 62px;
+    position: relative;
+
+}
+.subtitle{
+    width: 50%;
+    padding-top: 35px;
+    padding-bottom: 38px;
+}
+.personal{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    gap: 5%;
+    padding-bottom: 33px;
+    }
+    .checkbox{
+        padding-bottom: 63px;
+    }
+.title-img{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 600px;
+    height: 600px;
+}
+h1{
+    font-family: 'Panton';
+    font-style: normal;
+    font-size: 50px;
+    
+}
+
+.imgclinic{
+    bottom: 5px;
+    right: 0px;
+    width: 650px;
+    height: 400px;
+}
+.controlcontriner{
+
+    padding-left: 100px;
+    margin-top: 135px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50% ;
+    justify-content: space-around;
+    gap: 40px;
+    background-color:#FBFBFB;
+    position: relative;
+    
+    &__content{
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        
+        
+    }}
+
+.content__servicescontainer__servbutton{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+.content__logocontainer{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+}
+.content__bastitle{
+    font-family: 'Panton';
+    font-size: 50px;
+}
+.content__text{
+    font-size: 28px;
+}
+
+
+.buttons{ 
+    text-decoration: none;
+    background-color:$colorbuttongr;
+    color: rgb(5, 5, 5);
+    padding: 10px 15px;
+ }
+
+.buttons:hover {
+	@extend%btn-1;
+}
+
+    .controlcontriner__contimg{
+  
+    position: absolute;
+    bottom: -200px;
+    right: 0px;
+    width: 600px;
+    height: 600px;
+    }
+    
