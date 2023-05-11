@@ -818,6 +818,7 @@ footer {
 
 
 /*Конец блока Анна Мычко*/
+/*Начало блока Татьяна Семашко*/
 
 @font-face {
     font-family: 'Panton';
@@ -831,14 +832,6 @@ $colorbutton: #38BCEA;
 $colorbuttongr: #F9F9F9;
 $bacgrimg: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
 $bacgrcont: #FBFBFB;
-
-%btn-1 {
-    background: rgba(0, 0, 0, 0);
-    color: #3a7999;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
-
-
 
 
 * {
@@ -857,42 +850,52 @@ html {
     font-size: 16px;
     font-weight: 600;
 }
-.button{
-    font-size: 15px;
-    text-decoration: none;
-    background-color:$colorbutton;
-    color: white;
-    display: inline-block;
-    padding: 10px 15px;
-}
-.tel{
-    color: #616269;
-    border: 0;
-}
+
+
 
 .controltitle {
     padding-left: 100px;
     margin-top: 135px;
-    background-color:$bacgrcont;
+    background-image:$bacgrimg;
+    max-width: 1650px;
 }
-/* .title{      
-    padding-top: 62px;
-    position: relative;
- Удалить этот блок. Для всех заголовков создан класс title. присвоить своим заголовкам класс title
-} */
+
 .subtitle{
     width: 50%;
     padding-top: 35px;
     padding-bottom: 38px;
+    font-size: 24px;
+}
+.processing{
+    font-size: 18px;
 }
 
 .personal {
     width: 50%;
     display: grid;
-    grid-template-columns: 30% 30%;
+    grid-template-columns: 50% 50%;
     gap: 5%;
     padding-bottom: 33px;
 }
+.btn_size_big{
+    font-size: 24px;
+            margin-top: 25px;
+ }
+ .tel{
+    color: #616269;
+    border: 0px;
+    margin-top: 25px;
+    font-size: 24px;
+    transition: 1s linear;
+    
+}
+.tel:hover {
+   
+    background-color: $white;
+    color: $hover;
+    border-color: $hover;
+}
+
 
 .checkbox {
     padding-bottom: 63px;
@@ -904,12 +907,6 @@ html {
     right: 0px;
     width: 600px;
     height: 600px;
-}
-h1{
-    font-family: 'Panton';
-    font-style: normal;
-    font-size: 50px;
-    
 }
 
 .imgclinic {
@@ -930,16 +927,17 @@ h1{
     gap: 40px;
     background-color: #FBFBFB;
     position: relative;
+    font-size: 20px;
     
     &__content{
         display: grid;
         grid-template-rows: 25% 25% 25% 25%;
-
+        font-size: 20px;
 
     }
 }
 
-.content__servicescontainer__servbutton{
+.link-doc{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 20px;
@@ -951,18 +949,21 @@ h1{
     background-color:$colorbuttongr;
     color: rgb(5, 5, 5);
     padding: 10px 15px;
+    font-size: 20px;
  }
 
 .content__logocontainer {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     align-items: center;
+    height: 400px;
+    padding-bottom: 100px;
 }
 .content__bastitle{
     font-family: 'Panton';
     font-size: 50px;
 }
-.content__text{
+.text{
     font-size: 28px;
 }
 
@@ -974,15 +975,17 @@ h1{
     padding: 10px 15px;
  }
 
-.buttons:hover {
-	@extend%btn-1;
+
+.title-pade{
+    position: relative;
 }
 
-.controlcontriner__contimg {
 
+.imgclinic{
     position: absolute;
-    bottom: -150px;
+    bottom: 60px;
     right: 50px;
     width: 600px;
-    height: 600px;
+    height: 400px;
 }
+/*Конец блока Татьяна Семашко*/
