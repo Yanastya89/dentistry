@@ -36,13 +36,19 @@ $bl1graylight2: #4B4B4B;
     border-radius: 3px;
     border-color: $transparent;
     font-family: 'Roboto Slab', serif;
-    }
+
+    font-size: 15px;
+}
+
+
+    
 
 .btn:hover {
         background-color: $white;
         color: $hover;
         border-color: $hover;
     }
+
 $fontarial: Arial, Helvetica, sans-serif;
 $fontpan: 'Panton', Arial, Helvetica, sans-serif;
 $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
@@ -207,6 +213,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
 .welcomepage {
     background-image: url(../images/Fonblock1.png);
+    background-repeat: no-repeat;
     max-width: 100%;
     width: 100%;
     height: auto;
@@ -219,7 +226,8 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 20px;
                 color: $bl1gray;
-                padding-bottom: 17px;
+                padding-bottom: 17px ;
+                
             }
             &__item-2 {
                 font-family: Arial, Helvetica, sans-serif;
@@ -272,8 +280,6 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         } 
                    }
     }
-
-
 
 /*Начало блока 2 Анастасия Добровольская*/
 @font-face {
@@ -459,12 +465,13 @@ $white: #FBFBFB;
 
 /*Конец блока 2 Анастасия Добровольская*/
 
+/*Начало блока Анна Мычко*/
 
 .doctitle {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-    padding: 0 3% 0 3%;
+    grid-template-rows: 1fr 1fr;
+
     width: 40%;
     padding-bottom: 3%;
 }
@@ -473,13 +480,15 @@ $white: #FBFBFB;
     font-family: $fontpan;
     font-size: 2.5vw;
     @extend %font-align;
-    padding-bottom: 5%;
+
+    padding: 0 0 5% 9%;
 }
 
 .doctitle__main {
     font-family: $fontarial;
     font-size: 1.5vw;
     @extend %font-align;
+    padding: 0 3% 0 9%;
 }
 
 .doctors__card-name {
@@ -505,24 +514,25 @@ $white: #FBFBFB;
 .doctors {
     display: grid;
     gap: 4%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.1% 1fr 1fr 0.1%;
     grid-template-rows: 1fr 1fr 1fr;
 
     max-width: 100vw;
-    padding: 0 3% 0 3%;
+
 
     .doctors__card {
         display: grid;
         max-width: 60%;
         max-height: 50%;
         padding: 5% 0 0 5%;
+
     }
 
 
 
     .doctors__firstphoto {
 
-        grid-area: 1/1/2/2;
+        grid-area: 1/2/2/3;
 
         @extend %card-size;
         box-shadow: $shadow;
@@ -530,59 +540,59 @@ $white: #FBFBFB;
 
     .doctors__firstcard {
         @extend %card-size;
-        grid-area: 1/1/2/2;
+        grid-area: 1/2/2/3;
 
     }
 
     .doctors__secondphoto {
         @extend %card-size;
-        grid-area: 1/2/2/3;
+        grid-area: 1/3/2/4;
 
         box-shadow: $shadow;
     }
 
     .doctors__secondcard {
 
-        grid-area: 1/2/2/3;
+        grid-area: 1/3/2/4;
         @extend %card-size;
     }
 
     .doctors__thirdphoto {
         @extend %card-size;
-        grid-area: 2/1/3/2;
+        grid-area: 2/2/3/3;
 
         box-shadow: $shadow;
     }
 
     .doctors__thirdcard {
 
-        grid-area: 2/1/3/2;
+        grid-area: 2/2/3/3;
         @extend %card-size;
     }
 
     .doctors__fourthphoto {
         @extend %card-size;
-        grid-area: 2/2/3/3;
+        grid-area: 2/3/3/4;
 
         box-shadow: $shadow;
     }
 
     .doctors__fourthcard {
         @extend %card-size;
-        grid-area: 2/2/3/3;
+        grid-area: 2/3/3/4;
 
     }
 
     .doctors__fifthphoto {
         @extend %card-size;
-        grid-area: 3/1/4/2;
+        grid-area: 3/2/4/3;
 
         box-shadow: $shadow;
     }
 
     .doctors__fifthcard {
         @extend %card-size;
-        grid-area: 3/1/4/2;
+        grid-area: 3/2/4/3;
 
     }
 }
@@ -597,7 +607,7 @@ $white: #FBFBFB;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        margin: 15% 3% 0 3%;
+        margin: 15% 3% 0 4%;
         font-family: $fontpan;
         font-size: 2.5vw;
         @extend %font-align;
@@ -609,7 +619,7 @@ $white: #FBFBFB;
         grid-template-rows: 1fr;
         gap: 1%;
         align-items: center;
-        padding: 5% 0 10% 0;
+        padding: 5% 0 5% 0;
 
         .certificates__doc {
             display: grid;
@@ -623,28 +633,126 @@ $white: #FBFBFB;
     }
 }
 
+.consultation {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 1fr 1fr 2fr 2fr;
+    background-image: url("../images/dentist2.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+
+
+    .consultation__title {
+        display: grid;
+        font-family: $fontpan;
+        font-size: 2.5vw;
+        @extend %font-align;
+        max-width: 50%;
+        margin: 10% 0 3% 4%;
+
+    }
+
+    .consultation__subtitle {
+        display: grid;
+        font-family: $fontarial;
+        font-size: 1.2vw;
+        @extend %font-align;
+        max-width: 35%;
+        margin-left: 4%;
+    }
+
+    .consultation__phone {
+        display: grid;
+
+        font-family: $fontarial;
+        font-size: 1.2vw;
+        @extend %font-align;
+        max-width: 35%;
+        margin-left: 4%;
+
+        .consultation__phone-number {
+            color: #0079FF;
+            text-decoration: none;
+        }
+    }
+
+    .consultation__inputs {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        grid-template-rows: 1fr;
+        max-width: 50%;
+        margin-left: 4%;
+
+        .consultation__inputs-tel {
+            border: none;
+            max-width: 90%;
+            color: #BBBBBB;
+            text-align: center;
+            align-items: center;
+            margin: 5% 0 5% 0;
+            font-family: $fontarial;
+            font-size: 1.1vw;
+            @extend %font-align;
+        }
+
+        .consultation__inputs-button {
+            background-color: #38BCEA;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+
+            padding-top: 4%;
+            margin: 3% 0 3% 0;
+            max-width: 60%;
+            font-family: $fontarial;
+            font-size: 1.1vw;
+            @extend %font-align;
+        }
+    }
+
+    .consultation__agreement {
+        display: grid;
+
+        max-width: 30%;
+        font-family: $fontarial;
+        font-size: 1vw;
+        @extend %font-align;
+        margin-left: 4%;
+        margin-top: 1%;
+
+
+        .consultation__agreement-href {
+            color: black;
+        }
+    }
+
+}
+
 footer {
     display: grid;
-    grid-template-columns: 2fr 4fr 2fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 2% 2fr 5% 4fr 3% 2fr 5% 1fr 1%;
+    grid-template-rows: 2fr 4fr 2fr;
     align-items: center;
 
-    max-width: 100vw;
+   /*  max-width: 100vw; */
     background-color:
         #F2F3F5;
-    padding: 3% 0 3% 0;
+
 
     .nets {
         display: grid;
+        grid-area: 2/2/3/3;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         justify-content: center;
-        padding: 0 15% 0 15%;
+
     }
 
     .licence {
         display: grid;
-        padding: 0 12% 0 12%;
+        grid-area: 2/4/3/5;
+
         font-family: $fontarial;
         @extend %font-align;
         font-size: 1.1vw;
@@ -655,6 +763,7 @@ footer {
 
     .polyci {
         display: grid;
+        grid-area: 2/6/3/7;
         color: black;
         font-family: $fontarial;
         @extend %font-align;
@@ -669,9 +778,15 @@ footer {
 
     .logo {
         display: grid;
-        padding-left: 25%;
+        grid-area: 2/8/3/9;
+
+
     }
 }
+
+
+/*Конец блока Анна Мычко*/
+
 @font-face{
     font-family: 'Panton';
     src: url('../fonts/Panton-Bold.ttf');
@@ -722,11 +837,11 @@ html{
     margin-top: 135px;
     background-color:$bacgrcont;
 }
-.title-pade{
+ .title-pade{      
     padding-top: 62px;
     position: relative;
-
-}
+    background-color: #38BCEA;
+} 
 .subtitle{
     width: 50%;
     padding-top: 35px;
