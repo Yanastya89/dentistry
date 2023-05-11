@@ -820,13 +820,20 @@ html{
   font-size: 16px;
   font-weight: 600;
 }
-.button{
+.button{background-color: $blue;
+    color: $white;
+    padding: 0.7rem 1rem;
+    border-radius: 3px;
+    border-color: $transparent;
+    font-family: 'Roboto Slab', serif;
+text-decoration: none;
     font-size: 15px;
-    text-decoration: none;
-    background-color:$colorbutton;
-    color: white;
-    display: inline-block;
-    padding: 10px 15px;
+    
+}
+.button:hover {
+    background-color: $white;
+    color: $hover;
+    border-color: $hover;
 }
 .tel{
     color: #616269;
@@ -922,8 +929,8 @@ html{
     .controlcontriner__contimg{
   
     position: absolute;
-    bottom: -200px;
-    right: 0px;
+    bottom: -150px;
+    right: 50px;
     width: 600px;
     height: 600px;
     }

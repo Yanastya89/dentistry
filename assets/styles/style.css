@@ -609,12 +609,20 @@ html {
 }
 
 .button {
-  font-size: 15px;
-  text-decoration: none;
   background-color: #38BCEA;
-  color: white;
-  display: inline-block;
-  padding: 10px 15px;
+  color: #FBFBFB;
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+  border-color: transparent;
+  font-family: "Roboto Slab", serif;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.button:hover {
+  background-color: #FBFBFB;
+  color: #01678A;
+  border-color: #01678A;
 }
 
 .tel {
@@ -631,7 +639,6 @@ html {
 .title-pade {
   padding-top: 62px;
   position: relative;
-  background-color: #38BCEA;
 }
 
 .subtitle {
@@ -658,12 +665,6 @@ html {
   right: 0px;
   width: 600px;
   height: 600px;
-}
-
-title {
-  font-family: "Panton";
-  font-style: normal;
-  font-size: 24px;
 }
 
 .imgclinic {
@@ -715,8 +716,8 @@ title {
 
 .controlcontriner__contimg {
   position: absolute;
-  bottom: -200px;
-  right: 0px;
+  bottom: -150px;
+  right: 50px;
   width: 600px;
   height: 600px;
 }/*# sourceMappingURL=style.css.map */
