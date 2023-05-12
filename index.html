@@ -80,12 +80,12 @@
       <!--    Начало блока 2 Добровольская Анастасия -->
       <div class="main-links">
         <div class="main-links__text text">
-          <h2 class="text__services title">Услуги</h2>
-          <p class="text__price">Мы постарались сделать прайс <br> максимально простым и понятным. </p>
+          <h2 class="text__services title">Услуги</h2> <!-- text__services и scss к нему  удалить  -->
+          <p class="text__price">Мы постарались сделать прайс <br> максимально простым и понятным. </p> <!-- проверь шрифт, слишком большой -->
         </div>
         <div class="main-links__treatment treatment">
           <div class="treatment__cards cards">
-            <img src="assets/images/tooth1.png" alt="tooth" class="cards__img"> <br>
+            <img src="assets/images/tooth1.png" alt="tooth" class="cards__img"> <br><!-- поменять на голубую картинку -->
             <a class="cards__link" href="">Лечение зубов</a>
             <div class="treatment__butn butn">
               <button class="butn__bottom">V</button>
@@ -100,7 +100,7 @@
           </div>
           <div class="treatment__cards cards">
             <img src="assets/images/tooth3.png" alt="tooth" class="cards__img"> <br>
-            <a class="cards__link" href="">Брекеты</a>
+            <a class="cards__link" href="">Брекеты</a> <!-- выровнять с др. элкментами, и все остальные тоже -->
             <div class="treatment__butn butn">
               <button class="butn__bottom">V</button>
             </div>
@@ -145,13 +145,13 @@
       </div>
       <div class="main-benefits">
         <div class="main-benefits__heading title">
-          <h2>Нам доверяют пациенты</h2>
+          <h2>Нам доверяют пациенты</h2> <!--  удалить div и scss к нему h2 присвоить класс title -->
         </div>
         <div class="main-benefits__advantages advantages">
           <div class="advantages__accents accents">
             <div class="accents__card card">
               <img src="assets/images/1.png" alt="number" class="card__img">
-              <h3 class="card__title title">Честные цены, без <br> хитрых уловок</h3>
+              <h3 class="card__title title">Честные цены, без <br> хитрых уловок</h3> <!-- добавь margin 7px во всех блоках -->
               <p class="card__paragraph">Фиксируем цены в плане лечения, <br> не повышаем в процессе.</p>
 
             </div>
@@ -181,7 +181,7 @@
 <!--    Начало  блока 3 Семашко Татьяна -->
       <div class="wrapper">
         <div class="controltitle">
-    <div class="title-pade">
+    <div class="title-pade"> <!--добавь padding top  и bottom 62px  -->
         <div class="title"> При фиксации брекетов на обе челюсти<br> получи сертификат на 7000 рублей</div>
         <div class="subtitle">Укажите вой номер телефона, мы перезвоним<br> и подберем для вас удобное время приёма.<br>
             Или позвоните нам сами — <a href="tel:+790033310">+7 900 333 10</a> </div>
@@ -190,7 +190,7 @@
         <input class="tel" type="tel" name="tel" value="Телефон">
         <button class="btn btn_size_big">Заказать звонок</button>
     </div>
-        <div> 
+        <div> <!-- измени цвет текста ссылки -->
             <p class="subtitle__processing processing">Записываясь на услугу вы даёте согласие на <a href="#">обработку<br> своих персональных данных<br></a></p>
         </div>
         
@@ -224,11 +224,11 @@
     </div>
 
 <!--    Конец  блока 3 Семашко Татьяна -->
-      <section class="doctitle">
-        <h2 class="doctitle__header title">
+      <section class="doctitle">   <!-- используй, наверное, лучше rem 1rem=16px при масштвбировании страницы не красиво все -->
+        <h2 class="doctitle__header title"> <!-- doctitle__header и scss к нему  удалить добавь padding top -->
           Специалисты
         </h2>
-        <p class="doctitle__main">
+        <p class="doctitle__main"> <!-- проверь шрифт -->
           Просто и безболезненно, с предоставлением всего спектра стоматологических услуг
         </p>
       </section>
@@ -237,8 +237,8 @@
         <section class="doctors__firstcard doctors__card">
 
           <h3 class="doctors__card-name">Шац Дарья Сергеевна</h3>
-          <p class="doctors__card-prof">Директор, Главный врач, Врач ортодонт</p>
-          <p class="doctors__card-experience">Стаж работы 11 лет</p>
+          <p class="doctors__card-prof">Директор, Главный врач, Врач ортодонт</p> <!-- проверь шрифт -->
+          <p class="doctors__card-experience">Стаж работы 11 лет</p><!-- проверь шрифт -->
 
         </section>
         <img src="./assets/images/docgirl.png" alt="врач фото" class="doctors__secondphoto">
@@ -271,7 +271,7 @@
         </section>
       </div>
       <section class="certificates">
-        <h2 class="certificates__title title">Сертификаты, награды и дипломы</h2>
+        <h2 class="certificates__title title">Сертификаты, награды и дипломы</h2><!--  certificates__title и scss к нему  удалить -->  
         <div class="certificates__carousel">
           <img src="./assets/images/left.png" alt="влево" class="certificates__arrow">
           <img src="./assets/images/sertificate.png" alt="сертификат" class="certificates__doc">
@@ -280,8 +280,8 @@
           <img src="./assets/images/right.png" alt="вправо" class="certificates__arrow">
         </div>
       </section>
-      <section class="consultation">
-        <h2 class="consultation__title title">Онлайн консультация специалиста по аудио и видео связи, Бесплатно.</h2>
+      <section class="consultation"> <!-- проверь шрифт у блока -->
+        <h2 class="consultation__title title">Онлайн консультация специалиста по аудио и видео связи, Бесплатно.</h2><!-- consultation__title и scss к нему  удалить -->  
         <div class="consultation__subtitle">Укажите вой номер телефона, мы перезвоним и подберем для вас удобное
           время для консультации.</div>
         <div class="consultation__phone">
@@ -291,7 +291,8 @@
         </div>
         <div class="consultation__inputs">
           <input class="consultation__inputs-tel" type="tel" name="tel" value="Телефон">
-          <a href="#" class="consultation__inputs-button btn">Записаться на прием</a>
+        <!-- вставить   <button class="btn btn_size_big">Записаться на прием</button> -->
+          <!-- удалить <a href="#" class="consultation__inputs-button btn">Записаться на прием</a> consultation__inputsbutton- -->
         </div>
         <div class="consultation__agreement">
           <p class="consultation__agreement-text">Записываясь на услугу вы даёте согласие на <a href="#"
