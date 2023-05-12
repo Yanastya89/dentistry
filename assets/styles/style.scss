@@ -907,8 +907,8 @@ html {
     position: absolute;
     bottom: 0px;
     right: 50px;
-    width: 700px;
-    height: 700px;
+    width: 750px;
+    height: 750px;
     
 }
 
@@ -932,6 +932,12 @@ html {
         display: grid;
         grid-template-rows: 25% 25% 25% 25%;
         font-size: 20px;
+        &__text{
+            color:$gray;
+        }
+        &__logoclin{
+            color: $bl1darkblue;
+        }
 
     }
 }
@@ -988,5 +994,11 @@ html {
     right: 50px;
     width: 800px;
     height: 500px;
+}
+.link-pade{
+    color: $bl1graylight2;
+}
+.processing{
+    color: $bl1graylight2;
 }
 /*Конец блока Татьяна Семашко*/

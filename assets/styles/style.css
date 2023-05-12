@@ -692,8 +692,8 @@ html {
   position: absolute;
   bottom: 0px;
   right: 50px;
-  width: 700px;
-  height: 700px;
+  width: 750px;
+  height: 750px;
 }
 
 .controlcontriner {
@@ -714,6 +714,12 @@ html {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
   font-size: 20px;
+}
+.controlcontriner__content__text {
+  color: #737373;
+}
+.controlcontriner__content__logoclin {
+  color: #1A3444;
 }
 
 .link-doc {
@@ -767,6 +773,14 @@ html {
   right: 50px;
   width: 800px;
   height: 500px;
+}
+
+.link-pade {
+  color: #4B4B4B;
+}
+
+.processing {
+  color: #4B4B4B;
 }
 
 /*Конец блока Татьяна Семашко*//*# sourceMappingURL=style.css.map */
