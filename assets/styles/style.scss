@@ -324,26 +324,18 @@ $lgray: #D5D5D5;
 .main-links {
     display: grid;
     grid-template-rows: 1fr 2fr;
-    max-width: 1650px;
+    max-width: 100%;
     height: 900px;
+
 
     &__text {
         margin-top: 77px;
     }
 
-    .text__services {
-        font-family: $fontpan;
-        font-size: 3em;
-        font-weight: 700;
-        line-height: 59px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $darkblue;
-    }
-
     .text__price {
-        font-family: $fontarial;
-        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-size: 24px;
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0em;
@@ -357,6 +349,7 @@ $lgray: #D5D5D5;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: repeat(5, 1fr);
         gap: 2.4% 2.4%;
+        max-width: 100%;
 
     }
 
@@ -373,20 +366,25 @@ $lgray: #D5D5D5;
         border-radius: 5px;
         padding: 50px;
 
+        &__img {
+            max-width: 26%;
+            height: 33%;
         }
 
-    .cards__link {
-        font-size: 20px;
-        margin: 0 auto 0;
-        text-decoration: none;
-        display: inline-block;
-        color: $dark;
-        font-family: $fontpan;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 32px;
-        letter-spacing: 0em;
-        text-align: center;
+
+        &__link {
+            font-size: 20px;
+            margin: 0 auto 0;
+            text-decoration: none;
+            display: inline-block;
+            color: $dark;
+            font-family: $fontpan;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
     }
 
     .cards:hover {
@@ -446,23 +444,16 @@ $lgray: #D5D5D5;
 }
 
 .main-benefits {
-    max-width: 1650px;
+    max-width: 100%;
     height: 700px;
 
-    .main-benefits__heading {
-        font-family: $fontpan;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 59px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $darkgray;
-        padding-top: 124px;
-    }
-
-    .main-benefits__advantages {
+    &__advantages {
         display: grid;
         grid-template-columns: repeat(3, 33%);
+    }
+
+    &__heading {
+        margin-top: 124px;
     }
 
     .advantages__accents {
@@ -494,6 +485,8 @@ $lgray: #D5D5D5;
         letter-spacing: 0em;
         text-align: left;
         color: $black;
+        margin: 7px 0px 7px 0px;
+
     }
 }
 
@@ -849,17 +842,18 @@ html {
 .controltitle {
     padding-left: 100px;
     margin-top: 135px;
-    background-image:$bacgrimg;
+    background-image: $bacgrimg;
     max-width: 1650px;
 }
 
-.subtitle{
+.subtitle {
     width: 50%;
     padding-top: 35px;
     padding-bottom: 38px;
     font-size: 24px;
 }
-.processing{
+
+.processing {
     font-size: 18px;
 }
 
@@ -870,20 +864,23 @@ html {
     gap: 5%;
     padding-bottom: 33px;
 }
-.btn_size_big{
+
+.btn_size_big {
     font-size: 24px;
-            margin-top: 25px;
- }
- .tel{
+    margin-top: 25px;
+}
+
+.tel {
     color: #616269;
     border: 0px;
     margin-top: 25px;
     font-size: 24px;
     transition: 1s linear;
-    
+
 }
+
 .tel:hover {
-   
+
     background-color: $white;
     color: $hover;
     border-color: $hover;
@@ -921,8 +918,8 @@ html {
     background-color: #FBFBFB;
     position: relative;
     font-size: 20px;
-    
-    &__content{
+
+    &__content {
         display: grid;
         grid-template-rows: 25% 25% 25% 25%;
         font-size: 20px;
@@ -930,20 +927,21 @@ html {
     }
 }
 
-.link-doc{
+.link-doc {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 20px;
     gap: 5px;
-    
+
 }
-.links{ 
+
+.links {
     text-decoration: none;
-    background-color:$colorbuttongr;
+    background-color: $colorbuttongr;
     color: rgb(5, 5, 5);
     padding: 10px 15px;
     font-size: 20px;
- }
+}
 
 .content__logocontainer {
     display: grid;
@@ -952,33 +950,36 @@ html {
     height: 400px;
     padding-bottom: 100px;
 }
-.content__bastitle{
+
+.content__bastitle {
     font-family: 'Panton';
     font-size: 50px;
 }
-.text{
+
+.text {
     font-size: 28px;
 }
 
 
-.buttons{ 
+.buttons {
     text-decoration: none;
-    background-color:$colorbuttongr;
+    background-color: $colorbuttongr;
     color: rgb(5, 5, 5);
     padding: 10px 15px;
- }
+}
 
 
-.title-pade{
+.title-pade {
     position: relative;
 }
 
 
-.imgclinic{
+.imgclinic {
     position: absolute;
     bottom: 60px;
     right: 50px;
     width: 600px;
     height: 400px;
 }
+
 /*Конец блока Татьяна Семашко*/

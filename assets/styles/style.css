@@ -32,7 +32,7 @@ html {
   border-color: #01678A;
 }
 
-footer .polyci, footer .licence, .consultation .consultation__agreement, .consultation .consultation__inputs .consultation__inputs-button, .consultation .consultation__inputs .consultation__inputs-tel, .consultation .consultation__phone, .consultation .consultation__subtitle, .consultation .consultation__title, .certificates .certificates__title, .doctors__card-experience, .doctors__card-prof, .doctors__card-name, .doctitle__main, .doctitle__header {
+footer .polyci, footer .licence, .consultation .consultation__agreement, .consultation .consultation__inputs .consultation__inputs-tel, .consultation .consultation__phone, .consultation .consultation__subtitle, .doctors__card-experience, .doctors__card-prof, .doctors__card-name, .doctitle__main {
   line-height: 100%;
   vertical-align: top;
 }
@@ -237,24 +237,15 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .main-links {
   display: grid;
   grid-template-rows: 1fr 2fr;
-  max-width: 1650px;
+  max-width: 100%;
   height: 900px;
 }
 .main-links__text {
   margin-top: 77px;
 }
-.main-links .text__services {
-  font-family: "Panton", Arial, Helvetica, sans-serif;
-  font-size: 3em;
-  font-weight: 700;
-  line-height: 59px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #12354B;
-}
 .main-links .text__price {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
+  font-size: 24px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0em;
@@ -267,6 +258,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(5, 1fr);
   gap: 2.4% 2.4%;
+  max-width: 100%;
 }
 .main-links .treatment__cards {
   text-align: center;
@@ -279,6 +271,10 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   background-color: #D5D5D5;
   border-radius: 5px;
   padding: 50px;
+}
+.main-links .cards__img {
+  max-width: 26%;
+  height: 33%;
 }
 .main-links .cards__link {
   font-size: 20px;
@@ -341,22 +337,15 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 }
 
 .main-benefits {
-  max-width: 1650px;
+  max-width: 100%;
   height: 700px;
 }
-.main-benefits .main-benefits__heading {
-  font-family: "Panton", Arial, Helvetica, sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 59px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #272727;
-  padding-top: 124px;
-}
-.main-benefits .main-benefits__advantages {
+.main-benefits__advantages {
   display: grid;
   grid-template-columns: repeat(3, 33%);
+}
+.main-benefits__heading {
+  margin-top: 124px;
 }
 .main-benefits .advantages__accents {
   text-align: start;
@@ -384,6 +373,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   letter-spacing: 0em;
   text-align: left;
   color: #222222;
+  margin: 7px 0px 7px 0px;
 }
 
 /*Конец блока 2 Анастасия Добровольская*/
@@ -397,8 +387,6 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 }
 
 .doctitle__header {
-  font-family: "Panton", Arial, Helvetica, sans-serif;
-  font-size: 2.5vw;
   padding: 0 0 5% 9%;
 }
 
@@ -484,8 +472,6 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   margin: 15% 3% 0 4%;
-  font-family: "Panton", Arial, Helvetica, sans-serif;
-  font-size: 2.5vw;
 }
 .certificates .certificates__carousel {
   display: grid;
@@ -515,8 +501,6 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 }
 .consultation .consultation__title {
   display: grid;
-  font-family: "Panton", Arial, Helvetica, sans-serif;
-  font-size: 2.5vw;
   max-width: 50%;
   margin: 10% 0 3% 4%;
 }
@@ -556,15 +540,9 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   font-size: 1.1vw;
 }
 .consultation .consultation__inputs .consultation__inputs-button {
-  background-color: #38BCEA;
-  text-decoration: none;
-  color: white;
-  text-align: center;
   padding-top: 4%;
   margin: 3% 0 3% 0;
   max-width: 60%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1vw;
 }
 .consultation .consultation__agreement {
   display: grid;
@@ -577,13 +555,15 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .consultation .consultation__agreement .consultation__agreement-href {
   color: black;
 }
+.consultation .consultation__agreement .consultation__agreement-href:hover {
+  color: #01678A;
+}
 
 footer {
   display: grid;
   grid-template-columns: 2% 2fr 5% 4fr 3% 2fr 5% 1fr 1%;
   grid-template-rows: 2fr 4fr 2fr;
   align-items: center;
-  /*  max-width: 100vw; */
   background-color: #F2F3F5;
 }
 footer .nets {
@@ -608,7 +588,7 @@ footer .polyci {
   font-size: 1.1vw;
 }
 footer .polyci:hover {
-  color: rgb(19, 151, 168);
+  color: #01678A;
 }
 footer .logo {
   display: grid;
