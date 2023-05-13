@@ -36,6 +36,10 @@ $bl1graylight2: #4B4B4B;
     border-radius: 3px;
     border-color: $transparent;
     font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.3vw;
+
 }
 
 .btn:hover {
@@ -62,7 +66,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 .title {
     font-family: $fontpan;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3vw;
     color: $bl1darkblue;
 }
 
@@ -535,13 +539,26 @@ $lgray: #D5D5D5;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 40%;
-    padding-bottom: 3%;
+
+
 }
 
 .doctitle__header {
 
     padding: 0 0 5% 9%;
+
+    @media(min-width:768px) and (max-width:1199px) {
+        font-size: 4vw;
+    }
+
+    @media(min-width:576px) and (max-width:767px) {
+        font-size: 6vw;
+    }
+
+    @media (max-width:576px) {
+        font-size: 7vw;
+    }
+
 }
 
 .doctitle__main {
@@ -549,26 +566,81 @@ $lgray: #D5D5D5;
     font-size: 1.5vw;
     @extend %font-align;
     padding: 0 3% 0 9%;
+    width: 50%;
+
+    @media(min-width:768px) and (max-width:1199px) {
+        font-size: 1.6vw;
+        width: 50%;
+    }
+
+    @media(min-width:576px) and (max-width:767px) {
+        font-size: 2.3vw;
+        width: 70%;
+
+    }
+
+    @media (max-width:576px) {
+        font-size: 2.7vw;
+        width: 80%;
+    }
+
 }
 
 .doctors__card-name {
     font-family: $fontpan;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     @extend %font-align;
     max-width: 60%;
+
+    @media(min-width:768px) and (max-width:1199px) {
+        font-size: 1.6vw;
+    }
+
+    @media(min-width:576px) and (max-width:767px) {
+        font-size: 3vw;
+    }
+
+    @media (max-width:576px) {
+        font-size: 3vw;
+    }
 }
 
 .doctors__card-prof {
     font-family: $fontarial;
     @extend %font-align;
-    font-size: 1.1vw;
+    font-size: 1vw;
+
+    @media(min-width:768px) and (max-width:1199px) {
+        font-size: 1.3vw;
+    }
+
+    @media(min-width:576px) and (max-width:767px) {
+        font-size: 2vw;
+    }
+
+    @media (max-width:576px) {
+        font-size: 2.5vw;
+    }
+
 
 }
 
 .doctors__card-experience {
     font-family: $fontarial;
-    font-size: 1.1vw;
+    font-size: 1vw;
     @extend %font-align;
+
+    @media(min-width:768px) and (max-width:1199px) {
+        font-size: 1.3vw;
+    }
+
+    @media(min-width:576px) and (max-width:767px) {
+        font-size: 2vw;
+    }
+
+    @media (max-width:576px) {
+        font-size: 2.5vw;
+    }
 }
 
 .doctors {
@@ -579,12 +651,38 @@ $lgray: #D5D5D5;
 
     max-width: 100vw;
 
+    @media (max-width:767px) {
+        grid-template-columns: 2% 1fr 2%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    @media(min-width:576px) and (max-width:767px) {
+        grid-template-columns: 0.3% 1fr 0.3%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+
 
     .doctors__card {
         display: grid;
-        max-width: 60%;
+        max-width: 70%;
         max-height: 50%;
         padding: 5% 0 0 5%;
+
+        @media(min-width:768px) and (max-width:1199px) {
+            max-height: 60%;
+            max-width: 60%;
+        }
+
+        @media(min-width:576px) and (max-width:767px) {
+            max-height: 70%;
+            max-width: 70%;
+        }
+
+        @media (max-width:576px) {
+            max-height: 80%;
+            max-width: 60%;
+        }
 
     }
 
@@ -596,11 +694,20 @@ $lgray: #D5D5D5;
 
         @extend %card-size;
         box-shadow: $shadow;
+
+        @media (max-width:766px) {
+            grid-area: 1/2/2/3;
+        }
     }
 
     .doctors__firstcard {
         @extend %card-size;
         grid-area: 1/2/2/3;
+
+        @media (max-width:766px) {
+            grid-area: 1/2/2/3;
+        }
+
 
     }
 
@@ -609,12 +716,20 @@ $lgray: #D5D5D5;
         grid-area: 1/3/2/4;
 
         box-shadow: $shadow;
+
+        @media (max-width:766px) {
+            grid-area: 2/2/3/3;
+        }
     }
 
     .doctors__secondcard {
 
         grid-area: 1/3/2/4;
         @extend %card-size;
+
+        @media (max-width:766px) {
+            grid-area: 2/2/3/3;
+        }
     }
 
     .doctors__thirdphoto {
@@ -622,12 +737,20 @@ $lgray: #D5D5D5;
         grid-area: 2/2/3/3;
 
         box-shadow: $shadow;
+
+        @media (max-width:766px) {
+            grid-area: 3/2/4/3;
+        }
     }
 
     .doctors__thirdcard {
 
         grid-area: 2/2/3/3;
         @extend %card-size;
+
+        @media (max-width:766px) {
+            grid-area: 3/2/4/3;
+        }
     }
 
     .doctors__fourthphoto {
@@ -635,11 +758,19 @@ $lgray: #D5D5D5;
         grid-area: 2/3/3/4;
 
         box-shadow: $shadow;
+
+        @media (max-width:766px) {
+            grid-area: 4/2/5/3;
+        }
     }
 
     .doctors__fourthcard {
         @extend %card-size;
         grid-area: 2/3/3/4;
+
+        @media (max-width:766px) {
+            grid-area: 4/2/5/3;
+        }
 
     }
 
@@ -648,11 +779,19 @@ $lgray: #D5D5D5;
         grid-area: 3/2/4/3;
 
         box-shadow: $shadow;
+
+        @media (max-width:766px) {
+            grid-area: 5/2/6/3;
+        }
     }
 
     .doctors__fifthcard {
         @extend %card-size;
         grid-area: 3/2/4/3;
+
+        @media (max-width:766px) {
+            grid-area: 5/2/6/3;
+        }
 
     }
 }
@@ -669,6 +808,18 @@ $lgray: #D5D5D5;
         grid-template-rows: 1fr;
         margin: 15% 3% 0 4%;
 
+        @media(min-width:768px) and (max-width:1199px) {
+            font-size: 4vw;
+        }
+
+        @media(min-width:576px) and (max-width:767px) {
+            font-size: 6vw;
+        }
+
+        @media (max-width:576px) {
+            font-size: 7vw;
+        }
+
     }
 
     .certificates__carousel {
@@ -679,17 +830,46 @@ $lgray: #D5D5D5;
         align-items: center;
         padding: 5% 0 5% 0;
 
-        .certificates__doc {
-            display: grid;
-            max-width: 100%;
+
+        @media (max-width:576px) {
+
+            grid-template-columns: 1fr 12fr 1fr;
+            grid-template-rows: 1fr;
         }
 
-        .certificates__arrow {
-            display: grid;
-            max-width: 100%;
+        @media(min-width:576px) and (max-width:767px) {
+            grid-template-columns: 1fr 12fr 12fr 1fr;
+            grid-template-rows: 1fr;
         }
     }
 }
+
+
+.certificates__doc {
+    display: grid;
+    max-width: 100%;
+}
+
+.certificates__docsecond {
+    @media (max-width:576px) {
+        display: none;
+
+    }
+}
+
+.certificates__docthird {
+    @media (max-width:767px) {
+        display: none;
+
+    }
+}
+
+.certificates__arrow {
+    display: grid;
+    max-width: 100%;
+}
+
+
 
 .consultation {
     display: grid;
@@ -783,6 +963,8 @@ $lgray: #D5D5D5;
 
 }
 
+
+
 footer {
     display: grid;
     grid-template-columns: 2% 2fr 5% 4fr 3% 2fr 5% 1fr 1%;
@@ -793,6 +975,9 @@ footer {
     background-color:
         #F2F3F5;
 
+    @media (max-width:568px) {
+        display: none;
+    }
 
     .nets {
         display: grid;
@@ -883,7 +1068,7 @@ html {
 }
 
 
-.subtitle{
+.subtitle {
     width: 100%;
 
     padding-top: 35px;
@@ -937,7 +1122,7 @@ html {
     right: 50px;
     width: 750px;
     height: 750px;
-    
+
 }
 
 
@@ -960,10 +1145,12 @@ html {
         display: grid;
         grid-template-rows: 25% 25% 25% 25%;
         font-size: 20px;
-        &__text{
-            color:$gray;
+
+        &__text {
+            color: $gray;
         }
-        &__logoclin{
+
+        &__logoclin {
             color: $bl1darkblue;
         }
 
@@ -1026,10 +1213,12 @@ html {
     width: 800px;
     height: 500px;
 }
-.link-pade{
+
+.link-pade {
     color: $bl1graylight2;
 }
-.processing{
+
+.processing {
     color: $bl1graylight2;
 }
 
