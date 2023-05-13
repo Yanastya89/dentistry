@@ -32,7 +32,7 @@ html {
   border-color: #01678A;
 }
 
-footer .polyci, footer .licence, .consultation .consultation__agreement, .consultation .consultation__inputs .consultation__inputs-button, .consultation .consultation__inputs .consultation__inputs-tel, .consultation .consultation__phone, .consultation .consultation__subtitle, .consultation .consultation__title, .certificates .certificates__title, .doctors__card-experience, .doctors__card-prof, .doctors__card-name, .doctitle__main, .doctitle__header {
+footer .polyci, footer .licence, .consultation .consultation__agreement, .consultation .consultation__inputs .consultation__inputs-tel, .consultation .consultation__phone, .consultation .consultation__subtitle, .doctors__card-experience, .doctors__card-prof, .doctors__card-name, .doctitle__main {
   line-height: 100%;
   vertical-align: top;
 }
@@ -234,27 +234,28 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 }
 
 /*Начало блока 2 Анастасия Добровольская*/
+.container {
+  display: grid;
+  grid-template-rows: 56% 43%;
+}
+@media (min-width: 576px) and (max-width: 766px) {
+  .container {
+    grid-template-rows: 70% 30%;
+  }
+}
+
 .main-links {
   display: grid;
   grid-template-rows: 1fr 2fr;
-  max-width: 1650px;
+  max-width: 100%;
   height: 900px;
 }
 .main-links__text {
   margin-top: 77px;
 }
-.main-links .text__services {
-  font-family: "Panton", Arial, Helvetica, sans-serif;
-  font-size: 3em;
-  font-weight: 700;
-  line-height: 59px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #12354B;
-}
 .main-links .text__price {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
+  font-size: 24px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0em;
@@ -266,12 +267,32 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(5, 1fr);
-  gap: 2.4% 2.4%;
+  gap: 2.4%;
+  max-width: 100%;
+  row-gap: 6%;
+}
+@media (min-width: 576px) and (max-width: 766px) {
+  .main-links .main-links__treatment {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media (min-width: 767px) and (max-width: 1199px) {
+  .main-links .main-links__treatment {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .main-links .main-links__treatment {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 .main-links .treatment__cards {
   text-align: center;
   width: 100%;
-  height: 82%;
+  height: 100%;
   position: relative;
   display: inline-block;
 }
@@ -279,6 +300,10 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   background-color: #D5D5D5;
   border-radius: 5px;
   padding: 50px;
+}
+.main-links .cards__img {
+  max-width: 26%;
+  height: 33%;
 }
 .main-links .cards__link {
   font-size: 20px;
@@ -302,6 +327,11 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 }
 .main-links .vinir {
   grid-column: 2/3;
+}
+@media (min-width: 767px) and (max-width: 1199px) {
+  .main-links .vinir {
+    grid-column: 3/4;
+  }
 }
 .main-links .cards__link:after {
   display: block;
@@ -341,22 +371,27 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 }
 
 .main-benefits {
-  max-width: 1650px;
+  max-width: 100%;
   height: 700px;
 }
-.main-benefits .main-benefits__heading {
-  font-family: "Panton", Arial, Helvetica, sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 59px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #272727;
-  padding-top: 124px;
-}
-.main-benefits .main-benefits__advantages {
+.main-benefits__advantages {
   display: grid;
   grid-template-columns: repeat(3, 33%);
+}
+@media (min-width: 576px) and (max-width: 766px) {
+  .main-benefits__advantages {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 767px) and (max-width: 1199px) {
+  .main-benefits__advantages {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+.main-benefits__heading {
+  margin-top: 124px;
 }
 .main-benefits .advantages__accents {
   text-align: start;
@@ -384,6 +419,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   letter-spacing: 0em;
   text-align: left;
   color: #222222;
+  margin: 7px 0px 7px 0px;
 }
 
 /*Конец блока 2 Анастасия Добровольская*/
@@ -397,8 +433,6 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 }
 
 .doctitle__header {
-  font-family: "Panton", Arial, Helvetica, sans-serif;
-  font-size: 2.5vw;
   padding: 0 0 5% 9%;
 }
 
@@ -484,8 +518,6 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   margin: 15% 3% 0 4%;
-  font-family: "Panton", Arial, Helvetica, sans-serif;
-  font-size: 2.5vw;
 }
 .certificates .certificates__carousel {
   display: grid;
@@ -515,8 +547,6 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 }
 .consultation .consultation__title {
   display: grid;
-  font-family: "Panton", Arial, Helvetica, sans-serif;
-  font-size: 2.5vw;
   max-width: 50%;
   margin: 10% 0 3% 4%;
 }
@@ -556,15 +586,9 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   font-size: 1.1vw;
 }
 .consultation .consultation__inputs .consultation__inputs-button {
-  background-color: #38BCEA;
-  text-decoration: none;
-  color: white;
-  text-align: center;
   padding-top: 4%;
   margin: 3% 0 3% 0;
   max-width: 60%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1vw;
 }
 .consultation .consultation__agreement {
   display: grid;
@@ -577,13 +601,15 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .consultation .consultation__agreement .consultation__agreement-href {
   color: black;
 }
+.consultation .consultation__agreement .consultation__agreement-href:hover {
+  color: #01678A;
+}
 
 footer {
   display: grid;
   grid-template-columns: 2% 2fr 5% 4fr 3% 2fr 5% 1fr 1%;
   grid-template-rows: 2fr 4fr 2fr;
   align-items: center;
-  /*  max-width: 100vw; */
   background-color: #F2F3F5;
 }
 footer .nets {
@@ -608,7 +634,7 @@ footer .polyci {
   font-size: 1.1vw;
 }
 footer .polyci:hover {
-  color: rgb(19, 151, 168);
+  color: #01678A;
 }
 footer .logo {
   display: grid;
@@ -616,16 +642,11 @@ footer .logo {
 }
 
 /*Конец блока Анна Мычко*/
+/*Начало блока Татьяна Семашко*/
 @font-face {
   font-family: "Panton";
   src: url("../fonts/Panton-Bold.ttf");
 }
-.buttons:hover {
-  background: rgba(0, 0, 0, 0);
-  color: #3a7999;
-  box-shadow: inset 0 0 0 3px #3a7999;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -643,97 +664,111 @@ html {
   font-weight: 600;
 }
 
-.button {
-  font-size: 15px;
-  text-decoration: none;
-  background-color: #38BCEA;
-  color: white;
-  display: inline-block;
-  padding: 10px 15px;
-}
-
-.tel {
-  color: #616269;
-  border: 0;
-}
-
 .controltitle {
   padding-left: 100px;
   margin-top: 135px;
-  background-color: #FBFBFB;
+  background-image: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
+  max-width: 1650px;
 }
 
-/* .title{      
-    padding-top: 62px;
-    position: relative;
- Удалить этот блок. Для всех заголовков создан класс title. присвоить своим заголовкам класс title
-} */
 .subtitle {
-  width: 50%;
+  width: 100%;
   padding-top: 35px;
   padding-bottom: 38px;
+  font-size: 24px;
+  position: relative;
+}
+
+.processing {
+  font-size: 18px;
 }
 
 .personal {
   width: 50%;
   display: grid;
-  grid-template-columns: 30% 30%;
+  grid-template-columns: 50% 50%;
   gap: 5%;
   padding-bottom: 33px;
+}
+
+.btn_size_big {
+  font-size: 24px;
+  margin-top: 25px;
+}
+
+.tel {
+  color: #616269;
+  border: 0px;
+  margin-top: 25px;
+  font-size: 24px;
+  transition: 1s linear;
+}
+
+.tel:hover {
+  background-color: #FBFBFB;
+  color: #01678A;
+  border-color: #01678A;
 }
 
 .checkbox {
   padding-bottom: 63px;
 }
 
-.title-img {
+.subtitle-img {
   position: absolute;
   bottom: 0px;
-  right: 0px;
-  width: 600px;
-  height: 600px;
-}
-
-h1 {
-  font-family: "Panton";
-  font-style: normal;
-  font-size: 50px;
-}
-
-.imgclinic {
-  bottom: 5px;
-  right: 0px;
-  width: 650px;
-  height: 400px;
+  right: 50px;
+  width: 750px;
+  height: 750px;
 }
 
 .controlcontriner {
   padding-left: 100px;
   margin-top: 135px;
+  padding-top: 63px;
+  padding-bottom: 62px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   grid-template-rows: 50% 50%;
   justify-content: space-around;
   gap: 40px;
   background-color: #FBFBFB;
   position: relative;
+  font-size: 20px;
 }
 .controlcontriner__content {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
+  font-size: 20px;
+}
+.controlcontriner__content__text {
+  color: #737373;
+}
+.controlcontriner__content__logoclin {
+  color: #1A3444;
 }
 
-.content__servicescontainer__servbutton {
+.link-doc {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 20px;
   gap: 5px;
 }
 
+.links {
+  text-decoration: none;
+  background-color: #F9F9F9;
+  color: rgb(5, 5, 5);
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
 .content__logocontainer {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  height: 400px;
+  padding-bottom: 100px;
 }
 
 .content__bastitle {
@@ -741,7 +776,7 @@ h1 {
   font-size: 50px;
 }
 
-.content__text {
+.text {
   font-size: 28px;
 }
 
@@ -752,10 +787,26 @@ h1 {
   padding: 10px 15px;
 }
 
-.controlcontriner__contimg {
+.title-pade {
+  position: relative;
+  padding-top: 62px;
+  padding-bottom: 62px;
+}
+
+.imgclinic {
   position: absolute;
-  bottom: -200px;
-  right: 0px;
-  width: 600px;
-  height: 600px;
-}/*# sourceMappingURL=style.css.map */
+  bottom: 100px;
+  right: 50px;
+  width: 800px;
+  height: 500px;
+}
+
+.link-pade {
+  color: #4B4B4B;
+}
+
+.processing {
+  color: #4B4B4B;
+}
+
+/*Конец блока Татьяна Семашко*//*# sourceMappingURL=style.css.map */

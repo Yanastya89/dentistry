@@ -319,31 +319,29 @@ $lightblack: #292929;
 $white: #FBFBFB;
 $lgray: #D5D5D5;
 
+.container {
+    display: grid;
+    grid-template-rows: 56% 43%;
 
+    @media(min-width:576px) and (max-width:766px) {
+        grid-template-rows: 70% 30%;
+    }
+}
 
 .main-links {
     display: grid;
     grid-template-rows: 1fr 2fr;
-    max-width: 1650px;
+    max-width: 100%;
     height: 900px;
+
 
     &__text {
         margin-top: 77px;
     }
 
-    .text__services {
-        font-family: $fontpan;
-        font-size: 3em;
-        font-weight: 700;
-        line-height: 59px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $darkblue;
-    }
-
     .text__price {
-        font-family: $fontarial;
-        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0em;
@@ -356,14 +354,31 @@ $lgray: #D5D5D5;
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: repeat(5, 1fr);
-        gap: 2.4% 2.4%;
+        gap: 2.4%;
+        max-width: 100%;
+        row-gap: 6%;
+
+        @media(min-width:576px) and (max-width:766px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
+        }
+
+        @media(min-width:767px) and (max-width:1199px) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        @media(min-width:1200px) and (max-width:1439px) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
 
     }
 
     .treatment__cards {
         text-align: center;
         width: 100%;
-        height: 82%;
+        height: 100%;
         position: relative;
         display: inline-block;
     }
@@ -372,20 +387,26 @@ $lgray: #D5D5D5;
         background-color: $lgray;
         border-radius: 5px;
         padding: 50px;
-    }
 
-    .cards__link {
-        font-size: 20px;
-        margin: 0 auto 0;
-        text-decoration: none;
-        display: inline-block;
-        color: $dark;
-        font-family: $fontpan;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 32px;
-        letter-spacing: 0em;
-        text-align: center;
+        &__img {
+            max-width: 26%;
+            height: 33%;
+        }
+
+
+        &__link {
+            font-size: 20px;
+            margin: 0 auto 0;
+            text-decoration: none;
+            display: inline-block;
+            color: $dark;
+            font-family: $fontpan;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
     }
 
     .cards:hover {
@@ -399,6 +420,10 @@ $lgray: #D5D5D5;
 
     .vinir {
         grid-column: 2/3;
+
+        @media(min-width:767px) and (max-width:1199px) {
+            grid-column: 3/4;
+        }
     }
 
     .cards__link:after {
@@ -445,23 +470,26 @@ $lgray: #D5D5D5;
 }
 
 .main-benefits {
-    max-width: 1650px;
+    max-width: 100%;
     height: 700px;
 
-    .main-benefits__heading {
-        font-family: $fontpan;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 59px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $darkgray;
-        padding-top: 124px;
-    }
-
-    .main-benefits__advantages {
+    &__advantages {
         display: grid;
         grid-template-columns: repeat(3, 33%);
+
+        @media(min-width:576px) and (max-width:766px) {
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+        }
+
+        @media(min-width:767px) and (max-width:1199px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+
+    &__heading {
+        margin-top: 124px;
     }
 
     .advantages__accents {
@@ -493,6 +521,8 @@ $lgray: #D5D5D5;
         letter-spacing: 0em;
         text-align: left;
         color: $black;
+        margin: 7px 0px 7px 0px;
+
     }
 }
 
@@ -810,6 +840,7 @@ footer {
 
 
 /*Конец блока Анна Мычко*/
+/*Начало блока Татьяна Семашко*/
 
 @font-face {
     font-family: 'Panton';
@@ -823,14 +854,6 @@ $colorbutton: #38BCEA;
 $colorbuttongr: #F9F9F9;
 $bacgrimg: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
 $bacgrcont: #FBFBFB;
-
-%btn-1 {
-    background: rgba(0, 0, 0, 0);
-    color: #3a7999;
-    box-shadow: inset 0 0 0 3px #3a7999;
-}
-
-
 
 
 * {
@@ -850,102 +873,125 @@ html {
     font-weight: 600;
 }
 
-.button {
-    font-size: 15px;
-    text-decoration: none;
-    background-color: $colorbutton;
-    color: white;
-    display: inline-block;
-    padding: 10px 15px;
-}
 
-.tel {
-    color: #616269;
-    border: 0;
-}
 
 .controltitle {
     padding-left: 100px;
     margin-top: 135px;
-    background-color: $bacgrcont;
+    background-image: $bacgrimg;
+    max-width: 1650px;
 }
 
-/* .title{      
-    padding-top: 62px;
-    position: relative;
- Удалить этот блок. Для всех заголовков создан класс title. присвоить своим заголовкам класс title
-} */
-.subtitle {
-    width: 50%;
+
+.subtitle{
+    width: 100%;
+
     padding-top: 35px;
     padding-bottom: 38px;
+    font-size: 24px;
+    position: relative;
+
+}
+
+.processing {
+    font-size: 18px;
 }
 
 .personal {
     width: 50%;
     display: grid;
-    grid-template-columns: 30% 30%;
+    grid-template-columns: 50% 50%;
     gap: 5%;
     padding-bottom: 33px;
 }
+
+.btn_size_big {
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+.tel {
+    color: #616269;
+    border: 0px;
+    margin-top: 25px;
+    font-size: 24px;
+    transition: 1s linear;
+
+}
+
+.tel:hover {
+
+    background-color: $white;
+    color: $hover;
+    border-color: $hover;
+}
+
 
 .checkbox {
     padding-bottom: 63px;
 }
 
-.title-img {
+.subtitle-img {
     position: absolute;
     bottom: 0px;
-    right: 0px;
-    width: 600px;
-    height: 600px;
+    right: 50px;
+    width: 750px;
+    height: 750px;
+    
 }
 
-h1 {
-    font-family: 'Panton';
-    font-style: normal;
-    font-size: 50px;
-
-}
-
-.imgclinic {
-    bottom: 5px;
-    right: 0px;
-    width: 650px;
-    height: 400px;
-}
 
 .controlcontriner {
 
     padding-left: 100px;
     margin-top: 135px;
+    padding-top: 63px;
+    padding-bottom: 62px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 50% 50%;
     justify-content: space-around;
     gap: 40px;
     background-color: #FBFBFB;
     position: relative;
+    font-size: 20px;
 
     &__content {
         display: grid;
         grid-template-rows: 25% 25% 25% 25%;
-
+        font-size: 20px;
+        &__text{
+            color:$gray;
+        }
+        &__logoclin{
+            color: $bl1darkblue;
+        }
 
     }
 }
 
-.content__servicescontainer__servbutton {
+.link-doc {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 20px;
     gap: 5px;
+
+}
+
+.links {
+    text-decoration: none;
+    background-color: $colorbuttongr;
+    color: rgb(5, 5, 5);
+    padding: 10px 15px;
+    font-size: 20px;
 }
 
 .content__logocontainer {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    height: 400px;
+    padding-bottom: 100px;
 }
 
 .content__bastitle {
@@ -953,7 +999,7 @@ h1 {
     font-size: 50px;
 }
 
-.content__text {
+.text {
     font-size: 28px;
 }
 
@@ -965,15 +1011,26 @@ h1 {
     padding: 10px 15px;
 }
 
-.buttons:hover {
-    @extend%btn-1;
+
+.title-pade {
+    position: relative;
+    padding-top: 62px;
+    padding-bottom: 62px;
 }
 
-.controlcontriner__contimg {
 
+.imgclinic {
     position: absolute;
-    bottom: -200px;
-    right: 0px;
-    width: 600px;
-    height: 600px;
+    bottom: 100px;
+    right: 50px;
+    width: 800px;
+    height: 500px;
 }
+.link-pade{
+    color: $bl1graylight2;
+}
+.processing{
+    color: $bl1graylight2;
+}
+
+/*Конец блока Татьяна Семашко*/
