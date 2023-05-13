@@ -24,6 +24,9 @@ html {
   border-radius: 3px;
   border-color: transparent;
   font-family: "Roboto Slab", serif;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.3vw;
 }
 
 .btn:hover {
@@ -46,7 +49,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .title {
   font-family: "Panton", Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 3vw;
   color: #1A3444;
 }
 
@@ -428,34 +431,111 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  width: 40%;
-  padding-bottom: 3%;
 }
 
 .doctitle__header {
   padding: 0 0 5% 9%;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .doctitle__header {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .doctitle__header {
+    font-size: 6vw;
+  }
+}
+@media (max-width: 576px) {
+  .doctitle__header {
+    font-size: 7vw;
+  }
 }
 
 .doctitle__main {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5vw;
   padding: 0 3% 0 9%;
+  width: 50%;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .doctitle__main {
+    font-size: 1.6vw;
+    width: 50%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .doctitle__main {
+    font-size: 2.3vw;
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .doctitle__main {
+    font-size: 2.7vw;
+    width: 80%;
+  }
 }
 
 .doctors__card-name {
   font-family: "Panton", Arial, Helvetica, sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
   max-width: 60%;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .doctors__card-name {
+    font-size: 1.6vw;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .doctors__card-name {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 576px) {
+  .doctors__card-name {
+    font-size: 3vw;
+  }
 }
 
 .doctors__card-prof {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1vw;
+  font-size: 1vw;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .doctors__card-prof {
+    font-size: 1.3vw;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .doctors__card-prof {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 576px) {
+  .doctors__card-prof {
+    font-size: 2.5vw;
+  }
 }
 
 .doctors__card-experience {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1vw;
+  font-size: 1vw;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .doctors__card-experience {
+    font-size: 1.3vw;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .doctors__card-experience {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 576px) {
+  .doctors__card-experience {
+    font-size: 2.5vw;
+  }
 }
 
 .doctors {
@@ -465,46 +545,126 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   grid-template-rows: 1fr 1fr 1fr;
   max-width: 100vw;
 }
+@media (max-width: 767px) {
+  .doctors {
+    grid-template-columns: 2% 1fr 2%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .doctors {
+    grid-template-columns: 0.3% 1fr 0.3%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
 .doctors .doctors__card {
   display: grid;
-  max-width: 60%;
+  max-width: 70%;
   max-height: 50%;
   padding: 5% 0 0 5%;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .doctors .doctors__card {
+    max-height: 60%;
+    max-width: 60%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .doctors .doctors__card {
+    max-height: 70%;
+    max-width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .doctors .doctors__card {
+    max-height: 80%;
+    max-width: 60%;
+  }
 }
 .doctors .doctors__firstphoto {
   grid-area: 1/2/2/3;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
+@media (max-width: 766px) {
+  .doctors .doctors__firstphoto {
+    grid-area: 1/2/2/3;
+  }
+}
 .doctors .doctors__firstcard {
   grid-area: 1/2/2/3;
+}
+@media (max-width: 766px) {
+  .doctors .doctors__firstcard {
+    grid-area: 1/2/2/3;
+  }
 }
 .doctors .doctors__secondphoto {
   grid-area: 1/3/2/4;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
+@media (max-width: 766px) {
+  .doctors .doctors__secondphoto {
+    grid-area: 2/2/3/3;
+  }
+}
 .doctors .doctors__secondcard {
   grid-area: 1/3/2/4;
+}
+@media (max-width: 766px) {
+  .doctors .doctors__secondcard {
+    grid-area: 2/2/3/3;
+  }
 }
 .doctors .doctors__thirdphoto {
   grid-area: 2/2/3/3;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
+@media (max-width: 766px) {
+  .doctors .doctors__thirdphoto {
+    grid-area: 3/2/4/3;
+  }
+}
 .doctors .doctors__thirdcard {
   grid-area: 2/2/3/3;
+}
+@media (max-width: 766px) {
+  .doctors .doctors__thirdcard {
+    grid-area: 3/2/4/3;
+  }
 }
 .doctors .doctors__fourthphoto {
   grid-area: 2/3/3/4;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
+@media (max-width: 766px) {
+  .doctors .doctors__fourthphoto {
+    grid-area: 4/2/5/3;
+  }
+}
 .doctors .doctors__fourthcard {
   grid-area: 2/3/3/4;
+}
+@media (max-width: 766px) {
+  .doctors .doctors__fourthcard {
+    grid-area: 4/2/5/3;
+  }
 }
 .doctors .doctors__fifthphoto {
   grid-area: 3/2/4/3;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
+@media (max-width: 766px) {
+  .doctors .doctors__fifthphoto {
+    grid-area: 5/2/6/3;
+  }
+}
 .doctors .doctors__fifthcard {
   grid-area: 3/2/4/3;
+}
+@media (max-width: 766px) {
+  .doctors .doctors__fifthcard {
+    grid-area: 5/2/6/3;
+  }
 }
 
 .certificates {
@@ -519,6 +679,21 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   grid-template-rows: 1fr;
   margin: 15% 3% 0 4%;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .certificates .certificates__title {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .certificates .certificates__title {
+    font-size: 6vw;
+  }
+}
+@media (max-width: 576px) {
+  .certificates .certificates__title {
+    font-size: 7vw;
+  }
+}
 .certificates .certificates__carousel {
   display: grid;
   grid-template-columns: 1fr 12fr 12fr 12fr 1fr;
@@ -527,11 +702,37 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   align-items: center;
   padding: 5% 0 5% 0;
 }
-.certificates .certificates__carousel .certificates__doc {
+@media (max-width: 576px) {
+  .certificates .certificates__carousel {
+    grid-template-columns: 1fr 12fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .certificates .certificates__carousel {
+    grid-template-columns: 1fr 12fr 12fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.certificates__doc {
   display: grid;
   max-width: 100%;
 }
-.certificates .certificates__carousel .certificates__arrow {
+
+@media (max-width: 576px) {
+  .certificates__docsecond {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .certificates__docthird {
+    display: none;
+  }
+}
+
+.certificates__arrow {
   display: grid;
   max-width: 100%;
 }
@@ -611,6 +812,11 @@ footer {
   grid-template-rows: 2fr 4fr 2fr;
   align-items: center;
   background-color: #F2F3F5;
+}
+@media (max-width: 568px) {
+  footer {
+    display: none;
+  }
 }
 footer .nets {
   display: grid;
