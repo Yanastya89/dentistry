@@ -545,18 +545,21 @@ $lgray: #D5D5D5;
 
 .doctitle__header {
 
-    padding: 0 0 5% 9%;
+    padding: 5% 0 1% 4%;
 
     @media(min-width:768px) and (max-width:1199px) {
         font-size: 4vw;
+        padding: 5% 0 2% 4%;
     }
 
     @media(min-width:576px) and (max-width:767px) {
         font-size: 6vw;
+        padding: 5% 0 3% 5%;
     }
 
-    @media (max-width:576px) {
+    @media (max-width:575px) {
         font-size: 7vw;
+        padding: 5% 0 4% 6%;
     }
 
 }
@@ -565,23 +568,26 @@ $lgray: #D5D5D5;
     font-family: $fontarial;
     font-size: 1.5vw;
     @extend %font-align;
-    padding: 0 3% 0 9%;
+    padding: 0 3% 0 4%;
     width: 50%;
 
     @media(min-width:768px) and (max-width:1199px) {
         font-size: 1.6vw;
         width: 50%;
+        padding: 0 0 2% 4%;
     }
 
     @media(min-width:576px) and (max-width:767px) {
         font-size: 2.3vw;
         width: 70%;
+        padding: 0 0 3% 5%;
 
     }
 
-    @media (max-width:576px) {
+    @media (max-width:575px) {
         font-size: 2.7vw;
         width: 80%;
+        padding: 0 0 4% 6%;
     }
 
 }
@@ -600,7 +606,7 @@ $lgray: #D5D5D5;
         font-size: 3vw;
     }
 
-    @media (max-width:576px) {
+    @media (max-width:575px) {
         font-size: 3vw;
     }
 }
@@ -618,7 +624,7 @@ $lgray: #D5D5D5;
         font-size: 2vw;
     }
 
-    @media (max-width:576px) {
+    @media (max-width:575px) {
         font-size: 2.5vw;
     }
 
@@ -638,7 +644,7 @@ $lgray: #D5D5D5;
         font-size: 2vw;
     }
 
-    @media (max-width:576px) {
+    @media (max-width:575px) {
         font-size: 2.5vw;
     }
 }
@@ -679,7 +685,7 @@ $lgray: #D5D5D5;
             max-width: 70%;
         }
 
-        @media (max-width:576px) {
+        @media (max-width:575px) {
             max-height: 80%;
             max-width: 60%;
         }
@@ -799,31 +805,46 @@ $lgray: #D5D5D5;
 .certificates {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 25% 1fr 2fr;
     max-width: 100vw;
+
+    @media(min-width:768px) and (max-width:1199px) {
+        grid-template-rows: 25% 1fr 2fr;
+    }
+
+    @media(min-width:576px) and (max-width:767px) {
+        grid-template-rows: 70% 1fr 2fr;
+    }
+
+    @media (max-width:575px) {
+        grid-template-rows: 40% 1fr 2fr;
+    }
 
     .certificates__title {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin: 15% 3% 0 4%;
+        grid-row: 2/3;
+        padding-left: 4%;
 
         @media(min-width:768px) and (max-width:1199px) {
             font-size: 4vw;
+            padding-left: 4%;
         }
 
         @media(min-width:576px) and (max-width:767px) {
             font-size: 6vw;
+            padding-left: 5%;
         }
 
-        @media (max-width:576px) {
+        @media (max-width:575px) {
             font-size: 7vw;
+            padding-left: 8%;
         }
 
     }
 
     .certificates__carousel {
         display: grid;
+        grid-row: 3/4;
         grid-template-columns: 1fr 12fr 12fr 12fr 1fr;
         grid-template-rows: 1fr;
         gap: 1%;
@@ -870,54 +891,142 @@ $lgray: #D5D5D5;
 }
 
 
+.consultation__wrapper {
+    display: grid;
+    grid-template-rows: 5% 1fr;
+    grid-template-columns: 1fr;
+
+
+    @media(min-width:768px) and (max-width:1199px) {
+        grid-template-rows: 10% 1fr;
+    }
+
+
+
+    @media(min-width:576px) and (max-width:767px) {
+        grid-template-rows: 90% 1fr;
+    }
+
+
+
+    @media (max-width:575px) {
+        grid-template-rows: 40% 1fr;
+    }
+}
 
 .consultation {
     display: grid;
+    grid-row: 2/3;
     grid-template-columns: 1fr;
-    grid-template-rows: 6fr 1fr 1fr 2fr 2fr;
+    grid-template-rows: 4fr 1fr 1fr 1fr;
     background-image: url("../images/dentist2.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    max-width: 100vw;
+
+    @media(min-width:768px) and (max-width:1199px) {
+        background-color: #F2F3F5;
+        grid-template-rows: 3fr 2fr 1fr 2fr;
+    }
+
+    @media(min-width:576px) and (max-width:767px) {
+        background-color: #F2F3F5;
+        grid-template-rows: 3fr 2fr 1fr 2fr;
+    }
+
+    @media (max-width:575px) {
+        grid-template-rows: 3fr 2fr 1fr 2fr;
+        background-color: #F2F3F5;
+    }
+
 
 
     .consultation__title {
         display: grid;
 
-        max-width: 50%;
-        margin: 10% 0 3% 4%;
+        max-width: 60%;
+        padding: 10% 0 3% 4%;
 
+        @media(min-width:768px) and (max-width:1199px) {
+            font-size: 4vw;
+        }
+
+        @media(min-width:576px) and (max-width:767px) {
+            padding-left: 5%;
+            font-size: 4vw;
+        }
+
+        @media (max-width:575px) {
+            font-size: 4vw;
+            padding-left: 8%;
+        }
     }
 
     .consultation__subtitle {
         display: grid;
+
         font-family: $fontarial;
-        font-size: 1.2vw;
+        font-size: 1.1vw;
         @extend %font-align;
         max-width: 35%;
-        margin-left: 4%;
-    }
+        padding-left: 4%;
+        color: #262626;
 
-    .consultation__phone {
-        display: grid;
-        font-family: $fontarial;
-        font-size: 1.2vw;
-        @extend %font-align;
-        max-width: 35%;
-        margin-left: 4%;
+        @media(min-width:768px) and (max-width:1199px) {
+            max-width: 50%;
+            font-size: 2vw;
+        }
 
-        .consultation__phone-number {
+        @media(min-width:576px) and (max-width:767px) {
+            max-width: 55%;
+            font-size: 2vw;
+            padding-left: 5%;
+        }
+
+        @media (max-width:575px) {
+            max-width: 60%;
+            font-size: 2vw;
+            padding-left: 8%;
+        }
+
+        .consultation__subtitle-number {
             color: #0079FF;
             text-decoration: none;
         }
+
+        .consultation__subtitle-number:hover {
+            color: $hover;
+
+        }
     }
+
+
+
+
+
 
     .consultation__inputs {
         display: grid;
         grid-template-columns: 2fr 4fr;
         grid-template-rows: 1fr;
         max-width: 50%;
-        margin-left: 4%;
+        padding-left: 4%;
+
+        @media(min-width:768px) and (max-width:1199px) {
+            max-width: 60%;
+            padding-bottom: 3%;
+        }
+
+        @media(min-width:576px) and (max-width:767px) {
+            max-width: 70%;
+            padding-left: 5%;
+            padding-bottom: 3%;
+        }
+
+        @media (max-width:575px) {
+            max-width: 80%;
+            padding-left: 8%;
+            padding-bottom: 3%;
+        }
 
         .consultation__inputs-tel {
             border: none;
@@ -925,7 +1034,7 @@ $lgray: #D5D5D5;
             color: #BBBBBB;
             text-align: center;
             align-items: center;
-            margin: 5% 0 5% 0;
+
             font-family: $fontarial;
             font-size: 1.1vw;
             @extend %font-align;
@@ -935,7 +1044,7 @@ $lgray: #D5D5D5;
 
 
             padding-top: 4%;
-            margin: 3% 0 3% 0;
+
             max-width: 60%;
 
         }
@@ -948,9 +1057,25 @@ $lgray: #D5D5D5;
         font-family: $fontarial;
         font-size: 1vw;
         @extend %font-align;
-        margin-left: 4%;
+        padding-left: 4%;
         margin-top: 1%;
 
+        @media(min-width:768px) and (max-width:1199px) {
+            font-size: 2vw;
+            max-width: 100%;
+        }
+
+        @media(min-width:576px) and (max-width:767px) {
+            padding-left: 5%;
+            font-size: 2vw;
+            max-width: 100%;
+        }
+
+        @media (max-width:575px) {
+            max-width: 100%;
+            font-size: 2vw;
+            padding-left: 8%;
+        }
 
         .consultation__agreement-href {
             color: black;
@@ -968,14 +1093,15 @@ $lgray: #D5D5D5;
 footer {
     display: grid;
     grid-template-columns: 2% 2fr 5% 4fr 3% 2fr 5% 1fr 1%;
-    grid-template-rows: 2fr 4fr 2fr;
+    grid-template-rows: 2fr 2fr 1fr;
     align-items: center;
 
 
     background-color:
         #F2F3F5;
 
-    @media (max-width:568px) {
+
+    @media (max-width:767px) {
         display: none;
     }
 
