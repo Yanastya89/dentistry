@@ -626,10 +626,11 @@ html {
 }
 
 .subtitle {
-  width: 50%;
+  width: 100%;
   padding-top: 35px;
   padding-bottom: 38px;
   font-size: 24px;
+  position: relative;
 }
 
 .processing {
@@ -667,26 +668,21 @@ html {
   padding-bottom: 63px;
 }
 
-.title-img {
+.subtitle-img {
   position: absolute;
   bottom: 0px;
-  right: 0px;
-  width: 600px;
-  height: 600px;
-}
-
-.imgclinic {
-  bottom: 5px;
-  right: 0px;
-  width: 650px;
-  height: 400px;
+  right: 50px;
+  width: 750px;
+  height: 750px;
 }
 
 .controlcontriner {
   padding-left: 100px;
   margin-top: 135px;
+  padding-top: 63px;
+  padding-bottom: 62px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   grid-template-rows: 50% 50%;
   justify-content: space-around;
   gap: 40px;
@@ -698,6 +694,12 @@ html {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
   font-size: 20px;
+}
+.controlcontriner__content__text {
+  color: #737373;
+}
+.controlcontriner__content__logoclin {
+  color: #1A3444;
 }
 
 .link-doc {
@@ -717,7 +719,7 @@ html {
 
 .content__logocontainer {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   height: 400px;
   padding-bottom: 100px;
@@ -741,14 +743,24 @@ html {
 
 .title-pade {
   position: relative;
+  padding-top: 62px;
+  padding-bottom: 62px;
 }
 
 .imgclinic {
   position: absolute;
-  bottom: 60px;
+  bottom: 100px;
   right: 50px;
-  width: 600px;
-  height: 400px;
+  width: 800px;
+  height: 500px;
+}
+
+.link-pade {
+  color: #4B4B4B;
+}
+
+.processing {
+  color: #4B4B4B;
 }
 
 /*Конец блока Татьяна Семашко*//*# sourceMappingURL=style.css.map */
