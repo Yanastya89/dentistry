@@ -66,7 +66,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 .title {
     font-family: $fontpan;
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 3rem;
     color: $bl1darkblue;
 }
 
@@ -183,10 +183,10 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         margin-left: 19px;
         gap: 9px;
 
-        .calendar { 
-                 
-    
-           
+        .calendar {
+
+
+
 
             &__link {
                 border: 1px solid $transparent;
@@ -626,6 +626,7 @@ $lgray: #D5D5D5;
     @extend %font-align;
     padding: 0 3% 0 4%;
     width: 50%;
+    color: #737373;
 
     @media(min-width:768px) and (max-width:1199px) {
         font-size: 1.6vw;
@@ -653,6 +654,7 @@ $lgray: #D5D5D5;
     font-size: 1.7vw;
     @extend %font-align;
     max-width: 60%;
+    color: #363636;
 
     @media(min-width:768px) and (max-width:1199px) {
         font-size: 1.6vw;
@@ -671,6 +673,7 @@ $lgray: #D5D5D5;
     font-family: $fontarial;
     @extend %font-align;
     font-size: 1vw;
+    color: #3E3E3E;
 
     @media(min-width:768px) and (max-width:1199px) {
         font-size: 1.3vw;
@@ -691,6 +694,7 @@ $lgray: #D5D5D5;
     font-family: $fontarial;
     font-size: 1vw;
     @extend %font-align;
+    color: #3E3E3E;
 
     @media(min-width:768px) and (max-width:1199px) {
         font-size: 1.3vw;
@@ -954,19 +958,19 @@ $lgray: #D5D5D5;
 
 
     @media(min-width:768px) and (max-width:1199px) {
-        grid-template-rows: 10% 1fr;
+        grid-template-rows: 5% 1fr;
     }
 
 
 
     @media(min-width:576px) and (max-width:767px) {
-        grid-template-rows: 90% 1fr;
+        grid-template-rows: 50% 1fr;
     }
 
 
 
     @media (max-width:575px) {
-        grid-template-rows: 40% 1fr;
+        grid-template-rows: 30% 1fr;
     }
 }
 
@@ -979,18 +983,23 @@ $lgray: #D5D5D5;
     background-size: 100% auto;
     background-repeat: no-repeat;
 
+    @media(min-width:1199px) and (max-width:1439px) {
+
+        grid-template-rows: 3fr 1fr 1fr 1fr;
+    }
+
     @media(min-width:768px) and (max-width:1199px) {
         background-color: #F2F3F5;
-        grid-template-rows: 3fr 2fr 1fr 2fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr;
     }
 
     @media(min-width:576px) and (max-width:767px) {
         background-color: #F2F3F5;
-        grid-template-rows: 3fr 2fr 1fr 2fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr;
     }
 
     @media (max-width:575px) {
-        grid-template-rows: 3fr 2fr 1fr 2fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr;
         background-color: #F2F3F5;
     }
 
@@ -998,21 +1007,28 @@ $lgray: #D5D5D5;
 
     .consultation__title {
         display: grid;
-
-        max-width: 60%;
+        color: black;
+        max-width: 65%;
         padding: 10% 0 3% 4%;
 
+        @media(min-width:1200px) and (max-width:1439px) {
+            font-size: 2rem;
+
+
+        }
+
         @media(min-width:768px) and (max-width:1199px) {
-            font-size: 4vw;
+            font-size: 2rem;
+
         }
 
         @media(min-width:576px) and (max-width:767px) {
             padding-left: 5%;
-            font-size: 4vw;
+            font-size: 1.5rem;
         }
 
         @media (max-width:575px) {
-            font-size: 4vw;
+            font-size: 1.5rem;
             padding-left: 8%;
         }
     }
@@ -1068,18 +1084,18 @@ $lgray: #D5D5D5;
         padding-left: 4%;
 
         @media(min-width:768px) and (max-width:1199px) {
-            max-width: 60%;
+            max-width: 70%;
             padding-bottom: 3%;
         }
 
         @media(min-width:576px) and (max-width:767px) {
-            max-width: 70%;
+            max-width: 80%;
             padding-left: 5%;
             padding-bottom: 3%;
         }
 
         @media (max-width:575px) {
-            max-width: 80%;
+            max-width: 90%;
             padding-left: 8%;
             padding-bottom: 3%;
         }
@@ -1094,6 +1110,7 @@ $lgray: #D5D5D5;
             font-family: $fontarial;
             font-size: 1.1vw;
             @extend %font-align;
+            margin-top: 10%;
         }
 
         .consultation__inputs-button {
@@ -1115,6 +1132,7 @@ $lgray: #D5D5D5;
         @extend %font-align;
         padding-left: 4%;
         margin-top: 1%;
+        color: #4E4E4E;
 
         @media(min-width:768px) and (max-width:1199px) {
             font-size: 2vw;
@@ -1134,7 +1152,7 @@ $lgray: #D5D5D5;
         }
 
         .consultation__agreement-href {
-            color: black;
+            color: #4E4E4E;
         }
 
         .consultation__agreement-href:hover {
