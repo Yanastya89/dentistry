@@ -36,10 +36,8 @@ $bl1graylight2: #4B4B4B;
     border-radius: 3px;
     border-color: $transparent;
     font-family: 'Roboto Slab', serif;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.3vw;
-
+   
+  
 }
 
 .btn:hover {
@@ -66,10 +64,26 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 .title {
     font-family: $fontpan;
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 3rem;
     color: $bl1darkblue;
+    @media screen and (max-width: 1199px){
+          font-size: 2rem;
+        }
+   /*  @media(max-width:575px){ 
+         font-size: 1.5rem;
+        } */
+
+
 }
 
+.wrapper {
+    max-width: 1650px;
+    margin: 0 auto;
+    @media screen and (max-width: 768px){
+        width: 90%; 
+        margin: 0 auto;
+    }
+}
 
 
 .header:before {
@@ -78,26 +92,27 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     width: 100%;
     height: 100%;
     top: 0;
-    left: 0;
     background-color: white;
 }
 
 .header {
 
     position: fixed;
-    width: 100%;
     top: 0;
-    left: 0;
     z-index: 50;
 
     &__container {
         position: relative;
         z-index: 2;
         display: flex;
+      
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         height: 80px;
+       
+       
+     
     }
 
 
@@ -112,6 +127,10 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 
     &__social {
+        @media(max-width:767px){
+           display: none; 
+        
+        }
         a:nth-child(2) {
             margin: 0 15px;
         }
@@ -128,6 +147,9 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 
     &__nav {
+        @media(max-width:1199px){
+            display: none; 
+        }
         margin-left: 70px;
 
         .nav {
@@ -151,6 +173,9 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 
     &__address {
+        @media(max-width:1199px){
+            display: none; 
+        }
         max-width: 176px;
         margin-left: 3rem;
         color: $darkgray;
@@ -174,17 +199,17 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 
     &__calendar {
+        @media(max-width:1199px){
+            display: none; 
+        }
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-left: 19px;
         gap: 9px;
 
-        .calendar { 
-                 
+        .calendar {   
     
-           
-
             &__link {
                 border: 1px solid $transparent;
             }
@@ -194,8 +219,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             }
 
             &__hours {
-                /*   font-family: */
-                color: $darkblue;
+                  color: $darkblue;
             }
 
             &__datas {
@@ -205,11 +229,17 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 
     &__phone {
+        @media(max-width:1199px){
+            display: none; 
+        }
         margin-left: 41px;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 5px;
+        @mediad (max-width:1199px)  {
+            display: none; 
+        }
 
         .phone {
             &__link {
@@ -232,24 +262,44 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 
     .btn_size_small {
-        font-size: 15px;
+        font-size: 0.9rem;
         margin-left: 20px;
+        @media(max-width:1199px){
+            font-size: 0.6rem;
+               
+        }
     }
 }
 
 .welcomepage {
     background-image: url(../images/Fonblock1.png);
     background-repeat: no-repeat;
+    min-width: 1766px;
+    @media(max-width:575px){
+       background-size: 30% 30%;  
+     
+    }
+
+
     margin-top: 80px;
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+  
+    @media(max-width:767px)
+    { margin-top: 10px;
+        max-width: 70%;
+    }
+    @media(max-width:575px){
+        max-width: 70%;   
+    }
 
     &__text {
         padding-top: 146px;
+        @media(max-width:767px)
+        {   padding-top: 220px;
+                        }
 
         .text {
             &__item {
+                
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 20px;
                 color: $bl1gray;
@@ -270,6 +320,8 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         .btn_size_average {
             font-size: 20px;
             margin-top: 17px;
+            @media(max-width:1199px){
+                font-size: 0.7rem;}
         }
 
     }
@@ -279,8 +331,15 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         flex-direction: row;
         gap: 6px;
         margin-top: 76px;
+        @media screen and (max-width: 767px)
+        {
+                    display: flex;
+                flex-direction: column; 
+                     }
 
         .row {
+            @media screen and (max-width: 767px){
+                justify-content: center;}
             &__content {
                 background-color: rgba(255, 255, 255, 0.4);
                 display: flex;
@@ -298,16 +357,26 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             &__content_position_left {
                 flex: 2 1 auto;
                 justify-content: right;
+                @media screen and (max-width: 767px)
+                {justify-content: left;}
+                @media(min-width:768px) and (max-width:1199px) 
+                {    flex: 1 1 auto; }
             }
 
             &__content_position_center {
                 flex: 1 1 auto;
                 justify-content: center;
+                @media screen and (max-width: 767px)
+                {justify-content: left;}
             }
 
             &__content_position_right {
 
                 flex: 2 1 auto;
+                @media screen and (max-width: 767px)
+                {justify-content: left;}
+                @media(min-width:768px) and (max-width:1199px) 
+                {    flex: 1 1 auto; }
             }
         }
     }
