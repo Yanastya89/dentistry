@@ -85,6 +85,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 }
 
+
 .header:before {
     content: "";
     position: absolute;
@@ -1306,13 +1307,7 @@ html {
 }
 
 
-
-.controltitle {
-    padding-left: 100px;
-    margin-top: 135px;
-    background-image: $bacgrimg;
-    max-width: 1650px;
-}
+  
 
 
 .subtitle {
@@ -1366,32 +1361,73 @@ html {
 .subtitle-img {
     position: absolute;
     bottom: 0px;
-    right: 50px;
-    width: 750px;
-    height: 750px;
+    right: 0px;
+    width: 600px;
+    height: 600px;
+    @media(min-width:768px) and (max-width:1199px) {
+       
+        max-height: 95%;
+        max-width: 100%;
+        position: absolute;
+       left: 25%;
+       z-index:2;
+       opacity: 0.4;
+        filter: alpha(opacity=40)
+    }
+
+    @media(min-width:576px) and (max-width:767px) {
+       
+        max-height: 100%;
+        max-width: 80%;
+        position: absolute;
+        z-index:2;
+        opacity: 0.4;
+         filter: alpha(opacity=40)
+    }
+    @media (max-width:576px) {
+        
+        max-height: 85%;
+        max-width: 85%;
+        position: absolute;
+       z-index:2;
+       opacity: 0.4;
+        filter: alpha(opacity=40)
+    }
 
 }
 
 
 .controlcontriner {
 
-    padding-left: 100px;
-    margin-top: 135px;
-    padding-top: 63px;
-    padding-bottom: 62px;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 40px;
     background-color: #FBFBFB;
     position: relative;
-    font-size: 20px;
+    font-size: 5vw; 
+    margin-top: 153px;
+    margin-bottom: 153px;
+    @media(min-width:768px) and (max-width:1199px) {
+    
+        
+    }
+
+    @media(min-width:576px) and (max-width:767px) {
+        font-size: 1vw;
+        grid-area: 30px;
+        font-size: 1vw;
+    }
+    @media (max-width:576px) {
+        font-size: 1vw;
+    }
 
     &__content {
         display: grid;
         grid-template-rows: 25% 25% 25% 25%;
         font-size: 20px;
+    
 
         &__text {
             color: $gray;
@@ -1400,15 +1436,35 @@ html {
         &__logoclin {
             color: $bl1darkblue;
         }
+        @media(min-width:768px) and (max-width:1199px) {
+            font-size: 0,5vw;
+            grid-template-rows: 1fr 1fr 1fr;
+    
+        }
 
-    }
-}
+          
+    
+        @media(min-width:576px) and (max-width:767px) {
+            font-size: 1vw;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-area: 30px;
+            font-size: 1vw;
+        }
+    
+        @media (max-width:576px) {
+            font-size: 1vw;
+            grid-template-rows: 1fr 1fr;
+            grid-area: 30px;
+        }}}
+
+    
 
 .link-doc {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 20px;
     gap: 5px;
+    
 
 }
 
@@ -1418,6 +1474,24 @@ html {
     color: rgb(5, 5, 5);
     padding: 10px 15px;
     font-size: 20px;
+    @media(min-width:768px) and (max-width:1199px) {
+        padding: 10px 15px;
+        max-width:50px;
+        justify-content: space-around;
+    }
+
+      
+
+    @media(min-width:576px) and (max-width:767px) {
+    
+        padding: 10px 15px;
+        max-width:50px;
+    }
+
+    @media (max-width:576px) {
+        max-width: 50px;
+        padding: 10px 15px;
+    }
 }
 
 .content__logocontainer {
@@ -1426,7 +1500,22 @@ html {
     align-items: center;
     height: 400px;
     padding-bottom: 100px;
-}
+    @media(min-width:768px) and (max-width:1199px) {
+        font-size: 2vw;
+     }
+
+      
+
+    @media(min-width:576px) and (max-width:767px) {
+        font-size: 2vw;
+       
+    }
+
+    @media (max-width:576px) {
+        font-size: 2vw;
+       
+    }}
+
 
 .content__bastitle {
     font-family: 'Panton';
@@ -1435,6 +1524,20 @@ html {
 
 .text {
     font-size: 28px;
+    @media(min-width:768px) and (max-width:1199px) {
+        font-size: 2vw;
+       }
+
+      
+
+    @media(min-width:576px) and (max-width:767px) {
+        font-size: 2vw;
+        ;
+    }
+
+    @media (max-width:576px) {
+        font-size: 2vw;
+    }
 }
 
 
@@ -1450,6 +1553,11 @@ html {
     position: relative;
     padding-top: 62px;
     padding-bottom: 62px;
+    max-width: 1650px;
+    display: grid;
+    background-image: $bacgrimg;
+     margin-top: 153px;
+
 }
 
 
@@ -1457,10 +1565,33 @@ html {
     position: absolute;
     bottom: 100px;
     right: 50px;
-    width: 800px;
-    height: 500px;
-}
+    width: 40%;
+    height: 50%;
+    @media(min-width:768px) and (max-width:1199px) {
+        max-height: 25%;
+        max-width: 40%;
+        position: absolute;
+       left: 25%;
+       top: 70%;
+       
+       } 
+       @media(min-width:576px) and (max-width:767px) {
+       
+        max-height: 25%;
+        max-width: 40%;
+        position: absolute;
+       left: 25%;
+       top: 70%;
+    }
 
+    @media (max-width:576px) { 
+        max-height: 25%;
+        max-width: 40%;
+        position: absolute;
+       left: 25%;
+       top: 70%;
+    }
+}
 .link-pade {
     color: $bl1graylight2;
 }
@@ -1468,5 +1599,6 @@ html {
 .processing {
     color: $bl1graylight2;
 }
+
 
 /*Конец блока Татьяна Семашко*/
