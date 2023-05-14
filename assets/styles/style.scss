@@ -327,6 +327,11 @@ $lgray: #D5D5D5;
     display: grid;
     grid-template-rows: 56% 43%;
 
+    @media (max-width:575px) {
+        grid-template-rows: 90% 10%;
+
+    }
+
     @media(min-width:576px) and (max-width:766px) {
         grid-template-rows: 70% 30%;
     }
@@ -336,11 +341,22 @@ $lgray: #D5D5D5;
     display: grid;
     grid-template-rows: 1fr 2fr;
     max-width: 100%;
-    height: 900px;
+    min-height: 900px;
 
+    @media (max-width:766px) {
+        grid-template-rows: 20% 80%;
+    }
 
     &__text {
         margin-top: 77px;
+    }
+
+    .text__services {
+        @media (max-width:766px) {
+            text-align: center;
+            font-size: 2em;
+            padding-top: 100px;
+        }
     }
 
     .text__price {
@@ -352,6 +368,10 @@ $lgray: #D5D5D5;
         text-align: left;
         color: $gray;
         margin-top: 14px;
+
+        @media (max-width:766px) {
+            text-align: center;
+        }
     }
 
     .main-links__treatment {
@@ -361,6 +381,11 @@ $lgray: #D5D5D5;
         gap: 2.4%;
         max-width: 100%;
         row-gap: 6%;
+
+        @media (max-width:575px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8, 1fr);
+        }
 
         @media(min-width:576px) and (max-width:766px) {
             grid-template-columns: 1fr 1fr;
@@ -385,6 +410,16 @@ $lgray: #D5D5D5;
         height: 100%;
         position: relative;
         display: inline-block;
+
+        @media (max-width:575px) {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        @media(min-width:576px) and (max-width:766px) {
+            width: 80%;
+            margin: 0 auto;
+        }
     }
 
     .cards {
@@ -424,6 +459,10 @@ $lgray: #D5D5D5;
 
     .vinir {
         grid-column: 2/3;
+
+        @media (max-width:575px) {
+            grid-column: 1/2;
+        }
 
         @media(min-width:767px) and (max-width:1199px) {
             grid-column: 3/4;
@@ -475,13 +514,13 @@ $lgray: #D5D5D5;
 
 .main-benefits {
     max-width: 100%;
-    height: 700px;
+    min-height: 700px;
 
     &__advantages {
         display: grid;
         grid-template-columns: repeat(3, 33%);
 
-        @media(min-width:576px) and (max-width:766px) {
+        @media (max-width:766px) {
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr;
         }
@@ -494,6 +533,11 @@ $lgray: #D5D5D5;
 
     &__heading {
         margin-top: 124px;
+
+
+        @media (max-width:766px) {
+            font-size: 2em;
+        }
     }
 
     .advantages__accents {
@@ -515,6 +559,10 @@ $lgray: #D5D5D5;
         letter-spacing: 0em;
         text-align: left;
         color: $lightblack;
+
+        @media (max-width:766px) {
+            font-size: 1.5em;
+        }
     }
 
     .card__title {
@@ -526,6 +574,10 @@ $lgray: #D5D5D5;
         text-align: left;
         color: $black;
         margin: 7px 0px 7px 0px;
+
+        @media (max-width:766px) {
+            font-size: 2em;
+        }
 
     }
 }
