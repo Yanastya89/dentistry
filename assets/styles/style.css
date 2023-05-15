@@ -403,6 +403,12 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   color: #737373;
   margin-top: 14px;
 }
+@media (max-width: 575px) {
+  .main-links .text__price {
+    text-align: center;
+    font-size: 1em;
+  }
+}
 @media (max-width: 767px) {
   .main-links .text__price {
     text-align: center;
@@ -1325,7 +1331,6 @@ html {
 }
 @media (max-width: 575px) {
   .controlcontriner__contents {
-
     font-size: 1vw;
   }
 }
@@ -1391,9 +1396,7 @@ html {
   }
 }
 @media (max-width: 575px) {
-
   .contents__logocontainer {
-
     font-size: 2vw;
   }
 }
