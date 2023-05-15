@@ -1202,6 +1202,12 @@ html {
   font-size: 24px;
   position: relative;
 }
+@media (max-width: 576px) {
+  .subtitle {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+}
 
 .processing {
   font-size: 18px;
@@ -1216,16 +1222,27 @@ html {
 }
 
 .btn_size_big {
-  font-size: 24px;
-  margin-top: 25px;
+  font-size: 0.9rem;
+  margin-left: 20px;
+}
+@media (max-width: 576px) {
+  .btn_size_big {
+    font-size: 0.5rem;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .tel {
   color: #616269;
   border: 0px;
-  margin-top: 25px;
   font-size: 24px;
   transition: 1s linear;
+}
+@media (max-width: 576px) {
+  .tel {
+    font-size: 0.5rem;
+  }
 }
 
 .tel:hover {
@@ -1247,33 +1264,17 @@ html {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .subtitle-img {
-    max-height: 95%;
-    max-width: 100%;
-    position: absolute;
-    left: 25%;
-    z-index: 2;
-    opacity: 0.4;
-    filter: alpha(opacity=40);
+    display: none;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .subtitle-img {
-    max-height: 100%;
-    max-width: 80%;
-    position: absolute;
-    z-index: 2;
-    opacity: 0.4;
-    filter: alpha(opacity=40);
+    display: none;
   }
 }
 @media (max-width: 576px) {
   .subtitle-img {
-    max-height: 85%;
-    max-width: 85%;
-    position: absolute;
-    z-index: 2;
-    opacity: 0.4;
-    filter: alpha(opacity=40);
+    display: none;
   }
 }
 
@@ -1292,34 +1293,40 @@ html {
 @media (min-width: 576px) and (max-width: 767px) {
   .controlcontriner {
     font-size: 1vw;
-    grid-area: 30px;
-    font-size: 1vw;
   }
 }
 @media (max-width: 576px) {
   .controlcontriner {
     font-size: 1vw;
+    grid-template-columns: 99% 1%;
   }
 }
-.controlcontriner__content {
+.controlcontriner__contents {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
   font-size: 20px;
 }
-.controlcontriner__content__text {
+@media (max-width: 576px) {
+  .controlcontriner__contents {
+    max-width: 100%;
+    grid-template-rows: 30% 10% 30% 30%;
+    align-items: center;
+  }
+}
+.controlcontriner__contents__text {
   color: #737373;
 }
-.controlcontriner__content__logoclin {
+.controlcontriner__contents__logoclin {
   color: #1A3444;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .controlcontriner__content {
+  .controlcontriner__contents {
     font-size: 0, 5vw;
     grid-template-rows: 1fr 1fr 1fr;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .controlcontriner__content {
+  .controlcontriner__contents {
     font-size: 1vw;
     grid-template-rows: 1fr 1fr 1fr;
     grid-area: 30px;
@@ -1327,10 +1334,8 @@ html {
   }
 }
 @media (max-width: 576px) {
-  .controlcontriner__content {
+  .controlcontriner__contents {
     font-size: 1vw;
-    grid-template-rows: 1fr 1fr;
-    grid-area: 30px;
   }
 }
 
@@ -1339,6 +1344,14 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 20px;
   gap: 5px;
+}
+@media (max-width: 576px) {
+  .link-doc {
+    font-size: 0.5rem;
+    padding: 10px 15px;
+    width: 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .links {
@@ -1359,16 +1372,17 @@ html {
   .links {
     padding: 10px 15px;
     max-width: 50px;
+    font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
   .links {
-    max-width: 50px;
-    padding: 10px 15px;
+    font-size: 0.7rem;
+    width: 100%;
   }
 }
 
-.content__logocontainer {
+.contents__logocontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -1376,22 +1390,22 @@ html {
   padding-bottom: 100px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .content__logocontainer {
+  .contents__logocontainer {
     font-size: 2vw;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .content__logocontainer {
+  .contents__logocontainer {
     font-size: 2vw;
   }
 }
 @media (max-width: 576px) {
-  .content__logocontainer {
+  .contents__logocontainer {
     font-size: 2vw;
   }
 }
 
-.content__bastitle {
+.contents__bastitle {
   font-family: "Panton";
   font-size: 50px;
 }
@@ -1406,12 +1420,13 @@ html {
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .text {
-    font-size: 2vw;
+    font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
   .text {
-    font-size: 2vw;
+    font-size: 1rem;
+    width: 100%;
   }
 }
 
@@ -1426,10 +1441,15 @@ html {
   position: relative;
   padding-top: 62px;
   padding-bottom: 62px;
-  max-width: 1650px;
-  display: grid;
+  max-width: 100%;
   background-image: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
   margin-top: 153px;
+}
+@media (max-width: 576px) {
+  .title-pade {
+    max-width: 100%;
+    font-size: 1rem;
+  }
 }
 
 .imgclinic {
@@ -1459,11 +1479,7 @@ html {
 }
 @media (max-width: 576px) {
   .imgclinic {
-    max-height: 25%;
-    max-width: 40%;
-    position: absolute;
-    left: 25%;
-    top: 70%;
+    display: none;
   }
 }
 
@@ -1473,6 +1489,79 @@ html {
 
 .processing {
   color: #4B4B4B;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .processing {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .processing {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .processing {
+    max-width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .textprioritet {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .textprioritet {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .textprioritet {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .textservices {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .textservices {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .textservices {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .clinika {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .clinika {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 576px) {
+  .clinika {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .logovoxel,
+  .logoort,
+  .logobisnes {
+    max-height: 80%;
+    max-width: 80%;
+  }
 }
 
 /*Конец блока Татьяна Семашко*//*# sourceMappingURL=style.css.map */
