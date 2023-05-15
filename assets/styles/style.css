@@ -1492,12 +1492,12 @@ html {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .processing {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .processing {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
@@ -1509,7 +1509,7 @@ html {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .textprioritet {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1525,7 +1525,7 @@ html {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .textservices {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
