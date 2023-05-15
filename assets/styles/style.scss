@@ -1341,7 +1341,11 @@ html {
     padding-bottom: 38px;
     font-size: 24px;
     position: relative;
-
+    @media (max-width:575px) { 
+    
+        max-width:100%;
+        font-size: 1rem;
+    }
 }
 
 .processing {
@@ -1357,16 +1361,26 @@ html {
 }
 
 .btn_size_big {
-    font-size: 24px;
-    margin-top: 25px;
+   
+    font-size: 0.9rem;
+    margin-left: 20px;
+    @media (max-width:575px) { 
+        font-size: 0.5rem;
+   width: 100%;
+   max-width: 100%;
+    }
 }
 
 .tel {
     color: #616269;
     border: 0px;
-    margin-top: 25px;
     font-size: 24px;
     transition: 1s linear;
+    @media (max-width:575px) { 
+    
+        font-size: 0.5rem;
+
+    }
 
 }
 
@@ -1390,32 +1404,18 @@ html {
     height: 600px;
     @media(min-width:768px) and (max-width:1199px) {
        
-        max-height: 95%;
-        max-width: 100%;
-        position: absolute;
-       left: 25%;
-       z-index:2;
-       opacity: 0.4;
-        filter: alpha(opacity=40)
+     
+      display: none;
     }
 
     @media(min-width:576px) and (max-width:767px) {
        
-        max-height: 100%;
-        max-width: 80%;
-        position: absolute;
-        z-index:2;
-        opacity: 0.4;
-         filter: alpha(opacity=40)
+       
+        display: none;
     }
-    @media (max-width:576px) {
+    @media (max-width:575px) {
         
-        max-height: 85%;
-        max-width: 85%;
-        position: absolute;
-       z-index:2;
-       opacity: 0.4;
-        filter: alpha(opacity=40)
+        display: none;
     }
 
 }
@@ -1439,18 +1439,24 @@ html {
     }
 
     @media(min-width:576px) and (max-width:767px) {
-        font-size: 1vw;
-        grid-area: 30px;
+
+      
         font-size: 1vw;
     }
-    @media (max-width:576px) {
+    @media (max-width:575px) {
         font-size: 1vw;
+        grid-template-columns: 99% 1%;
     }
 
-    &__content {
+    &__contents {
         display: grid;
         grid-template-rows: 25% 25% 25% 25%;
         font-size: 20px;
+        @media (max-width:575px) {
+            max-width: 100%;
+            grid-template-rows: 30% 10% 30% 30%;
+            align-items: center;
+        }
     
 
         &__text {
@@ -1475,10 +1481,8 @@ html {
             font-size: 1vw;
         }
     
-        @media (max-width:576px) {
+        @media (max-width:575px) {
             font-size: 1vw;
-            grid-template-rows: 1fr 1fr;
-            grid-area: 30px;
         }}}
 
     
@@ -1489,7 +1493,13 @@ html {
     margin-bottom: 20px;
     gap: 5px;
     
-
+    @media (max-width:575px) {
+      
+        font-size: 0.5rem;
+        padding: 10px 15px;
+        width: 50%;
+       grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .links {
@@ -1510,15 +1520,18 @@ html {
     
         padding: 10px 15px;
         max-width:50px;
+        font-size: 1rem;
     }
 
-    @media (max-width:576px) {
-        max-width: 50px;
-        padding: 10px 15px;
+    @media (max-width:575px) {
+      
+        font-size: 0.7rem;
+        width: 100%;
+       
     }
 }
 
-.content__logocontainer {
+.contents__logocontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -1535,13 +1548,13 @@ html {
        
     }
 
-    @media (max-width:576px) {
+    @media (max-width:575px) {
         font-size: 2vw;
        
     }}
 
 
-.content__bastitle {
+.contents__bastitle {
     font-family: 'Panton';
     font-size: 50px;
 }
@@ -1555,12 +1568,14 @@ html {
       
 
     @media(min-width:576px) and (max-width:767px) {
-        font-size: 2vw;
+        font-size: 1rem;
         ;
     }
 
-    @media (max-width:576px) {
-        font-size: 2vw;
+    @media (max-width:575px) {
+        font-size: 1rem;
+        width: 100%;
+        
     }
 }
 
@@ -1577,11 +1592,14 @@ html {
     position: relative;
     padding-top: 62px;
     padding-bottom: 62px;
-    max-width: 1650px;
-    display: grid;
+    max-width: 100%;
     background-image: $bacgrimg;
      margin-top: 153px;
-
+     @media (max-width:575px) { 
+    
+        max-width:100%;
+        font-size: 1rem;
+    }
 }
 
 
@@ -1608,12 +1626,8 @@ html {
        top: 70%;
     }
 
-    @media (max-width:576px) { 
-        max-height: 25%;
-        max-width: 40%;
-        position: absolute;
-       left: 25%;
-       top: 70%;
+    @media (max-width:575px) { 
+       display: none;
     }
 }
 .link-pade {
@@ -1622,7 +1636,68 @@ html {
 
 .processing {
     color: $bl1graylight2;
+    @media(min-width:768px) and (max-width:1199px) {
+   
+        font-size: 2rem;
+   } 
+   @media(min-width:576px) and (max-width:767px) {
+    font-size: 1rem;
+  
+}
+    @media (max-width:575px) { 
+    
+        max-width:100%;
+        font-size: 0.8rem;
+    }
+}
+.textprioritet{
+    @media(min-width:768px) and (max-width:1199px) {
+        font-size: 1rem;
+   } 
+
+   @media(min-width:576px) and (max-width:767px) {
+    font-size: 1rem;
+  
 }
 
+    @media (max-width:575px) { 
+  font-size: 0.8rem;
+    }
+}
+.textservices{  
+     @media(min-width:768px) and (max-width:1199px) {
+   
+        font-size: 1rem;
+   } 
+   @media(min-width:576px) and (max-width:767px) {
+    font-size: 1rem;
+  
+}
+    @media (max-width:575px) { 
+       font-size: 0.8rem;
+     
+    }
+}
+.clinika{
+    @media(min-width:768px) and (max-width:1199px) {
+   
+        font-size: 0.8rem;
+   } 
+   @media(min-width:576px) and (max-width:767px) {
+    font-size: 0.8rem;
+  
+}
+    @media (max-width:575px) { 
+        font-size: 0.8rem;
+    }
+}
 
+.logovoxel,
+.logoort,
+.logobisnes{
+    @media (max-width:575px) { 
+        max-height: 80%;
+        max-width: 80%;
+    }
+}
 /*Конец блока Татьяна Семашко*/
