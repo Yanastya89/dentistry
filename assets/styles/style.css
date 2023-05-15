@@ -17,13 +17,14 @@ html {
   font-weight: 400;
 }
 
-.btn {
+.welcomepage__treatment .treatment__btn, .header__btn {
   background-color: #38BCEA;
   color: #FFFFFF;
   padding: 0.7rem 1rem;
   border-radius: 3px;
   border-color: transparent;
   font-family: "Roboto Slab", serif;
+
 }
 
 .btn:hover {
@@ -57,6 +58,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   .title {
     font-size: 2rem;
   }
+
 }
 
 .wrapper {
@@ -80,6 +82,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 }
 
 .header {
+
   position: fixed;
   top: 0;
   z-index: 50;
@@ -87,6 +90,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .header__container {
   position: relative;
   z-index: 2;
+=
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -218,6 +222,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .header__phone .phone__number:hover {
   color: #01678A;
 }
+
 .header .btn_size_small {
   font-size: 0.9rem;
   margin-left: 20px;
@@ -226,10 +231,12 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   .header .btn_size_small {
     font-size: 0.6rem;
   }
+
 }
 
 .welcomepage {
   background-image: url(../images/Fonblock1.png);
+
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -274,35 +281,42 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   }
 }
 .welcomepage__text .text__item {
+
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   color: #4E4E4E;
-  padding-bottom: 17px;
 }
-.welcomepage__text .text__item-2 {
+.welcomepage__treatment .treatment__title {
+  margin-top: 17px;
+  font-size: 48px;
+  max-width: 351px;
+  color: #1A3444;
+}
+.welcomepage__treatment .treatment__consultation {
+  color: #6F6F6F;
+  margin-top: 16px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  color: #6F6F6F;
-  padding-top: 17px;
-  padding-bottom: 37px;
   max-width: 460px;
 }
-.welcomepage__text .btn_size_average {
-  font-size: 20px;
+.welcomepage__treatment .treatment__btn {
   margin-top: 17px;
 }
+
 @media (max-width: 1199px) {
   .welcomepage__text .btn_size_average {
     font-size: 0.7rem;
   }
 }
 .welcomepage__row {
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 6px;
   margin-top: 76px;
 }
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .welcomepage__row {
     margin-top: 90px;
@@ -320,15 +334,19 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   }
 }
 .welcomepage__row .row__content {
+
   background-color: rgba(255, 255, 255, 0.4);
   display: flex;
   align-items: center;
+  flex: 2 1 auto;
+  justify-content: right;
   gap: 19px;
 }
-.welcomepage__row .row__content .content__title {
+.welcomepage__benefits .benefits__doctor .doctor__title {
   text-decoration: none;
   color: #4B4B4B;
 }
+
 .welcomepage__row .row__content_position_left {
   flex: 2 1 auto;
   justify-content: right;
@@ -344,16 +362,29 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   }
 }
 .welcomepage__row .row__content_position_center {
+
   flex: 1 1 auto;
   justify-content: center;
+  gap: 19px;
 }
+.welcomepage__benefits .benefits__cabinet .cabinet__title {
+  text-decoration: none;
+  color: #4B4B4B;
+}
+
 @media screen and (max-width: 1199px) {
   .welcomepage__row .row__content_position_center {
     justify-content: left;
   }
 }
 .welcomepage__row .row__content_position_right {
+
   flex: 2 1 auto;
+  gap: 19px;
+}
+.welcomepage__benefits .benefits__location .location__title {
+  text-decoration: none;
+  color: #4B4B4B;
 }
 @media screen and (max-width: 1199px) {
   .welcomepage__row .row__content_position_right {
@@ -611,8 +642,22 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   }
 }
 
+footer .polyci, footer .licence, .certificates .certificates__title, .doctors__card-experience, .doctors__card-prof, .doctors__card-name, .doctitle__main, .doctitle__header {
+  line-height: 100%;
+  vertical-align: top;
+}
+
+.doctors .doctors__fifthcard, .doctors .doctors__fifthphoto, .doctors .doctors__fourthcard, .doctors .doctors__fourthphoto, .doctors .doctors__thirdcard, .doctors .doctors__thirdphoto, .doctors .doctors__secondcard, .doctors .doctors__secondphoto, .doctors .doctors__firstcard, .doctors .doctors__firstphoto {
+  display: grid;
+  max-width: 100%;
+  border-radius: 2px;
+}
+
+
 /*Конец блока 2 Анастасия Добровольская*/
+
 /*Начало блока Анна Мычко*/
+
 .doctitle {
   display: grid;
   grid-template-columns: 1fr;
