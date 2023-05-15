@@ -64,7 +64,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   overflow: hidden;
   margin: 0 auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1649px) {
   .wrapper {
     width: 95%;
   }
@@ -73,7 +73,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .header:before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   top: 0;
   background-color: white;
@@ -99,6 +99,11 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   border: 1px solid transparent;
   max-width: 100%;
 }
+@media (min-width: 767px) and (max-width: 1439px) {
+  .header__logo {
+    margin-right: 25px;
+  }
+}
 .header__logo:hover {
   border: 1px solid #01678A;
 }
@@ -116,12 +121,14 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .header__social .social__link:hover {
   border: 1px solid #01678A;
 }
-.header__nav {
-  margin-left: 70px;
-}
 @media (max-width: 1199px) {
   .header__nav {
     display: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .header__nav {
+    margin-left: 30px;
   }
 }
 .header__nav .nav__link {
@@ -149,7 +156,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .header__address {
     display: none;
   }
@@ -168,7 +175,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   margin-left: 19px;
   gap: 9px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
   .header__calendar {
     display: none;
   }
@@ -193,12 +200,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   align-items: center;
   gap: 5px;
 }
-@media (max-width: 1199px) {
-  .header__phone {
-    display: none;
-  }
-}
-@media (max-width: 1199px) {
+@media (max-width: 1649px) {
   .header__phone {
     display: none;
   }
@@ -229,6 +231,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .welcomepage {
   background-image: url(../images/Fonblock1.png);
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 @media (max-width: 575px) {
   .welcomepage {
@@ -247,11 +250,27 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   }
 }
 .welcomepage__text {
-  padding-top: 220px;
+  margin-top: 80px;
+  padding-top: 120px;
 }
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .welcomepage__text {
-    padding-top: 100px;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .welcomepage__text {
+    padding-top: 180px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .welcomepage__text {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .welcomepage__text {
+    padding-top: 20px;
   }
 }
 .welcomepage__text .text__item {
@@ -284,13 +303,18 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   gap: 6px;
   margin-top: 76px;
 }
-@media screen and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1199px) {
+  .welcomepage__row {
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 1199px) {
   .welcomepage__row {
     display: flex;
     flex-direction: column;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .welcomepage__row .row {
     justify-content: center;
   }
@@ -298,7 +322,6 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .welcomepage__row .row__content {
   background-color: rgba(255, 255, 255, 0.4);
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 19px;
 }
@@ -310,12 +333,12 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   flex: 2 1 auto;
   justify-content: right;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .welcomepage__row .row__content_position_left {
     justify-content: left;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
   .welcomepage__row .row__content_position_left {
     flex: 1 1 auto;
   }
@@ -324,7 +347,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   flex: 1 1 auto;
   justify-content: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .welcomepage__row .row__content_position_center {
     justify-content: left;
   }
@@ -332,12 +355,12 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .welcomepage__row .row__content_position_right {
   flex: 2 1 auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .welcomepage__row .row__content_position_right {
     justify-content: left;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
   .welcomepage__row .row__content_position_right {
     flex: 1 1 auto;
   }

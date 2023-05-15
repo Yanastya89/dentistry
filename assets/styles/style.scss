@@ -80,7 +80,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     max-width: 1650px;
     overflow: hidden;
     margin: 0 auto;
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 1649px){
         width: 95%; 
     }
 
@@ -88,9 +88,10 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
 
 .header:before {
+    
     content: "";
      position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     top: 0;
     background-color: white;
@@ -107,8 +108,8 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         position: relative;
         z-index: 2;
         display: flex;
-        
-        flex-wrap: wrap;
+      
+         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -123,6 +124,10 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         margin-right: 55px;
         border: 1px solid $transparent;
         max-width: 100%;
+
+        @media(min-width:767px) and (max-width:1439px){
+            margin-right: 25px;
+               }
     }
 
     &__logo:hover {
@@ -153,8 +158,9 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         @media(max-width:1199px){
             display: none; 
         }
-        margin-left: 70px;
-
+        @media(min-width:1200px) and (max-width:1439px){
+        margin-left: 30px;
+           }
         .nav {
             &__link {
                 text-decoration: none;
@@ -176,7 +182,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 
     &__address {
-        @media(max-width:1199px){
+        @media(max-width:767px){
             display: none; 
         }
         max-width: 176px;
@@ -203,7 +209,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 
     &__calendar {
-        @media(max-width:1199px){
+        @media(max-width:1439px){
             display: none; 
         }
         display: flex;
@@ -234,16 +240,14 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 
     &__phone {
-        @media(max-width:1199px){
-            display: none; 
-        }
+        
         margin-left: 41px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
         gap: 5px;
-        @media  (max-width:1199px)  {
+        @media  (max-width:1649px)  {
             display: none; 
         }
 
@@ -280,6 +284,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 .welcomepage {
     background-image: url(../images/Fonblock1.png);
     background-repeat: no-repeat;
+    background-size: 100% auto;
 
     @media(max-width:575px){
            background-image: none; 
@@ -287,16 +292,28 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     @media(max-width:767px)
     { margin-top: 10px;
         max-width: 70%;
+      
     }
     @media(max-width:575px){
-        max-width: 70%;   
+        max-width: 70%; 
+          
     }
 
     &__text {
-        padding-top: 220px;
-        @media(max-width:767px)
-        {   padding-top: 100px;
+        margin-top: 80px;
+        padding-top: 120px;
+        @media(max-width:575px) {
+            padding-top: 10px;
+
+        }
+        @media (min-width:576px) and  (max-width:767px)
+        {   padding-top: 180px;
                         }
+        @media (min-width:768px) and  (max-width:1199px)
+            {     padding-top:20px; 
+                                        }
+     @media (min-width:1200px) and  (max-width:1439px)
+            {     padding-top:20px;      }
 
         .text {
             &__item {
@@ -305,6 +322,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
                 font-size: 20px;
                 color: $bl1gray;
                 padding-bottom: 17px;
+            
 
             }
 
@@ -333,19 +351,21 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         flex-direction: row;
         gap: 6px;
         margin-top: 76px;
-        @media screen and (max-width: 767px)
+        @media (min-width:768px) and  (max-width:1199px)
+        {      margin-top: 90px;
+                                    }
+        @media screen and (max-width: 1199px)
         {
                     display: flex;
                 flex-direction: column; 
                      }
 
         .row {
-            @media screen and (max-width: 767px){
+            @media screen and (max-width: 1199px){
                 justify-content: center;}
             &__content {
                 background-color: rgba(255, 255, 255, 0.4);
                 display: flex;
-                flex-wrap: wrap;
                 align-items: center;
                 gap: 19px;
 
@@ -360,25 +380,26 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             &__content_position_left {
                 flex: 2 1 auto;
                 justify-content: right;
-                @media screen and (max-width: 767px)
-                {justify-content: left;}
-                @media(min-width:768px) and (max-width:1199px) 
+                @media screen and (max-width: 1199px)
+                {justify-content: left;
+                }
+                @media(min-width:1200px) and (max-width:1399px) 
                 {    flex: 1 1 auto; }
             }
 
             &__content_position_center {
                 flex: 1 1 auto;
                 justify-content: center;
-                @media screen and (max-width: 767px)
+                @media screen and (max-width: 1199px)
                 {justify-content: left;}
             }
 
             &__content_position_right {
 
                 flex: 2 1 auto;
-                @media screen and (max-width: 767px)
+                @media screen and (max-width: 1199px)
                 {justify-content: left;}
-                @media(min-width:768px) and (max-width:1199px) 
+                @media(min-width:1200px) and (max-width:1399px) 
                 {    flex: 1 1 auto; }
             }
         }
