@@ -43,6 +43,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   border-radius: 2px;
 }
 
+/* ------------------------------------------------------------ */
 .title {
   font-family: "Panton", Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -60,18 +61,19 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 
 .wrapper {
   max-width: 1650px;
+  overflow: hidden;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1649px) {
   .wrapper {
-    width: 90%;
-    margin: 0 auto;
+    width: 95%;
   }
 }
+
 .header:before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   top: 0;
   background-color: white;
@@ -86,20 +88,26 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   position: relative;
   z-index: 2;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 80px;
+  min-height: 80px;
 }
 .header__logo {
   margin-right: 55px;
   border: 1px solid transparent;
   max-width: 100%;
 }
+@media (min-width: 767px) and (max-width: 1439px) {
+  .header__logo {
+    margin-right: 25px;
+  }
+}
 .header__logo:hover {
   border: 1px solid #01678A;
 }
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .header__social {
     display: none;
   }
@@ -113,12 +121,14 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .header__social .social__link:hover {
   border: 1px solid #01678A;
 }
-.header__nav {
-  margin-left: 70px;
-}
 @media (max-width: 1199px) {
   .header__nav {
     display: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .header__nav {
+    margin-left: 30px;
   }
 }
 .header__nav .nav__link {
@@ -139,13 +149,14 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   margin-left: 3rem;
   color: #474747;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   gap: 9px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .header__address {
     display: none;
   }
@@ -158,12 +169,13 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 }
 .header__calendar {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   margin-left: 19px;
   gap: 9px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
   .header__calendar {
     display: none;
   }
@@ -183,16 +195,12 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .header__phone {
   margin-left: 41px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   gap: 5px;
 }
-@media (max-width: 1199px) {
-  .header__phone {
-    display: none;
-  }
-}
-@mediad (max-width:1199px) {
+@media (max-width: 1649px) {
   .header__phone {
     display: none;
   }
@@ -223,12 +231,11 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .welcomepage {
   background-image: url(../images/Fonblock1.png);
   background-repeat: no-repeat;
-  min-width: 1766px;
-  margin-top: 80px;
+  background-size: 100% auto;
 }
 @media (max-width: 575px) {
   .welcomepage {
-    background-size: 30% 30%;
+    background-image: none;
   }
 }
 @media (max-width: 767px) {
@@ -243,11 +250,27 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   }
 }
 .welcomepage__text {
-  padding-top: 146px;
+  margin-top: 80px;
+  padding-top: 120px;
 }
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .welcomepage__text {
-    padding-top: 220px;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .welcomepage__text {
+    padding-top: 180px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .welcomepage__text {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .welcomepage__text {
+    padding-top: 20px;
   }
 }
 .welcomepage__text .text__item {
@@ -275,17 +298,23 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 }
 .welcomepage__row {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 6px;
   margin-top: 76px;
 }
-@media screen and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1199px) {
+  .welcomepage__row {
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 1199px) {
   .welcomepage__row {
     display: flex;
     flex-direction: column;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .welcomepage__row .row {
     justify-content: center;
   }
@@ -304,12 +333,12 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   flex: 2 1 auto;
   justify-content: right;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .welcomepage__row .row__content_position_left {
     justify-content: left;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
   .welcomepage__row .row__content_position_left {
     flex: 1 1 auto;
   }
@@ -318,7 +347,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   flex: 1 1 auto;
   justify-content: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .welcomepage__row .row__content_position_center {
     justify-content: left;
   }
@@ -326,12 +355,12 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .welcomepage__row .row__content_position_right {
   flex: 2 1 auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .welcomepage__row .row__content_position_right {
     justify-content: left;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
   .welcomepage__row .row__content_position_right {
     flex: 1 1 auto;
   }
