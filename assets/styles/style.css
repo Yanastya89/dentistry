@@ -50,8 +50,8 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   font-size: 3rem;
   color: #1A3444;
   /*  @media(max-width:575px){ 
-        font-size: 1.5rem;
-       } */
+       font-size: 1.5rem;
+      } */
 }
 @media screen and (max-width: 1199px) {
   .title {
@@ -99,7 +99,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   border: 1px solid transparent;
   max-width: 100%;
 }
-@media (min-width: 767px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .header__logo {
     margin-right: 25px;
   }
@@ -367,28 +367,19 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 }
 
 /*Начало блока 2 Анастасия Добровольская*/
-.container {
-  display: grid;
-  grid-template-rows: 56% 43%;
-}
-@media (max-width: 575px) {
-  .container {
-    grid-template-rows: 90% 10%;
-  }
-}
-@media (min-width: 576px) and (max-width: 766px) {
-  .container {
-    grid-template-rows: 70% 30%;
-  }
-}
-
 .main-links {
   display: grid;
   grid-template-rows: 1fr 2fr;
   max-width: 100%;
   min-height: 900px;
 }
-@media (max-width: 766px) {
+@media (max-width: 575px) {
+  .main-links {
+    margin-bottom: 20px;
+    grid-template-rows: 10% 90%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
   .main-links {
     grid-template-rows: 20% 80%;
   }
@@ -396,11 +387,10 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .main-links__text {
   margin-top: 77px;
 }
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .main-links .text__services {
     text-align: center;
     font-size: 2em;
-    padding-top: 100px;
   }
 }
 .main-links .text__price {
@@ -413,7 +403,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   color: #737373;
   margin-top: 14px;
 }
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .main-links .text__price {
     text-align: center;
   }
@@ -424,7 +414,6 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   grid-template-columns: repeat(5, 1fr);
   gap: 2.4%;
   max-width: 100%;
-  row-gap: 6%;
 }
 @media (max-width: 575px) {
   .main-links .main-links__treatment {
@@ -432,13 +421,13 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
     grid-template-rows: repeat(8, 1fr);
   }
 }
-@media (min-width: 576px) and (max-width: 766px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .main-links .main-links__treatment {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
   }
 }
-@media (min-width: 767px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .main-links .main-links__treatment {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -463,14 +452,14 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
     margin: 0 auto;
   }
 }
-@media (min-width: 576px) and (max-width: 766px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .main-links .treatment__cards {
     width: 80%;
     margin: 0 auto;
   }
 }
 .main-links .cards {
-  background-color: #D5D5D5;
+  background-color: #FBFBFB;
   border-radius: 5px;
   padding: 50px;
 }
@@ -506,7 +495,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
     grid-column: 1/2;
   }
 }
-@media (min-width: 767px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .main-links .vinir {
     grid-column: 3/4;
   }
@@ -539,10 +528,10 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .main-links .butn__bottom {
   width: 298px;
   height: 48px;
-  color: #D5D5D5;
+  color: #FBFBFB;
   border: none;
   cursor: pointer;
-  background-color: #D5D5D5;
+  background-color: #FBFBFB;
 }
 .main-links .butn__bottom:hover {
   color: #38BCEA;
@@ -556,13 +545,14 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   display: grid;
   grid-template-columns: repeat(3, 33%);
 }
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .main-benefits__advantages {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
+    height: auto;
   }
 }
-@media (min-width: 767px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .main-benefits__advantages {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -571,7 +561,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 .main-benefits__heading {
   margin-top: 124px;
 }
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .main-benefits__heading {
     font-size: 2em;
   }
@@ -594,7 +584,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   text-align: left;
   color: #292929;
 }
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .main-benefits .card__paragraph {
     font-size: 1.5em;
   }
@@ -1335,6 +1325,7 @@ html {
 }
 @media (max-width: 575px) {
   .controlcontriner__contents {
+
     font-size: 1vw;
   }
 }
@@ -1400,7 +1391,9 @@ html {
   }
 }
 @media (max-width: 575px) {
+
   .contents__logocontainer {
+
     font-size: 2vw;
   }
 }

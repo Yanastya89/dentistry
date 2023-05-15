@@ -36,8 +36,8 @@ $bl1graylight2: #4B4B4B;
     border-radius: 3px;
     border-color: $transparent;
     font-family: 'Roboto Slab', serif;
-   
-  
+
+
 }
 
 .btn:hover {
@@ -60,16 +60,19 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     max-width: 100%;
     border-radius: 2px;
 }
+
 /* ------------------------------------------------------------ */
 .title {
     font-family: $fontpan;
     font-weight: 700;
     font-size: 3rem;
     color: $bl1darkblue;
-    @media screen and (max-width: 1199px){
-          font-size: 2rem;
-        }
-   /*  @media(max-width:575px){ 
+
+    @media screen and (max-width: 1199px) {
+        font-size: 2rem;
+    }
+
+    /*  @media(max-width:575px){ 
          font-size: 1.5rem;
         } */
 
@@ -80,17 +83,18 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     max-width: 1650px;
     overflow: hidden;
     margin: 0 auto;
-    @media screen and (max-width: 1649px){
-        width: 95%; 
+
+    @media screen and (max-width: 1649px) {
+        width: 95%;
     }
 
 }
 
 
 .header:before {
-    
+
     content: "";
-     position: absolute;
+    position: absolute;
     width: 100vw;
     height: 100%;
     top: 0;
@@ -108,15 +112,15 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         position: relative;
         z-index: 2;
         display: flex;
-      
-         flex-wrap: wrap;
+
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         min-height: 80px;
-       
-       
-     
+
+
+
     }
 
 
@@ -125,9 +129,9 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         border: 1px solid $transparent;
         max-width: 100%;
 
-        @media(min-width:767px) and (max-width:1439px){
+        @media(min-width:768px) and (max-width:1439px) {
             margin-right: 25px;
-               }
+        }
     }
 
     &__logo:hover {
@@ -135,10 +139,11 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 
     &__social {
-        @media(max-width:575px){
-           display: none; 
-        
+        @media(max-width:575px) {
+            display: none;
+
         }
+
         a:nth-child(2) {
             margin: 0 15px;
         }
@@ -155,12 +160,14 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 
     &__nav {
-        @media(max-width:1199px){
-            display: none; 
+        @media(max-width:1199px) {
+            display: none;
         }
-        @media(min-width:1200px) and (max-width:1439px){
-        margin-left: 30px;
-           }
+
+        @media(min-width:1200px) and (max-width:1439px) {
+            margin-left: 30px;
+        }
+
         .nav {
             &__link {
                 text-decoration: none;
@@ -182,9 +189,10 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 
     &__address {
-        @media(max-width:767px){
-            display: none; 
+        @media(max-width:767px) {
+            display: none;
         }
+
         max-width: 176px;
         margin-left: 3rem;
         color: $darkgray;
@@ -193,8 +201,11 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         flex-direction: row;
         align-items: center;
         gap: 9px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial,
+        Helvetica,
+        sans-serif;
         font-size: 15px;
+
 
         .address {
             &__link {
@@ -209,9 +220,10 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 
     &__calendar {
-        @media(max-width:1439px){
-            display: none; 
+        @media(max-width:1439px) {
+            display: none;
         }
+
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -219,8 +231,8 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         margin-left: 19px;
         gap: 9px;
 
-        .calendar {   
-    
+        .calendar {
+
             &__link {
                 border: 1px solid $transparent;
             }
@@ -230,7 +242,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             }
 
             &__hours {
-                  color: $darkblue;
+                color: $darkblue;
             }
 
             &__datas {
@@ -240,15 +252,16 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 
     &__phone {
-        
+
         margin-left: 41px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
         gap: 5px;
-        @media  (max-width:1649px)  {
-            display: none; 
+
+        @media (max-width:1649px) {
+            display: none;
         }
 
         .phone {
@@ -274,9 +287,10 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     .btn_size_small {
         font-size: 0.9rem;
         margin-left: 20px;
-        @media(max-width:1199px){
+
+        @media(max-width:1199px) {
             font-size: 0.6rem;
-               
+
         }
     }
 }
@@ -286,43 +300,50 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     background-repeat: no-repeat;
     background-size: 100% auto;
 
-    @media(max-width:575px){
-           background-image: none; 
-         }
-    @media(max-width:767px)
-    { margin-top: 10px;
-        max-width: 70%;
-      
+    @media(max-width:575px) {
+        background-image: none;
     }
-    @media(max-width:575px){
-        max-width: 70%; 
-          
+
+    @media(max-width:767px) {
+        margin-top: 10px;
+        max-width: 70%;
+
+    }
+
+    @media(max-width:575px) {
+        max-width: 70%;
+
     }
 
     &__text {
         margin-top: 80px;
         padding-top: 120px;
+
         @media(max-width:575px) {
             padding-top: 10px;
 
         }
-        @media (min-width:576px) and  (max-width:767px)
-        {   padding-top: 180px;
-                        }
-        @media (min-width:768px) and  (max-width:1199px)
-            {     padding-top:20px; 
-                                        }
-     @media (min-width:1200px) and  (max-width:1439px)
-            {     padding-top:20px;      }
+
+        @media (min-width:576px) and (max-width:767px) {
+            padding-top: 180px;
+        }
+
+        @media (min-width:768px) and (max-width:1199px) {
+            padding-top: 20px;
+        }
+
+        @media (min-width:1200px) and (max-width:1439px) {
+            padding-top: 20px;
+        }
 
         .text {
             &__item {
-                
+
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 20px;
                 color: $bl1gray;
                 padding-bottom: 17px;
-            
+
 
             }
 
@@ -339,8 +360,10 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         .btn_size_average {
             font-size: 20px;
             margin-top: 17px;
-            @media(max-width:1199px){
-                font-size: 0.7rem;}
+
+            @media(max-width:1199px) {
+                font-size: 0.7rem;
+            }
         }
 
     }
@@ -351,18 +374,21 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         flex-direction: row;
         gap: 6px;
         margin-top: 76px;
-        @media (min-width:768px) and  (max-width:1199px)
-        {      margin-top: 90px;
-                                    }
-        @media screen and (max-width: 1199px)
-        {
-                    display: flex;
-                flex-direction: column; 
-                     }
+
+        @media (min-width:768px) and (max-width:1199px) {
+            margin-top: 90px;
+        }
+
+        @media screen and (max-width: 1199px) {
+            display: flex;
+            flex-direction: column;
+        }
 
         .row {
-            @media screen and (max-width: 1199px){
-                justify-content: center;}
+            @media screen and (max-width: 1199px) {
+                justify-content: center;
+            }
+
             &__content {
                 background-color: rgba(255, 255, 255, 0.4);
                 display: flex;
@@ -380,27 +406,36 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             &__content_position_left {
                 flex: 2 1 auto;
                 justify-content: right;
-                @media screen and (max-width: 1199px)
-                {justify-content: left;
+
+                @media screen and (max-width: 1199px) {
+                    justify-content: left;
                 }
-                @media(min-width:1200px) and (max-width:1399px) 
-                {    flex: 1 1 auto; }
+
+                @media(min-width:1200px) and (max-width:1399px) {
+                    flex: 1 1 auto;
+                }
             }
 
             &__content_position_center {
                 flex: 1 1 auto;
                 justify-content: center;
-                @media screen and (max-width: 1199px)
-                {justify-content: left;}
+
+                @media screen and (max-width: 1199px) {
+                    justify-content: left;
+                }
             }
 
             &__content_position_right {
 
                 flex: 2 1 auto;
-                @media screen and (max-width: 1199px)
-                {justify-content: left;}
-                @media(min-width:1200px) and (max-width:1399px) 
-                {    flex: 1 1 auto; }
+
+                @media screen and (max-width: 1199px) {
+                    justify-content: left;
+                }
+
+                @media(min-width:1200px) and (max-width:1399px) {
+                    flex: 1 1 auto;
+                }
             }
         }
     }
@@ -417,19 +452,7 @@ $lightblack: #292929;
 $white: #FBFBFB;
 $lgray: #D5D5D5;
 
-.container {
-    display: grid;
-    grid-template-rows: 56% 43%;
 
-    @media (max-width:575px) {
-        grid-template-rows: 90% 10%;
-
-    }
-
-    @media(min-width:576px) and (max-width:766px) {
-        grid-template-rows: 70% 30%;
-    }
-}
 
 .main-links {
     display: grid;
@@ -437,7 +460,12 @@ $lgray: #D5D5D5;
     max-width: 100%;
     min-height: 900px;
 
-    @media (max-width:766px) {
+    @media (max-width:575px) {
+        margin-bottom: 20px;
+        grid-template-rows: 10% 90%;
+    }
+
+    @media (min-width:576px) and (max-width:767px) {
         grid-template-rows: 20% 80%;
     }
 
@@ -446,10 +474,10 @@ $lgray: #D5D5D5;
     }
 
     .text__services {
-        @media (max-width:766px) {
+        @media (max-width:767px) {
             text-align: center;
             font-size: 2em;
-            padding-top: 100px;
+
         }
     }
 
@@ -463,7 +491,7 @@ $lgray: #D5D5D5;
         color: $gray;
         margin-top: 14px;
 
-        @media (max-width:766px) {
+        @media (max-width:767px) {
             text-align: center;
         }
     }
@@ -474,19 +502,19 @@ $lgray: #D5D5D5;
         grid-template-columns: repeat(5, 1fr);
         gap: 2.4%;
         max-width: 100%;
-        row-gap: 6%;
+
 
         @media (max-width:575px) {
             grid-template-columns: 1fr;
             grid-template-rows: repeat(8, 1fr);
         }
 
-        @media(min-width:576px) and (max-width:766px) {
+        @media(min-width:576px) and (max-width:767px) {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: repeat(4, 1fr);
         }
 
-        @media(min-width:767px) and (max-width:1199px) {
+        @media(min-width:768px) and (max-width:1199px) {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 1fr);
         }
@@ -510,14 +538,14 @@ $lgray: #D5D5D5;
             margin: 0 auto;
         }
 
-        @media(min-width:576px) and (max-width:766px) {
+        @media(min-width:576px) and (max-width:767px) {
             width: 80%;
             margin: 0 auto;
         }
     }
 
     .cards {
-        background-color: $lgray;
+        background-color: $white;
         border-radius: 5px;
         padding: 50px;
 
@@ -525,7 +553,6 @@ $lgray: #D5D5D5;
             max-width: 26%;
             height: 33%;
         }
-
 
         &__link {
             font-size: 20px;
@@ -558,7 +585,7 @@ $lgray: #D5D5D5;
             grid-column: 1/2;
         }
 
-        @media(min-width:767px) and (max-width:1199px) {
+        @media(min-width:768px) and (max-width:1199px) {
             grid-column: 3/4;
         }
     }
@@ -595,10 +622,10 @@ $lgray: #D5D5D5;
     .butn__bottom {
         width: 298px;
         height: 48px;
-        color: $lgray;
+        color: $white;
         border: none;
         cursor: pointer;
-        background-color: $lgray;
+        background-color: $white;
     }
 
     .butn__bottom:hover {
@@ -614,12 +641,14 @@ $lgray: #D5D5D5;
         display: grid;
         grid-template-columns: repeat(3, 33%);
 
-        @media (max-width:766px) {
+
+        @media (max-width:767px) {
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr;
+            height: auto;
         }
 
-        @media(min-width:767px) and (max-width:1199px) {
+        @media(min-width:768px) and (max-width:1199px) {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
         }
@@ -629,7 +658,7 @@ $lgray: #D5D5D5;
         margin-top: 124px;
 
 
-        @media (max-width:766px) {
+        @media (max-width:767px) {
             font-size: 2em;
         }
     }
@@ -654,7 +683,7 @@ $lgray: #D5D5D5;
         text-align: left;
         color: $lightblack;
 
-        @media (max-width:766px) {
+        @media (max-width:767px) {
             font-size: 1.5em;
         }
     }
@@ -675,7 +704,6 @@ $lgray: #D5D5D5;
 
     }
 }
-
 
 /*Конец блока 2 Анастасия Добровольская*/
 
@@ -1331,7 +1359,7 @@ html {
 }
 
 
-  
+
 
 
 .subtitle {
@@ -1402,8 +1430,9 @@ html {
     right: 0px;
     width: 600px;
     height: 600px;
+
     @media(min-width:768px) and (max-width:1199px) {
-       
+     
      
       display: none;
     }
@@ -1430,19 +1459,18 @@ html {
     gap: 40px;
     background-color: #FBFBFB;
     position: relative;
-    font-size: 5vw; 
+    font-size: 5vw;
     margin-top: 153px;
     margin-bottom: 153px;
-    @media(min-width:768px) and (max-width:1199px) {
-    
-        
-    }
+
+    @media(min-width:768px) and (max-width:1199px) {}
 
     @media(min-width:576px) and (max-width:767px) {
 
       
         font-size: 1vw;
     }
+
     @media (max-width:575px) {
         font-size: 1vw;
         grid-template-columns: 99% 1%;
@@ -1452,13 +1480,13 @@ html {
         display: grid;
         grid-template-rows: 25% 25% 25% 25%;
         font-size: 20px;
+
         @media (max-width:575px) {
             max-width: 100%;
             grid-template-rows: 30% 10% 30% 30%;
             align-items: center;
         }
     
-
         &__text {
             color: $gray;
         }
@@ -1466,32 +1494,35 @@ html {
         &__logoclin {
             color: $bl1darkblue;
         }
+
         @media(min-width:768px) and (max-width:1199px) {
-            font-size: 0,5vw;
+            font-size: 0, 5vw;
             grid-template-rows: 1fr 1fr 1fr;
-    
+
         }
 
-          
-    
+
+
         @media(min-width:576px) and (max-width:767px) {
             font-size: 1vw;
             grid-template-rows: 1fr 1fr 1fr;
             grid-area: 30px;
             font-size: 1vw;
         }
+
     
         @media (max-width:575px) {
             font-size: 1vw;
         }}}
 
-    
+
 
 .link-doc {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 20px;
     gap: 5px;
+
     
     @media (max-width:575px) {
       
@@ -1500,6 +1531,7 @@ html {
         width: 50%;
        grid-template-columns: 1fr 1fr 1fr;
     }
+
 }
 
 .links {
@@ -1508,17 +1540,19 @@ html {
     color: rgb(5, 5, 5);
     padding: 10px 15px;
     font-size: 20px;
+
     @media(min-width:768px) and (max-width:1199px) {
         padding: 10px 15px;
-        max-width:50px;
+        max-width: 50px;
         justify-content: space-around;
     }
 
-      
+
 
     @media(min-width:576px) and (max-width:767px) {
-    
+
         padding: 10px 15px;
+
         max-width:50px;
         font-size: 1rem;
     }
@@ -1527,8 +1561,7 @@ html {
       
         font-size: 0.7rem;
         width: 100%;
-       
-    }
+           }
 }
 
 .contents__logocontainer {
@@ -1537,21 +1570,23 @@ html {
     align-items: center;
     height: 400px;
     padding-bottom: 100px;
+
     @media(min-width:768px) and (max-width:1199px) {
         font-size: 2vw;
-     }
+    }
 
-      
+
 
     @media(min-width:576px) and (max-width:767px) {
         font-size: 2vw;
-       
+
     }
 
     @media (max-width:575px) {
         font-size: 2vw;
-       
-    }}
+
+    }
+}
 
 
 .contents__bastitle {
@@ -1561,11 +1596,12 @@ html {
 
 .text {
     font-size: 28px;
+
     @media(min-width:768px) and (max-width:1199px) {
         font-size: 2vw;
-       }
+    }
 
-      
+
 
     @media(min-width:576px) and (max-width:767px) {
         font-size: 1rem;
@@ -1573,6 +1609,7 @@ html {
     }
 
     @media (max-width:575px) {
+
         font-size: 1rem;
         width: 100%;
         
@@ -1594,6 +1631,7 @@ html {
     padding-bottom: 62px;
     max-width: 100%;
     background-image: $bacgrimg;
+
      margin-top: 153px;
      @media (max-width:575px) { 
     
@@ -1609,27 +1647,31 @@ html {
     right: 50px;
     width: 40%;
     height: 50%;
+
     @media(min-width:768px) and (max-width:1199px) {
         max-height: 25%;
         max-width: 40%;
         position: absolute;
-       left: 25%;
-       top: 70%;
-       
-       } 
-       @media(min-width:576px) and (max-width:767px) {
-       
+        left: 25%;
+        top: 70%;
+
+    }
+
+    @media(min-width:576px) and (max-width:767px) {
+
         max-height: 25%;
         max-width: 40%;
         position: absolute;
-       left: 25%;
-       top: 70%;
+        left: 25%;
+        top: 70%;
     }
+
 
     @media (max-width:575px) { 
        display: none;
     }
 }
+
 .link-pade {
     color: $bl1graylight2;
 }
