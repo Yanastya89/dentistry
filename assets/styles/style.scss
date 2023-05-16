@@ -14,6 +14,7 @@ html {
     font-size: 16px;
     font-weight: 400;
 }
+
 /* ------------------------ */
 $blue: #38BCEA;
 $white: #FFFFFF;
@@ -35,10 +36,12 @@ $colorbutton: #38BCEA;
 $colorbuttongr: #F9F9F9;
 $bacgrimg: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
 $bacgrcont: #FBFBFB;
+
 @font-face {
     font-family: 'Panton';
     src: url('../fonts/Panton-Bold.ttf');
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 /* ---------------------------------------------- */
@@ -53,7 +56,7 @@ $bacgrcont: #FBFBFB;
     border-radius: 3px;
     border-color: $transparent;
     font-family: 'Roboto Slab', serif;
-   
+
 
 
 }
@@ -90,14 +93,16 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     @media screen and (max-width: 1199px) {
         font-size: 2rem;
     }
-/*     @media screen and (max-width: 767px) {
+
+    /*     @media screen and (max-width: 767px) {
         font-size: 1.5rem;
     } */
 }
 
-._ibg{
+._ibg {
     position: relative;
-    img{
+
+    img {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -318,90 +323,98 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
         }
     }
-   
+
 }
-.main{
 
-.welcomepage {
-    position: relative;
-   
-    &__text {
-        margin-top: 80px;
-        padding: 120px 0 146px 0;
+.main {
+
+    .welcomepage {
         position: relative;
-        z-index: 2;
 
-        @media(max-width:767px){
-            padding-top: 25px;
-        }
+        &__text {
+            margin-top: 80px;
+            padding: 120px 0 146px 0;
+            position: relative;
+            z-index: 2;
+
+            @media(max-width:767px) {
+                padding-top: 25px;
+            }
 
 
-             .text {
-            &__item {
+            .text {
+                &__item {
 
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 20px;
-                line-height: 115%;
-                color: $bl1gray;
-                padding-bottom: 17px;
-              /*   @media screen and (max-width: 767px) {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                    line-height: 115%;
+                    color: $bl1gray;
+                    padding-bottom: 17px;
+                    /*   @media screen and (max-width: 767px) {
                     font-size: 1rem;
                 } */
-            
+
+                }
+
+                &__item-2 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                    line-height: 115%;
+                    color: $bl1graylight;
+                    padding-top: 17px;
+                    padding-bottom: 37px;
+                    max-width: 460px;
+
+                    @media screen and (max-width: 767px) {
+                        padding-bottom: 17px;
+                    }
+                }
             }
 
-            &__item-2 {
-                font-family: Arial, Helvetica, sans-serif;
+            .btn_size_average {
                 font-size: 20px;
                 line-height: 115%;
-                color: $bl1graylight;
-                padding-top: 17px;
-                padding-bottom: 37px;
-                max-width: 460px;
-                  @media screen and (max-width: 767px) {
-                    padding-bottom: 17px;
-                } 
+                margin-top: 17px;
+                min-height: 60px;
+
+                @media(max-width:1199px) {
+                    font-size: 0.7rem;
+                }
+
+                @media screen and (max-width: 767px) {
+                    margin-top: 10px;
+
+                }
+
+
             }
+
         }
 
-        .btn_size_average {
-            font-size: 20px;
-            line-height: 115%;
-            margin-top: 17px;
-            min-height: 60px;
-            @media(max-width:1199px) {
-                font-size: 0.7rem;
-            }
-            @media screen and (max-width: 767px) {
-                margin-top: 10px;
-                
-            } 
-           
-          
-        }
-
-    }
-    &__image{
-        border-top: 80px;  
-        position: absolute;
+        &__image {
+            border-top: 80px;
+            position: absolute;
             width: 100%;
             height: 100%;
             top: 0;
             left: 0;
-            img{
-            @media(min-width:576px) and (max-width:1199px){
-object-position:right;
-opacity: 0.5;
-            }
-         @media (max-width:575px) {
-         
-              object-position:left;
-                opacity: 0.5;
-            } 
-            }
+
+            img {
+                @media(min-width:576px) and (max-width:1199px) {
+                    object-position: right;
+                    opacity: 0.5;
                 }
-}
-/* --------------------------------------------------------------- */
+
+                @media (max-width:575px) {
+
+                    object-position: left;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    /* --------------------------------------------------------------- */
     .page__row {
         position: relative;
         z-index: 2;
@@ -409,21 +422,21 @@ opacity: 0.5;
         flex-direction: row;
         gap: 6px;
         height: 100px;
-       margin-top: -76px;
+        margin-top: -76px;
 
-       
+
         @media (max-width:767px) {
-                     display: flex;
+            display: flex;
             flex-direction: column;
             margin-top: -120px;
             height: 80px;
         }
-    
+
         .row {
-           
+
             @media screen and (max-width: 1199px) {
                 justify-content: center;
-                      }
+            }
 
             &__content {
                 background-color: rgba(255, 255, 255, 0.4);
@@ -475,837 +488,870 @@ opacity: 0.5;
             }
         }
     }
- 
-
-
-/*Начало блока 2 Анастасия Добровольская*/
-$darkblue: #12354B;
-$gray: #737373;
-$dark: #454545;
-$blue: #38BCEA;
-$darkgray: #272727;
-$black: #222222;
-$lightblack: #292929;
-$white: #FBFBFB;
-$lgray: #D5D5D5;
 
 
 
-.main-links {
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-    max-width: 100%;
-    min-height: 900px;
-
-    @media (max-width:575px) {
-        margin-bottom: 20px;
-        grid-template-rows: 10% 90%;
-    }
-
-    @media (min-width:576px) and (max-width:767px) {
-        grid-template-rows: 20% 80%;
-    }
-
-    &__text {
-        margin-top: 77px;
-    }
-
-    .text__services {
-        @media (max-width:767px) {
-            text-align: center;
-            font-size: 2em;
-
-        }
-    }
-
-    .text__price {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $gray;
-        margin-top: 14px;
-
-        @media (max-width:575px) {
-            text-align: center;
-            font-size: 1em;
-
-        }
-
-        @media (max-width:767px) {
-            text-align: center;
+    /*Начало блока 2 Анастасия Добровольская*/
+    $darkblue: #12354B;
+    $gray: #737373;
+    $dark: #454545;
+    $blue: #38BCEA;
+    $darkgray: #272727;
+    $black: #222222;
+    $lightblack: #292929;
+    $white: #FBFBFB;
+    $lgray: #D5D5D5;
 
 
-        }
-    }
 
-    .main-links__treatment {
+    .main-links {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 2.4%;
+        grid-template-rows: 1fr 2fr;
         max-width: 100%;
-
-
-        @media (max-width:575px) {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(8, 1fr);
-        }
-
-        @media(min-width:576px) and (max-width:767px) {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(4, 1fr);
-        }
-
-        @media(min-width:768px) and (max-width:1199px) {
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-        }
-
-        @media(min-width:1200px) and (max-width:1439px) {
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-        }
-
-    }
-
-    .treatment__cards {
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: inline-block;
+        min-height: 900px;
 
         @media (max-width:575px) {
-            width: 70%;
-            margin: 0 auto;
+            margin-bottom: 20px;
+            grid-template-rows: 10% 1fr;
         }
 
-        @media(min-width:576px) and (max-width:767px) {
-            width: 80%;
-            margin: 0 auto;
-        }
-    }
-
-    .cards {
-        background-color: $white;
-        border-radius: 5px;
-        padding: 50px;
-
-        &__img {
-            max-width: 26%;
-            height: 33%;
+        @media (min-width:576px) and (max-width:767px) {
+            grid-template-rows: 20% 80%;
         }
 
-        &__link {
-            font-size: 20px;
-            margin: 0 auto 0;
-            text-decoration: none;
-            display: inline-block;
-            color: $dark;
-            font-family: $fontpan;
-            font-size: 26px;
-            font-weight: 700;
-            line-height: 32px;
+        &__text {
+            margin-top: 77px;
+        }
+
+        .text__services {
+            @media (max-width:767px) {
+                text-align: center;
+                font-size: 2em;
+
+            }
+        }
+
+        .text__price {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28px;
             letter-spacing: 0em;
-            text-align: center;
-        }
-    }
+            text-align: left;
+            color: $gray;
+            margin-top: 14px;
 
-    .cards:hover {
-        background: $blue;
-        box-shadow: 0 0 10px $blue;
-    }
+            @media (max-width:575px) {
+                text-align: center;
+                font-size: 1em;
 
-    .cards:hover .cards__link {
-        color: $white;
-    }
+            }
 
-    .vinir {
-        grid-column: 2/3;
-
-        @media (max-width:575px) {
-            grid-column: 1/2;
+            @media (max-width:767px) {
+                text-align: center;
+            }
         }
 
-        @media(min-width:768px) and (max-width:1199px) {
-            grid-column: 3/4;
-        }
-    }
-
-    .cards__link:after {
-        display: block;
-        content: "";
-        height: 3px;
-        width: 0%;
-        background-color: $white;
-        transition: width 0.4s ease-in-out;
-    }
-
-    .cards__link:hover:after,
-    .cards__link:focus:after {
-        width: 100%;
-    }
-
-    .cards__link:hover {
-        color: $white;
-    }
-
-    .treatment__butn {
-        width: 100%;
-        height: 48px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .butn__bottom {
-        width: 298px;
-        height: 48px;
-        color: $white;
-        border: none;
-        cursor: pointer;
-        background-color: $white;
-    }
-
-    .butn__bottom:hover {
-        color: $blue;
-    }
-}
-
-.main-benefits {
-    max-width: 100%;
-    min-height: 700px;
-
-    &__advantages {
-        display: grid;
-        grid-template-columns: repeat(3, 33%);
-
-
-        @media (max-width:767px) {
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 1fr;
-            height: auto;
-        }
-
-        @media(min-width:768px) and (max-width:1199px) {
-            grid-template-columns: 1fr 1fr;
+        .main-links__treatment {
+            display: grid;
             grid-template-rows: 1fr 1fr;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 2.4%;
+            max-width: 100%;
+
+
+            @media (max-width:575px) {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(8, 1fr);
+                gap: 1%;
+            }
+
+            @media(min-width:576px) and (max-width:767px) {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(4, 1fr);
+            }
+
+            @media(min-width:768px) and (max-width:1199px) {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+
+            @media(min-width:1200px) and (max-width:1439px) {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+
+        }
+
+        .treatment__cards {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: inline-block;
+
+
+            @media (max-width:575px) {
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            @media(min-width:576px) and (max-width:767px) {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+        .cards {
+            background-color: $lgray;
+            border-radius: 5px;
+            padding: 50px;
+
+
+
+
+            &__link {
+                text-decoration: none;
+                display: inline-block;
+                color: $dark;
+                font-family: $fontpan;
+                font-size: 26px;
+                font-weight: 700;
+                line-height: 32px;
+                letter-spacing: 0em;
+                margin: 0 auto 0;
+
+                @media (max-width:767px) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        //Замена цвета картинки
+        .cards__img_first,
+        .cards__img_second {
+            border: 2px solid transparent;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .cards__img_first {
+            opacity: 1px;
+            display: block;
+            position: absolute;
+            z-index: 100;
+        }
+
+        .cards__img_first:hover {
+            opacity: 0.00;
+        }
+
+        .cards__img {
+            display: inline-block;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 100%;
+            min-height: 40%;
+        }
+
+        //
+
+
+        .cards:hover {
+            background: $blue;
+            box-shadow: 0 0 10px $blue;
+        }
+
+        .cards:hover .cards__link {
+            color: $white;
+        }
+
+        .vinir {
+            grid-column: 2/3;
+
+            @media (max-width:575px) {
+                grid-column: 1/2;
+            }
+
+            @media(min-width:768px) and (max-width:1199px) {
+                grid-column: 3/4;
+            }
+        }
+
+        .cards__link:after {
+            display: block;
+            content: "";
+            height: 3px;
+            width: 0%;
+            background-color: $white;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .cards__link:hover:after,
+        .cards__link:focus:after {
+            width: 100%;
+        }
+
+        .cards__link:hover {
+            color: $white;
+        }
+
+        .treatment__butn {
+            width: 100%;
+            height: 48px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .butn__bottom {
+            width: 298px;
+            height: 48px;
+            color: $white;
+            border: none;
+            cursor: pointer;
+            background-color: $white;
+        }
+
+        .butn__bottom:hover {
+            color: $blue;
         }
     }
 
-    &__heading {
-        margin-top: 124px;
+    .main-benefits {
+        max-width: 100%;
+        min-height: 700px;
+
+        &__advantages {
+            display: grid;
+            grid-template-columns: repeat(3, 33%);
 
 
-        @media (max-width:767px) {
-            font-size: 2em;
+            @media (max-width:767px) {
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+
+            @media(min-width:768px) and (max-width:1199px) {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+        }
+
+        &__heading {
+            margin-top: 124px;
+
+
+            @media (max-width:767px) {
+                font-size: 2em;
+            }
+        }
+
+        .advantages__accents {
+            text-align: start;
+            width: 100%;
+            height: 80%;
+            margin: 3%;
+        }
+
+        .accents__card {
+            margin-top: 58px;
+        }
+
+        .card__paragraph {
+            font-family: $fontarial;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $lightblack;
+
+            @media (max-width:767px) {
+                font-size: 1.5em;
+            }
+        }
+
+        .card__title {
+            font-family: $fontpan;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 44px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $black;
+            margin: 7px 0px 7px 0px;
+
+            @media (max-width:766px) {
+                font-size: 2em;
+            }
+
         }
     }
 
-    .advantages__accents {
-        text-align: start;
-        width: 100%;
-        height: 80%;
-        margin: 3%;
-    }
+    /*Конец блока 2 Анастасия Добровольская*/
 
-    .accents__card {
-        margin-top: 58px;
-    }
+    /*Начало блока Анна Мычко*/
 
-    .card__paragraph {
-        font-family: $fontarial;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $lightblack;
-
-        @media (max-width:767px) {
-            font-size: 1.5em;
-        }
-    }
-
-    .card__title {
-        font-family: $fontpan;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 44px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $black;
-        margin: 7px 0px 7px 0px;
-
-        @media (max-width:766px) {
-            font-size: 2em;
-        }
-
-    }
-}
-
-/*Конец блока 2 Анастасия Добровольская*/
-
-/*Начало блока Анна Мычко*/
-
-.doctitle {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-
-
-}
-
-.doctitle__header {
-
-    padding: 5% 0 1% 4%;
-
-    @media(min-width:768px) and (max-width:1199px) {
-        font-size: 4vw;
-        padding: 5% 0 2% 4%;
-    }
-
-    @media(min-width:576px) and (max-width:767px) {
-        font-size: 6vw;
-        padding: 5% 0 3% 5%;
-    }
-
-    @media (max-width:575px) {
-        font-size: 7vw;
-        padding: 5% 0 4% 6%;
-    }
-
-}
-
-.doctitle__main {
-    font-family: $fontarial;
-    font-size: 1.5vw;
-    @extend %font-align;
-    padding: 0 3% 0 4%;
-    width: 50%;
-
-    @media(min-width:768px) and (max-width:1199px) {
-        font-size: 1.6vw;
-        width: 50%;
-        padding: 0 0 2% 4%;
-    }
-
-    @media(min-width:576px) and (max-width:767px) {
-        font-size: 2.3vw;
-        width: 70%;
-        padding: 0 0 3% 5%;
-
-    }
-
-    @media (max-width:575px) {
-        font-size: 2.7vw;
-        width: 80%;
-        padding: 0 0 4% 6%;
-    }
-
-}
-
-&__card-name {
-    font-family: $fontpan;
-    font-size: 1.7vw;
-    @extend %font-align;
-    max-width: 60%;
-
-    @media(min-width:768px) and (max-width:1199px) {
-        font-size: 1.6vw;
-    }
-
-    @media(min-width:576px) and (max-width:767px) {
-        font-size: 3vw;
-    }
-
-    @media (max-width:575px) {
-        font-size: 3vw;
-    }
-}
-
-&__card-prof {
-    font-family: $fontarial;
-    @extend %font-align;
-    font-size: 1.25rem;
-
-    @media(min-width:768px) and (max-width:1199px) {
-        font-size: 1.3vw;
-    }
-
-    @media(min-width:576px) and (max-width:767px) {
-        font-size: 2vw;
-    }
-
-    @media (max-width:575px) {
-        font-size: 2.5vw;
-    }
-
-
-}
-
-&__card-experience {
-    font-family: $fontarial;
-    font-size: 1vw;
-    @extend %font-align;
-
-    @media(min-width:768px) and (max-width:1199px) {
-        font-size: 1.3vw;
-    }
-
-    @media(min-width:576px) and (max-width:767px) {
-        font-size: 2vw;
-    }
-
-    @media (max-width:575px) {
-        font-size: 2.5vw;
-    }
-}
-
-.doctors {
-    display: grid;
-    gap: 4%;
-    grid-template-columns: 0.1% 1fr 1fr 0.1%;
-    grid-template-rows: 1fr 1fr 1fr;
-
-    max-width: 100vw;
-
-    @media (max-width:767px) {
-        grid-template-columns: 2% 1fr 2%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    @media(min-width:576px) and (max-width:767px) {
-        grid-template-columns: 0.3% 1fr 0.3%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    }
-
-
-
-    &__card {
+    .doctitle {
         display: grid;
-        max-width: 70%;
-        max-height: 50%;
-        padding: 5% 0 0 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+
+    }
+
+    .doctitle__header {
+
+        padding: 5% 0 1% 4%;
 
         @media(min-width:768px) and (max-width:1199px) {
-            max-height: 60%;
-            max-width: 60%;
+            font-size: 4vw;
+            padding: 5% 0 2% 4%;
         }
 
         @media(min-width:576px) and (max-width:767px) {
-            max-height: 70%;
-            max-width: 70%;
+            font-size: 6vw;
+            padding: 5% 0 3% 5%;
         }
 
         @media (max-width:575px) {
-            max-height: 80%;
-            max-width: 60%;
+            font-size: 7vw;
+            padding: 5% 0 4% 6%;
         }
 
     }
 
+    .doctitle__main {
+        font-family: $fontarial;
+        font-size: 1.5vw;
+        @extend %font-align;
+        padding: 0 3% 0 4%;
+        width: 50%;
+
+        @media(min-width:768px) and (max-width:1199px) {
+            font-size: 1.6vw;
+            width: 50%;
+            padding: 0 0 2% 4%;
+        }
+
+        @media(min-width:576px) and (max-width:767px) {
+            font-size: 2.3vw;
+            width: 70%;
+            padding: 0 0 3% 5%;
+
+        }
+
+        @media (max-width:575px) {
+            font-size: 2.7vw;
+            width: 80%;
+            padding: 0 0 4% 6%;
+        }
+
+    }
+
+    &__card-name {
+        font-family: $fontpan;
+        font-size: 1.7vw;
+        @extend %font-align;
+        max-width: 60%;
+
+        @media(min-width:768px) and (max-width:1199px) {
+            font-size: 1.6vw;
+        }
+
+        @media(min-width:576px) and (max-width:767px) {
+            font-size: 3vw;
+        }
+
+        @media (max-width:575px) {
+            font-size: 3vw;
+        }
+    }
+
+    &__card-prof {
+        font-family: $fontarial;
+        @extend %font-align;
+        font-size: 1.25rem;
+
+        @media(min-width:768px) and (max-width:1199px) {
+            font-size: 1.3vw;
+        }
+
+        @media(min-width:576px) and (max-width:767px) {
+            font-size: 2vw;
+        }
+
+        @media (max-width:575px) {
+            font-size: 2.5vw;
+        }
 
 
-    &__firstphoto {
+    }
 
-        grid-area: 1/2/2/3;
+    &__card-experience {
+        font-family: $fontarial;
+        font-size: 1vw;
+        @extend %font-align;
 
-        @extend %card-size;
-        box-shadow: $shadow;
+        @media(min-width:768px) and (max-width:1199px) {
+            font-size: 1.3vw;
+        }
 
-        @media (max-width:766px) {
+        @media(min-width:576px) and (max-width:767px) {
+            font-size: 2vw;
+        }
+
+        @media (max-width:575px) {
+            font-size: 2.5vw;
+        }
+    }
+
+    .doctors {
+        display: grid;
+        gap: 4%;
+        grid-template-columns: 0.1% 1fr 1fr 0.1%;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        max-width: 100vw;
+
+        @media (max-width:767px) {
+            grid-template-columns: 2% 1fr 2%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        @media(min-width:576px) and (max-width:767px) {
+            grid-template-columns: 0.3% 1fr 0.3%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+
+
+        &__card {
+            display: grid;
+            max-width: 70%;
+            max-height: 50%;
+            padding: 5% 0 0 5%;
+
+            @media(min-width:768px) and (max-width:1199px) {
+                max-height: 60%;
+                max-width: 60%;
+            }
+
+            @media(min-width:576px) and (max-width:767px) {
+                max-height: 70%;
+                max-width: 70%;
+            }
+
+            @media (max-width:575px) {
+                max-height: 80%;
+                max-width: 60%;
+            }
+
+        }
+
+
+
+        &__firstphoto {
+
             grid-area: 1/2/2/3;
+
+            @extend %card-size;
+            box-shadow: $shadow;
+
+            @media (max-width:766px) {
+                grid-area: 1/2/2/3;
+            }
         }
-    }
 
-    &__firstcard {
-        @extend %card-size;
-        grid-area: 1/2/2/3;
-
-        @media (max-width:766px) {
+        &__firstcard {
+            @extend %card-size;
             grid-area: 1/2/2/3;
+
+            @media (max-width:766px) {
+                grid-area: 1/2/2/3;
+            }
+
+
         }
 
+        &__secondphoto {
+            @extend %card-size;
+            grid-area: 1/3/2/4;
 
-    }
+            box-shadow: $shadow;
 
-    &__secondphoto {
-        @extend %card-size;
-        grid-area: 1/3/2/4;
+            @media (max-width:766px) {
+                grid-area: 2/2/3/3;
+            }
+        }
 
-        box-shadow: $shadow;
+        &__secondcard {
 
-        @media (max-width:766px) {
+            grid-area: 1/3/2/4;
+            @extend %card-size;
+
+            @media (max-width:766px) {
+                grid-area: 2/2/3/3;
+            }
+        }
+
+        &__thirdphoto {
+            @extend %card-size;
             grid-area: 2/2/3/3;
+
+            box-shadow: $shadow;
+
+            @media (max-width:766px) {
+                grid-area: 3/2/4/3;
+            }
         }
-    }
 
-    &__secondcard {
+        &__thirdcard {
 
-        grid-area: 1/3/2/4;
-        @extend %card-size;
-
-        @media (max-width:766px) {
             grid-area: 2/2/3/3;
+            @extend %card-size;
+
+            @media (max-width:766px) {
+                grid-area: 3/2/4/3;
+            }
         }
-    }
 
-    &__thirdphoto {
-        @extend %card-size;
-        grid-area: 2/2/3/3;
+        &__fourthphoto {
+            @extend %card-size;
+            grid-area: 2/3/3/4;
 
-        box-shadow: $shadow;
+            box-shadow: $shadow;
 
-        @media (max-width:766px) {
+            @media (max-width:766px) {
+                grid-area: 4/2/5/3;
+            }
+        }
+
+        &__fourthcard {
+            @extend %card-size;
+            grid-area: 2/3/3/4;
+
+            @media (max-width:766px) {
+                grid-area: 4/2/5/3;
+            }
+
+        }
+
+        &__fifthphoto {
+            @extend %card-size;
             grid-area: 3/2/4/3;
+
+            box-shadow: $shadow;
+
+            @media (max-width:766px) {
+                grid-area: 5/2/6/3;
+            }
         }
-    }
 
-    &__thirdcard {
-
-        grid-area: 2/2/3/3;
-        @extend %card-size;
-
-        @media (max-width:766px) {
+        &__fifthcard {
+            @extend %card-size;
             grid-area: 3/2/4/3;
+
+            @media (max-width:766px) {
+                grid-area: 5/2/6/3;
+            }
+
         }
     }
 
-    &__fourthphoto {
-        @extend %card-size;
-        grid-area: 2/3/3/4;
-
-        box-shadow: $shadow;
-
-        @media (max-width:766px) {
-            grid-area: 4/2/5/3;
-        }
-    }
-
-    &__fourthcard {
-        @extend %card-size;
-        grid-area: 2/3/3/4;
-
-        @media (max-width:766px) {
-            grid-area: 4/2/5/3;
-        }
-
-    }
-
-    &__fifthphoto {
-        @extend %card-size;
-        grid-area: 3/2/4/3;
-
-        box-shadow: $shadow;
-
-        @media (max-width:766px) {
-            grid-area: 5/2/6/3;
-        }
-    }
-
-    &__fifthcard {
-        @extend %card-size;
-        grid-area: 3/2/4/3;
-
-        @media (max-width:766px) {
-            grid-area: 5/2/6/3;
-        }
-
-    }
-}
-
-.certificates {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 25% 1fr 2fr;
-    max-width: 100vw;
-
-    @media(min-width:768px) and (max-width:1199px) {
+    .certificates {
+        display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: 25% 1fr 2fr;
+        max-width: 100vw;
+
+        @media(min-width:768px) and (max-width:1199px) {
+            grid-template-rows: 25% 1fr 2fr;
+        }
+
+        @media(min-width:576px) and (max-width:767px) {
+            grid-template-rows: 70% 1fr 2fr;
+        }
+
+        @media (max-width:575px) {
+            grid-template-rows: 40% 1fr 2fr;
+        }
+
+        &__title {
+            display: grid;
+            grid-row: 2/3;
+            padding-left: 4%;
+
+            @media(min-width:768px) and (max-width:1199px) {
+                font-size: 2rem;
+                padding-left: 4%;
+            }
+
+            @media(min-width:576px) and (max-width:767px) {
+                font-size: 2rem;
+                padding-left: 5%;
+            }
+
+            @media (max-width:575px) {
+                font-size: 2rem;
+                padding-left: 8%;
+            }
+
+        }
+
+        &__carousel {
+            display: grid;
+            grid-row: 3/4;
+            grid-template-columns: 1fr 12fr 12fr 12fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 1%;
+            align-items: center;
+            padding: 5% 0 5% 0;
+
+
+            @media (max-width:576px) {
+
+                grid-template-columns: 1fr 12fr 1fr;
+                grid-template-rows: 1fr;
+            }
+
+            @media(min-width:576px) and (max-width:767px) {
+                grid-template-columns: 1fr 12fr 12fr 1fr;
+                grid-template-rows: 1fr;
+            }
+        }
     }
 
-    @media(min-width:576px) and (max-width:767px) {
-        grid-template-rows: 70% 1fr 2fr;
+
+    &__doc {
+        display: grid;
+        max-width: 100%;
     }
 
-    @media (max-width:575px) {
-        grid-template-rows: 40% 1fr 2fr;
+    &__docsecond {
+        @media (max-width:576px) {
+            display: none;
+
+        }
     }
 
-    &__title {
+    &__docthird {
+        @media (max-width:767px) {
+            display: none;
+
+        }
+    }
+
+    &__arrow {
+        display: grid;
+        max-width: 100%;
+    }
+
+
+    .consultation__wrapper {
+        display: grid;
+        grid-template-rows: 5% 1fr;
+        grid-template-columns: 1fr;
+
+
+        @media(min-width:768px) and (max-width:1199px) {
+            grid-template-rows: 10% 1fr;
+        }
+
+
+
+        @media(min-width:576px) and (max-width:767px) {
+            grid-template-rows: 40% 1fr;
+        }
+
+
+
+        @media (max-width:575px) {
+            grid-template-rows: 40% 1fr;
+        }
+    }
+
+    .consultation {
         display: grid;
         grid-row: 2/3;
-        padding-left: 4%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr 1fr 1fr 1fr;
+        background-image: url("../images/dentist2.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
 
         @media(min-width:768px) and (max-width:1199px) {
-            font-size: 2rem;
-            padding-left: 4%;
+            background-color: #F2F3F5;
+            grid-template-rows: 2fr 1fr 1fr 1fr;
         }
 
         @media(min-width:576px) and (max-width:767px) {
-            font-size: 2rem;
-            padding-left: 5%;
+            background-color: #F2F3F5;
+            grid-template-rows: 2fr 1fr 1fr 1fr;
         }
 
         @media (max-width:575px) {
-            font-size: 2rem;
-            padding-left: 8%;
+            grid-template-rows: 2fr 1fr 1fr 1fr;
+            background-color: #F2F3F5;
         }
 
-    }
-
-    &__carousel {
-        display: grid;
-        grid-row: 3/4;
-        grid-template-columns: 1fr 12fr 12fr 12fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 1%;
-        align-items: center;
-        padding: 5% 0 5% 0;
 
 
-        @media (max-width:576px) {
+        &__title {
+            display: grid;
 
-            grid-template-columns: 1fr 12fr 1fr;
-            grid-template-rows: 1fr;
-        }
-
-        @media(min-width:576px) and (max-width:767px) {
-            grid-template-columns: 1fr 12fr 12fr 1fr;
-            grid-template-rows: 1fr;
-        }
-    }
-}
-
-
-&__doc {
-    display: grid;
-    max-width: 100%;
-}
-
-&__docsecond {
-    @media (max-width:576px) {
-        display: none;
-
-    }
-}
-
-&__docthird {
-    @media (max-width:767px) {
-        display: none;
-
-    }
-}
-
-&__arrow {
-    display: grid;
-    max-width: 100%;
-}
-
-
-.consultation__wrapper {
-    display: grid;
-    grid-template-rows: 5% 1fr;
-    grid-template-columns: 1fr;
-
-
-    @media(min-width:768px) and (max-width:1199px) {
-        grid-template-rows: 10% 1fr;
-    }
-
-
-
-    @media(min-width:576px) and (max-width:767px) {
-        grid-template-rows: 40% 1fr;
-    }
-
-
-
-    @media (max-width:575px) {
-        grid-template-rows: 40% 1fr;
-    }
-}
-
-.consultation {
-    display: grid;
-    grid-row: 2/3;
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr 1fr 1fr 1fr;
-    background-image: url("../images/dentist2.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-
-    @media(min-width:768px) and (max-width:1199px) {
-        background-color: #F2F3F5;
-        grid-template-rows: 2fr 1fr 1fr 1fr;
-    }
-
-    @media(min-width:576px) and (max-width:767px) {
-        background-color: #F2F3F5;
-        grid-template-rows: 2fr 1fr 1fr 1fr;
-    }
-
-    @media (max-width:575px) {
-        grid-template-rows: 2fr 1fr 1fr 1fr;
-        background-color: #F2F3F5;
-    }
-
-
-
-    &__title {
-        display: grid;
-
-        max-width: 60%;
-        padding: 10% 0 3% 4%;
-
-        @media(min-width:768px) and (max-width:1199px) {
-            font-size: 4vw;
-        }
-
-        @media(min-width:576px) and (max-width:767px) {
-            padding-left: 5%;
-            font-size: 4vw;
-        }
-
-        @media (max-width:575px) {
-            font-size: 4vw;
-            padding-left: 8%;
-        }
-    }
-
-    &__subtitle {
-        display: grid;
-
-        font-family: $fontarial;
-        font-size: 1.1vw;
-        @extend %font-align;
-        max-width: 35%;
-        padding-left: 4%;
-        color: #262626;
-
-        @media(min-width:768px) and (max-width:1199px) {
-            max-width: 50%;
-            font-size: 2vw;
-        }
-
-        @media(min-width:576px) and (max-width:767px) {
-            max-width: 55%;
-            font-size: 2vw;
-            padding-left: 5%;
-        }
-
-        @media (max-width:575px) {
             max-width: 60%;
-            font-size: 2vw;
-            padding-left: 8%;
+            padding: 10% 0 3% 4%;
+
+            @media(min-width:768px) and (max-width:1199px) {
+                font-size: 4vw;
+            }
+
+            @media(min-width:576px) and (max-width:767px) {
+                padding-left: 5%;
+                font-size: 4vw;
+            }
+
+            @media (max-width:575px) {
+                font-size: 4vw;
+                padding-left: 8%;
+            }
         }
 
-        &__subtitle-number {
-            color: #0079FF;
-            text-decoration: none;
-        }
-
-        &__subtitle-number:hover {
-            color: $hover;
-
-        }
-    }
-
-
-
-
-
-
-    &__inputs {
-        display: grid;
-        grid-template-columns: 2fr 4fr;
-        grid-template-rows: 1fr;
-        max-width: 50%;
-        padding-left: 4%;
-
-        @media(min-width:768px) and (max-width:1199px) {
-            max-width: 60%;
-            padding-bottom: 3%;
-        }
-
-        @media(min-width:576px) and (max-width:767px) {
-            max-width: 80%;
-            padding-left: 5%;
-            padding-bottom: 3%;
-        }
-
-        @media (max-width:575px) {
-            max-width: 80%;
-            padding-left: 8%;
-            padding-bottom: 3%;
-        }
-
-        &__inputs-tel {
-            border: none;
-            max-width: 90%;
-            color: #BBBBBB;
-            text-align: center;
-            align-items: center;
+        &__subtitle {
+            display: grid;
 
             font-family: $fontarial;
             font-size: 1.1vw;
             @extend %font-align;
+            max-width: 35%;
+            padding-left: 4%;
+            color: #262626;
+
+            @media(min-width:768px) and (max-width:1199px) {
+                max-width: 50%;
+                font-size: 2vw;
+            }
+
+            @media(min-width:576px) and (max-width:767px) {
+                max-width: 55%;
+                font-size: 2vw;
+                padding-left: 5%;
+            }
+
+            @media (max-width:575px) {
+                max-width: 60%;
+                font-size: 2vw;
+                padding-left: 8%;
+            }
+
+            &__subtitle-number {
+                color: #0079FF;
+                text-decoration: none;
+            }
+
+            &__subtitle-number:hover {
+                color: $hover;
+
+            }
         }
 
-       /*  .consultation__inputs-button {
+
+
+
+
+
+        &__inputs {
+            display: grid;
+            grid-template-columns: 2fr 4fr;
+            grid-template-rows: 1fr;
+            max-width: 50%;
+            padding-left: 4%;
+
+            @media(min-width:768px) and (max-width:1199px) {
+                max-width: 60%;
+                padding-bottom: 3%;
+            }
+
+            @media(min-width:576px) and (max-width:767px) {
+                max-width: 80%;
+                padding-left: 5%;
+                padding-bottom: 3%;
+            }
+
+            @media (max-width:575px) {
+                max-width: 80%;
+                padding-left: 8%;
+                padding-bottom: 3%;
+            }
+
+            &__inputs-tel {
+                border: none;
+                max-width: 90%;
+                color: #BBBBBB;
+                text-align: center;
+                align-items: center;
+
+                font-family: $fontarial;
+                font-size: 1.1vw;
+                @extend %font-align;
+            }
+
+            /*  .consultation__inputs-button {
             padding-top: 4%;
             max-width: 60%;
         } */
+        }
+
+        &__agreement {
+            display: grid;
+
+            max-width: 30%;
+            font-family: $fontarial;
+            font-size: 1vw;
+            @extend %font-align;
+            padding-left: 4%;
+            margin-top: 1%;
+
+            @media(min-width:768px) and (max-width:1199px) {
+                font-size: 2vw;
+                max-width: 100%;
+            }
+
+            @media(min-width:576px) and (max-width:767px) {
+                padding-left: 5%;
+                font-size: 2vw;
+                max-width: 100%;
+            }
+
+            @media (max-width:575px) {
+                max-width: 100%;
+                font-size: 2vw;
+                padding-left: 8%;
+            }
+
+            &__agreement-href {
+                color: black;
+            }
+
+            &__agreement-href:hover {
+                color: $hover;
+            }
+        }
+
     }
-
-    &__agreement {
-        display: grid;
-
-        max-width: 30%;
-        font-family: $fontarial;
-        font-size: 1vw;
-        @extend %font-align;
-        padding-left: 4%;
-        margin-top: 1%;
-
-        @media(min-width:768px) and (max-width:1199px) {
-            font-size: 2vw;
-            max-width: 100%;
-        }
-
-        @media(min-width:576px) and (max-width:767px) {
-            padding-left: 5%;
-            font-size: 2vw;
-            max-width: 100%;
-        }
-
-        @media (max-width:575px) {
-            max-width: 100%;
-            font-size: 2vw;
-            padding-left: 8%;
-        }
-
-        &__agreement-href {
-            color: black;
-        }
-
-        &__agreement-href:hover {
-            color: $hover;
-        }
-    }
-
-}
 }
 
 
-.footer { 
+footer {
     display: grid;
     grid-template-columns: 2% 2fr 5% 4fr 3% 2fr 5% 1fr 1%;
     grid-template-rows: 2fr 2fr 1fr;
@@ -1316,6 +1362,7 @@ $lgray: #D5D5D5;
     @media (max-width:767px) {
         display: none;
     }
+
 
     .nets {
         display: grid;
