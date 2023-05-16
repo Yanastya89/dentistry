@@ -32,10 +32,14 @@ $bl1graylight2: #4B4B4B;
 .btn {
     background-color: $blue;
     color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0.7rem 1rem;
     border-radius: 3px;
     border-color: $transparent;
     font-family: 'Roboto Slab', serif;
+   
 
 
 }
@@ -66,17 +70,27 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     font-family: $fontpan;
     font-weight: 700;
     font-size: 3rem;
+    line-height: 104%;
     color: $bl1darkblue;
 
     @media screen and (max-width: 1199px) {
         font-size: 2rem;
     }
+/*     @media screen and (max-width: 767px) {
+        font-size: 1.5rem;
+    } */
+}
 
-    /*  @media(max-width:575px){ 
-         font-size: 1.5rem;
-        } */
-
-
+._ibg{
+    position: relative;
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
 }
 
 .wrapper {
@@ -103,7 +117,6 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
 .header {
 
-
     position: fixed;
     top: 0;
     z-index: 50;
@@ -118,11 +131,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         justify-content: space-around;
         align-items: center;
         min-height: 80px;
-
-
-
     }
-
 
     &__logo {
         margin-right: 55px;
@@ -286,108 +295,121 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
     .btn_size_small {
         font-size: 0.9rem;
+        line-height: 120%;
         margin-left: 20px;
+        min-height: 41px;
 
         @media(max-width:1199px) {
             font-size: 0.6rem;
 
         }
     }
+   
 }
+.main{
 
 .welcomepage {
-    background-image: url(../images/Fonblock1.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-
-    @media(max-width:575px) {
-        background-image: none;
-    }
-
-    @media(max-width:767px) {
-        margin-top: 10px;
-        max-width: 70%;
-
-    }
-
-    @media(max-width:575px) {
-        max-width: 70%;
-
-    }
-
+    position: relative;
+   
     &__text {
         margin-top: 80px;
-        padding-top: 120px;
+        padding: 120px 0 146px 0;
+        position: relative;
+        z-index: 2;
 
-        @media(max-width:575px) {
-            padding-top: 10px;
-
+        @media(max-width:767px){
+            padding-top: 25px;
         }
 
-        @media (min-width:576px) and (max-width:767px) {
-            padding-top: 180px;
-        }
 
-        @media (min-width:768px) and (max-width:1199px) {
-            padding-top: 20px;
-        }
-
-        @media (min-width:1200px) and (max-width:1439px) {
-            padding-top: 20px;
-        }
-
-        .text {
+             .text {
             &__item {
 
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 20px;
+                line-height: 115%;
                 color: $bl1gray;
                 padding-bottom: 17px;
-
-
+              /*   @media screen and (max-width: 767px) {
+                    font-size: 1rem;
+                } */
+            
             }
 
             &__item-2 {
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 20px;
+                line-height: 115%;
                 color: $bl1graylight;
                 padding-top: 17px;
                 padding-bottom: 37px;
                 max-width: 460px;
+                  @media screen and (max-width: 767px) {
+                    padding-bottom: 17px;
+                } 
             }
         }
 
         .btn_size_average {
             font-size: 20px;
+            line-height: 115%;
             margin-top: 17px;
-
+            min-height: 60px;
             @media(max-width:1199px) {
                 font-size: 0.7rem;
             }
+            @media screen and (max-width: 767px) {
+                margin-top: 10px;
+                
+            } 
+           
+          
         }
 
     }
-
-    &__row {
+    &__image{
+        border-top: 80px;  
+        position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            img{
+            @media(min-width:576px) and (max-width:1199px){
+object-position:right;
+opacity: 0.5;
+            }
+         @media (max-width:575px) {
+         
+              object-position:left;
+                opacity: 0.5;
+            } 
+            }
+                }
+}
+/* --------------------------------------------------------------- */
+    .page__row {
+        position: relative;
+        z-index: 2;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
         gap: 6px;
-        margin-top: 76px;
+        height: 100px;
+       margin-top: -76px;
 
-        @media (min-width:768px) and (max-width:1199px) {
-            margin-top: 90px;
-        }
-
-        @media screen and (max-width: 1199px) {
-            display: flex;
+       
+        @media (max-width:767px) {
+                     display: flex;
             flex-direction: column;
+            margin-top: -120px;
+            height: 80px;
         }
-
+    
         .row {
+           
             @media screen and (max-width: 1199px) {
                 justify-content: center;
-            }
+                      }
 
             &__content {
                 background-color: rgba(255, 255, 255, 0.4);
@@ -439,7 +461,8 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             }
         }
     }
-}
+ 
+
 
 /*Начало блока 2 Анастасия Добровольская*/
 $darkblue: #12354B;
@@ -796,7 +819,7 @@ $lgray: #D5D5D5;
 .doctors__card-prof {
     font-family: $fontarial;
     @extend %font-align;
-    font-size: 1vw;
+    font-size: 1.25rem;
 
     @media(min-width:768px) and (max-width:1199px) {
         font-size: 1.3vw;
@@ -1222,14 +1245,10 @@ $lgray: #D5D5D5;
             @extend %font-align;
         }
 
-        .consultation__inputs-button {
-
-
+       /*  .consultation__inputs-button {
             padding-top: 4%;
-
             max-width: 60%;
-
-        }
+        } */
     }
 
     .consultation__agreement {
@@ -1269,7 +1288,7 @@ $lgray: #D5D5D5;
     }
 
 }
-
+}
 
 
 footer {
@@ -1401,6 +1420,9 @@ html {
 
     font-size: 0.9rem;
     margin-left: 20px;
+    line-height: 129%;
+    min-height: 71px;
+
 
     @media (max-width:575px) {
         font-size: 0.5rem;
