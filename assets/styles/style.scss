@@ -14,7 +14,7 @@ html {
     font-size: 16px;
     font-weight: 400;
 }
-
+/* ------------------------ */
 $blue: #38BCEA;
 $white: #FFFFFF;
 $hover: #01678A;
@@ -29,13 +29,31 @@ $bl1darkblue: #1A3444;
 $bl1graylight: #6F6F6F;
 $bl1graylight2: #4B4B4B;
 
+/* ------------------------ */
+$tel: #BBBBBB;
+$colorbutton: #38BCEA;
+$colorbuttongr: #F9F9F9;
+$bacgrimg: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
+$bacgrcont: #FBFBFB;
+@font-face {
+    font-family: 'Panton';
+    src: url('../fonts/Panton-Bold.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* ---------------------------------------------- */
+
 .btn {
     background-color: $blue;
     color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0.7rem 1rem;
     border-radius: 3px;
     border-color: $transparent;
     font-family: 'Roboto Slab', serif;
+   
 
 
 }
@@ -66,17 +84,27 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     font-family: $fontpan;
     font-weight: 700;
     font-size: 3rem;
+    line-height: 104%;
     color: $bl1darkblue;
 
     @media screen and (max-width: 1199px) {
         font-size: 2rem;
     }
+/*     @media screen and (max-width: 767px) {
+        font-size: 1.5rem;
+    } */
+}
 
-    /*  @media(max-width:575px){ 
-         font-size: 1.5rem;
-        } */
-
-
+._ibg{
+    position: relative;
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
 }
 
 .wrapper {
@@ -103,7 +131,6 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
 .header {
 
-
     position: fixed;
     top: 0;
     z-index: 50;
@@ -118,11 +145,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         justify-content: space-around;
         align-items: center;
         min-height: 80px;
-
-
-
     }
-
 
     &__logo {
         margin-right: 55px;
@@ -286,108 +309,121 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
     .btn_size_small {
         font-size: 0.9rem;
+        line-height: 120%;
         margin-left: 20px;
+        min-height: 41px;
 
         @media(max-width:1199px) {
             font-size: 0.6rem;
 
         }
     }
+   
 }
+.main{
 
 .welcomepage {
-    background-image: url(../images/Fonblock1.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-
-    @media(max-width:575px) {
-        background-image: none;
-    }
-
-    @media(max-width:767px) {
-        margin-top: 10px;
-        max-width: 70%;
-
-    }
-
-    @media(max-width:575px) {
-        max-width: 70%;
-
-    }
-
+    position: relative;
+   
     &__text {
         margin-top: 80px;
-        padding-top: 120px;
+        padding: 120px 0 146px 0;
+        position: relative;
+        z-index: 2;
 
-        @media(max-width:575px) {
-            padding-top: 10px;
-
+        @media(max-width:767px){
+            padding-top: 25px;
         }
 
-        @media (min-width:576px) and (max-width:767px) {
-            padding-top: 180px;
-        }
 
-        @media (min-width:768px) and (max-width:1199px) {
-            padding-top: 20px;
-        }
-
-        @media (min-width:1200px) and (max-width:1439px) {
-            padding-top: 20px;
-        }
-
-        .text {
+             .text {
             &__item {
 
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 20px;
+                line-height: 115%;
                 color: $bl1gray;
                 padding-bottom: 17px;
-
-
+              /*   @media screen and (max-width: 767px) {
+                    font-size: 1rem;
+                } */
+            
             }
 
             &__item-2 {
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 20px;
+                line-height: 115%;
                 color: $bl1graylight;
                 padding-top: 17px;
                 padding-bottom: 37px;
                 max-width: 460px;
+                  @media screen and (max-width: 767px) {
+                    padding-bottom: 17px;
+                } 
             }
         }
 
         .btn_size_average {
             font-size: 20px;
+            line-height: 115%;
             margin-top: 17px;
-
+            min-height: 60px;
             @media(max-width:1199px) {
                 font-size: 0.7rem;
             }
+            @media screen and (max-width: 767px) {
+                margin-top: 10px;
+                
+            } 
+           
+          
         }
 
     }
-
-    &__row {
+    &__image{
+        border-top: 80px;  
+        position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            img{
+            @media(min-width:576px) and (max-width:1199px){
+object-position:right;
+opacity: 0.5;
+            }
+         @media (max-width:575px) {
+         
+              object-position:left;
+                opacity: 0.5;
+            } 
+            }
+                }
+}
+/* --------------------------------------------------------------- */
+    .page__row {
+        position: relative;
+        z-index: 2;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
         gap: 6px;
-        margin-top: 76px;
+        height: 100px;
+       margin-top: -76px;
 
-        @media (min-width:768px) and (max-width:1199px) {
-            margin-top: 90px;
-        }
-
-        @media screen and (max-width: 1199px) {
-            display: flex;
+       
+        @media (max-width:767px) {
+                     display: flex;
             flex-direction: column;
+            margin-top: -120px;
+            height: 80px;
         }
-
+    
         .row {
+           
             @media screen and (max-width: 1199px) {
                 justify-content: center;
-            }
+                      }
 
             &__content {
                 background-color: rgba(255, 255, 255, 0.4);
@@ -439,7 +475,8 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             }
         }
     }
-}
+ 
+
 
 /*Начало блока 2 Анастасия Добровольская*/
 $darkblue: #12354B;
@@ -774,7 +811,7 @@ $lgray: #D5D5D5;
 
 }
 
-.doctors__card-name {
+&__card-name {
     font-family: $fontpan;
     font-size: 1.7vw;
     @extend %font-align;
@@ -793,10 +830,10 @@ $lgray: #D5D5D5;
     }
 }
 
-.doctors__card-prof {
+&__card-prof {
     font-family: $fontarial;
     @extend %font-align;
-    font-size: 1vw;
+    font-size: 1.25rem;
 
     @media(min-width:768px) and (max-width:1199px) {
         font-size: 1.3vw;
@@ -813,7 +850,7 @@ $lgray: #D5D5D5;
 
 }
 
-.doctors__card-experience {
+&__card-experience {
     font-family: $fontarial;
     font-size: 1vw;
     @extend %font-align;
@@ -851,7 +888,7 @@ $lgray: #D5D5D5;
 
 
 
-    .doctors__card {
+    &__card {
         display: grid;
         max-width: 70%;
         max-height: 50%;
@@ -876,7 +913,7 @@ $lgray: #D5D5D5;
 
 
 
-    .doctors__firstphoto {
+    &__firstphoto {
 
         grid-area: 1/2/2/3;
 
@@ -888,7 +925,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .doctors__firstcard {
+    &__firstcard {
         @extend %card-size;
         grid-area: 1/2/2/3;
 
@@ -899,7 +936,7 @@ $lgray: #D5D5D5;
 
     }
 
-    .doctors__secondphoto {
+    &__secondphoto {
         @extend %card-size;
         grid-area: 1/3/2/4;
 
@@ -910,7 +947,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .doctors__secondcard {
+    &__secondcard {
 
         grid-area: 1/3/2/4;
         @extend %card-size;
@@ -920,7 +957,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .doctors__thirdphoto {
+    &__thirdphoto {
         @extend %card-size;
         grid-area: 2/2/3/3;
 
@@ -931,7 +968,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .doctors__thirdcard {
+    &__thirdcard {
 
         grid-area: 2/2/3/3;
         @extend %card-size;
@@ -941,7 +978,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .doctors__fourthphoto {
+    &__fourthphoto {
         @extend %card-size;
         grid-area: 2/3/3/4;
 
@@ -952,7 +989,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .doctors__fourthcard {
+    &__fourthcard {
         @extend %card-size;
         grid-area: 2/3/3/4;
 
@@ -962,7 +999,7 @@ $lgray: #D5D5D5;
 
     }
 
-    .doctors__fifthphoto {
+    &__fifthphoto {
         @extend %card-size;
         grid-area: 3/2/4/3;
 
@@ -973,7 +1010,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .doctors__fifthcard {
+    &__fifthcard {
         @extend %card-size;
         grid-area: 3/2/4/3;
 
@@ -1002,7 +1039,7 @@ $lgray: #D5D5D5;
         grid-template-rows: 40% 1fr 2fr;
     }
 
-    .certificates__title {
+    &__title {
         display: grid;
         grid-row: 2/3;
         padding-left: 4%;
@@ -1024,7 +1061,7 @@ $lgray: #D5D5D5;
 
     }
 
-    .certificates__carousel {
+    &__carousel {
         display: grid;
         grid-row: 3/4;
         grid-template-columns: 1fr 12fr 12fr 12fr 1fr;
@@ -1048,26 +1085,26 @@ $lgray: #D5D5D5;
 }
 
 
-.certificates__doc {
+&__doc {
     display: grid;
     max-width: 100%;
 }
 
-.certificates__docsecond {
+&__docsecond {
     @media (max-width:576px) {
         display: none;
 
     }
 }
 
-.certificates__docthird {
+&__docthird {
     @media (max-width:767px) {
         display: none;
 
     }
 }
 
-.certificates__arrow {
+&__arrow {
     display: grid;
     max-width: 100%;
 }
@@ -1122,7 +1159,7 @@ $lgray: #D5D5D5;
 
 
 
-    .consultation__title {
+    &__title {
         display: grid;
 
         max-width: 60%;
@@ -1143,7 +1180,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .consultation__subtitle {
+    &__subtitle {
         display: grid;
 
         font-family: $fontarial;
@@ -1170,12 +1207,12 @@ $lgray: #D5D5D5;
             padding-left: 8%;
         }
 
-        .consultation__subtitle-number {
+        &__subtitle-number {
             color: #0079FF;
             text-decoration: none;
         }
 
-        .consultation__subtitle-number:hover {
+        &__subtitle-number:hover {
             color: $hover;
 
         }
@@ -1186,7 +1223,7 @@ $lgray: #D5D5D5;
 
 
 
-    .consultation__inputs {
+    &__inputs {
         display: grid;
         grid-template-columns: 2fr 4fr;
         grid-template-rows: 1fr;
@@ -1210,7 +1247,7 @@ $lgray: #D5D5D5;
             padding-bottom: 3%;
         }
 
-        .consultation__inputs-tel {
+        &__inputs-tel {
             border: none;
             max-width: 90%;
             color: #BBBBBB;
@@ -1222,17 +1259,13 @@ $lgray: #D5D5D5;
             @extend %font-align;
         }
 
-        .consultation__inputs-button {
-
-
+       /*  .consultation__inputs-button {
             padding-top: 4%;
-
             max-width: 60%;
-
-        }
+        } */
     }
 
-    .consultation__agreement {
+    &__agreement {
         display: grid;
 
         max-width: 30%;
@@ -1259,29 +1292,26 @@ $lgray: #D5D5D5;
             padding-left: 8%;
         }
 
-        .consultation__agreement-href {
+        &__agreement-href {
             color: black;
         }
 
-        .consultation__agreement-href:hover {
+        &__agreement-href:hover {
             color: $hover;
         }
     }
 
 }
+}
 
 
-
-footer {
+.footer { 
     display: grid;
     grid-template-columns: 2% 2fr 5% 4fr 3% 2fr 5% 1fr 1%;
     grid-template-rows: 2fr 2fr 1fr;
     align-items: center;
-
-
     background-color:
         #F2F3F5;
-
 
     @media (max-width:767px) {
         display: none;
@@ -1335,36 +1365,6 @@ footer {
 /*Конец блока Анна Мычко*/
 /*Начало блока Татьяна Семашко*/
 
-@font-face {
-    font-family: 'Panton';
-    src: url('../fonts/Panton-Bold.ttf');
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-$tel: #BBBBBB;
-$colorbutton: #38BCEA;
-$colorbuttongr: #F9F9F9;
-$bacgrimg: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
-$bacgrcont: #FBFBFB;
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-html {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-}
 
 
 
@@ -1401,6 +1401,9 @@ html {
 
     font-size: 0.9rem;
     margin-left: 20px;
+    line-height: 129%;
+    min-height: 71px;
+
 
     @media (max-width:575px) {
         font-size: 0.5rem;

@@ -17,9 +17,19 @@ html {
   font-weight: 400;
 }
 
+/* ------------------------ */
+/* ------------------------ */
+@font-face {
+  font-family: "Panton";
+  src: url("../fonts/Panton-Bold.ttf");
+}
+/* ---------------------------------------------- */
 .btn {
   background-color: #38BCEA;
   color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.7rem 1rem;
   border-radius: 3px;
   border-color: transparent;
@@ -32,12 +42,12 @@ html {
   border-color: #01678A;
 }
 
-footer .polyci, footer .licence, .consultation .consultation__agreement, .consultation .consultation__inputs .consultation__inputs-tel, .consultation .consultation__subtitle, .doctors__card-experience, .doctors__card-prof, .doctors__card-name, .doctitle__main {
+.footer .polyci, .footer .licence, .main .consultation__agreement, .main .consultation__inputs__inputs-tel, .main .consultation__subtitle, .main__card-experience, .main__card-prof, .main__card-name, .main .doctitle__main {
   line-height: 100%;
   vertical-align: top;
 }
 
-.doctors .doctors__fifthcard, .doctors .doctors__fifthphoto, .doctors .doctors__fourthcard, .doctors .doctors__fourthphoto, .doctors .doctors__thirdcard, .doctors .doctors__thirdphoto, .doctors .doctors__secondcard, .doctors .doctors__secondphoto, .doctors .doctors__firstcard, .doctors .doctors__firstphoto {
+.main .doctors__fifthcard, .main .doctors__fifthphoto, .main .doctors__fourthcard, .main .doctors__fourthphoto, .main .doctors__thirdcard, .main .doctors__thirdphoto, .main .doctors__secondcard, .main .doctors__secondphoto, .main .doctors__firstcard, .main .doctors__firstphoto {
   display: grid;
   max-width: 100%;
   border-radius: 2px;
@@ -48,15 +58,29 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   font-family: "Panton", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 3rem;
+  line-height: 104%;
   color: #1A3444;
-  /*  @media(max-width:575px){ 
-       font-size: 1.5rem;
+  /*     @media screen and (max-width: 767px) {
+          font-size: 1.5rem;
       } */
 }
 @media screen and (max-width: 1199px) {
   .title {
     font-size: 2rem;
   }
+}
+
+._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .wrapper {
@@ -220,7 +244,9 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
 }
 .header .btn_size_small {
   font-size: 0.9rem;
+  line-height: 120%;
   margin-left: 20px;
+  min-height: 41px;
 }
 @media (max-width: 1199px) {
   .header .btn_size_small {
@@ -228,172 +254,183 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   }
 }
 
-.welcomepage {
-  background-image: url(../images/Fonblock1.png);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+.main {
+  /* --------------------------------------------------------------- */
+  /*Начало блока 2 Анастасия Добровольская*/
+  /*Конец блока 2 Анастасия Добровольская*/
+  /*Начало блока Анна Мычко*/
 }
-@media (max-width: 575px) {
-  .welcomepage {
-    background-image: none;
-  }
+.main .welcomepage {
+  position: relative;
+}
+.main .welcomepage__text {
+  margin-top: 80px;
+  padding: 120px 0 146px 0;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 767px) {
-  .welcomepage {
-    margin-top: 10px;
-    max-width: 70%;
+  .main .welcomepage__text {
+    padding-top: 25px;
   }
 }
-@media (max-width: 575px) {
-  .welcomepage {
-    max-width: 70%;
-  }
-}
-.welcomepage__text {
-  margin-top: 80px;
-  padding-top: 120px;
-}
-@media (max-width: 575px) {
-  .welcomepage__text {
-    padding-top: 10px;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .welcomepage__text {
-    padding-top: 180px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .welcomepage__text {
-    padding-top: 20px;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1439px) {
-  .welcomepage__text {
-    padding-top: 20px;
-  }
-}
-.welcomepage__text .text__item {
+.main .welcomepage__text .text__item {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+  line-height: 115%;
   color: #4E4E4E;
   padding-bottom: 17px;
+  /*   @media screen and (max-width: 767px) {
+        font-size: 1rem;
+    } */
 }
-.welcomepage__text .text__item-2 {
+.main .welcomepage__text .text__item-2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+  line-height: 115%;
   color: #6F6F6F;
   padding-top: 17px;
   padding-bottom: 37px;
   max-width: 460px;
 }
-.welcomepage__text .btn_size_average {
+@media screen and (max-width: 767px) {
+  .main .welcomepage__text .text__item-2 {
+    padding-bottom: 17px;
+  }
+}
+.main .welcomepage__text .btn_size_average {
   font-size: 20px;
+  line-height: 115%;
   margin-top: 17px;
+  min-height: 60px;
 }
 @media (max-width: 1199px) {
-  .welcomepage__text .btn_size_average {
+  .main .welcomepage__text .btn_size_average {
     font-size: 0.7rem;
   }
 }
-.welcomepage__row {
+@media screen and (max-width: 767px) {
+  .main .welcomepage__text .btn_size_average {
+    margin-top: 10px;
+  }
+}
+.main .welcomepage__image {
+  border-top: 80px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 576px) and (max-width: 1199px) {
+  .main .welcomepage__image img {
+    -o-object-position: right;
+       object-position: right;
+    opacity: 0.5;
+  }
+}
+@media (max-width: 575px) {
+  .main .welcomepage__image img {
+    -o-object-position: left;
+       object-position: left;
+    opacity: 0.5;
+  }
+}
+.main .page__row {
+  position: relative;
+  z-index: 2;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   gap: 6px;
-  margin-top: 76px;
+  height: 100px;
+  margin-top: -76px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
-  .welcomepage__row {
-    margin-top: 90px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .welcomepage__row {
+@media (max-width: 767px) {
+  .main .page__row {
     display: flex;
     flex-direction: column;
+    margin-top: -120px;
+    height: 80px;
   }
 }
 @media screen and (max-width: 1199px) {
-  .welcomepage__row .row {
+  .main .page__row .row {
     justify-content: center;
   }
 }
-.welcomepage__row .row__content {
+.main .page__row .row__content {
   background-color: rgba(255, 255, 255, 0.4);
   display: flex;
   align-items: center;
   gap: 19px;
 }
-.welcomepage__row .row__content .content__title {
+.main .page__row .row__content .content__title {
   text-decoration: none;
   color: #4B4B4B;
 }
-.welcomepage__row .row__content_position_left {
+.main .page__row .row__content_position_left {
   flex: 2 1 auto;
   justify-content: right;
 }
 @media screen and (max-width: 1199px) {
-  .welcomepage__row .row__content_position_left {
+  .main .page__row .row__content_position_left {
     justify-content: left;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .welcomepage__row .row__content_position_left {
+  .main .page__row .row__content_position_left {
     flex: 1 1 auto;
   }
 }
-.welcomepage__row .row__content_position_center {
+.main .page__row .row__content_position_center {
   flex: 1 1 auto;
   justify-content: center;
 }
 @media screen and (max-width: 1199px) {
-  .welcomepage__row .row__content_position_center {
+  .main .page__row .row__content_position_center {
     justify-content: left;
   }
 }
-.welcomepage__row .row__content_position_right {
+.main .page__row .row__content_position_right {
   flex: 2 1 auto;
 }
 @media screen and (max-width: 1199px) {
-  .welcomepage__row .row__content_position_right {
+  .main .page__row .row__content_position_right {
     justify-content: left;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .welcomepage__row .row__content_position_right {
+  .main .page__row .row__content_position_right {
     flex: 1 1 auto;
   }
 }
-
-/*Начало блока 2 Анастасия Добровольская*/
-.main-links {
+.main .main-links {
   display: grid;
   grid-template-rows: 1fr 2fr;
   max-width: 100%;
   min-height: 900px;
 }
 @media (max-width: 575px) {
-  .main-links {
+  .main .main-links {
     margin-bottom: 20px;
     grid-template-rows: 10% 90%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .main-links {
+  .main .main-links {
     grid-template-rows: 20% 80%;
   }
 }
-.main-links__text {
+.main .main-links__text {
   margin-top: 77px;
 }
 @media (max-width: 767px) {
-  .main-links .text__services {
+  .main .main-links .text__services {
     text-align: center;
     font-size: 2em;
   }
 }
-.main-links .text__price {
+.main .main-links .text__price {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -404,17 +441,17 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   margin-top: 14px;
 }
 @media (max-width: 575px) {
-  .main-links .text__price {
+  .main .main-links .text__price {
     text-align: center;
     font-size: 1em;
   }
 }
 @media (max-width: 767px) {
-  .main-links .text__price {
+  .main .main-links .text__price {
     text-align: center;
   }
 }
-.main-links .main-links__treatment {
+.main .main-links .main-links__treatment {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(5, 1fr);
@@ -422,30 +459,30 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   max-width: 100%;
 }
 @media (max-width: 575px) {
-  .main-links .main-links__treatment {
+  .main .main-links .main-links__treatment {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .main-links .main-links__treatment {
+  .main .main-links .main-links__treatment {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .main-links .main-links__treatment {
+  .main .main-links .main-links__treatment {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
-  .main-links .main-links__treatment {
+  .main .main-links .main-links__treatment {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
 }
-.main-links .treatment__cards {
+.main .main-links .treatment__cards {
   text-align: center;
   width: 100%;
   height: 100%;
@@ -453,27 +490,27 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   display: inline-block;
 }
 @media (max-width: 575px) {
-  .main-links .treatment__cards {
+  .main .main-links .treatment__cards {
     width: 70%;
     margin: 0 auto;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .main-links .treatment__cards {
+  .main .main-links .treatment__cards {
     width: 80%;
     margin: 0 auto;
   }
 }
-.main-links .cards {
+.main .main-links .cards {
   background-color: #FBFBFB;
   border-radius: 5px;
   padding: 50px;
 }
-.main-links .cards__img {
+.main .main-links .cards__img {
   max-width: 26%;
   height: 33%;
 }
-.main-links .cards__link {
+.main .main-links .cards__link {
   font-size: 20px;
   margin: 0 auto 0;
   text-decoration: none;
@@ -486,27 +523,27 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   letter-spacing: 0em;
   text-align: center;
 }
-.main-links .cards:hover {
+.main .main-links .cards:hover {
   background: #38BCEA;
   box-shadow: 0 0 10px #38BCEA;
 }
-.main-links .cards:hover .cards__link {
+.main .main-links .cards:hover .cards__link {
   color: #FBFBFB;
 }
-.main-links .vinir {
+.main .main-links .vinir {
   grid-column: 2/3;
 }
 @media (max-width: 575px) {
-  .main-links .vinir {
+  .main .main-links .vinir {
     grid-column: 1/2;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .main-links .vinir {
+  .main .main-links .vinir {
     grid-column: 3/4;
   }
 }
-.main-links .cards__link:after {
+.main .main-links .cards__link:after {
   display: block;
   content: "";
   height: 3px;
@@ -514,14 +551,14 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   background-color: #FBFBFB;
   transition: width 0.4s ease-in-out;
 }
-.main-links .cards__link:hover:after,
-.main-links .cards__link:focus:after {
+.main .main-links .cards__link:hover:after,
+.main .main-links .cards__link:focus:after {
   width: 100%;
 }
-.main-links .cards__link:hover {
+.main .main-links .cards__link:hover {
   color: #FBFBFB;
 }
-.main-links .treatment__butn {
+.main .main-links .treatment__butn {
   width: 100%;
   height: 48px;
   position: absolute;
@@ -531,7 +568,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   align-items: center;
   justify-content: center;
 }
-.main-links .butn__bottom {
+.main .main-links .butn__bottom {
   width: 298px;
   height: 48px;
   color: #FBFBFB;
@@ -539,49 +576,48 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   cursor: pointer;
   background-color: #FBFBFB;
 }
-.main-links .butn__bottom:hover {
+.main .main-links .butn__bottom:hover {
   color: #38BCEA;
 }
-
-.main-benefits {
+.main .main-benefits {
   max-width: 100%;
   min-height: 700px;
 }
-.main-benefits__advantages {
+.main .main-benefits__advantages {
   display: grid;
   grid-template-columns: repeat(3, 33%);
 }
 @media (max-width: 767px) {
-  .main-benefits__advantages {
+  .main .main-benefits__advantages {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     height: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .main-benefits__advantages {
+  .main .main-benefits__advantages {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
 }
-.main-benefits__heading {
+.main .main-benefits__heading {
   margin-top: 124px;
 }
 @media (max-width: 767px) {
-  .main-benefits__heading {
+  .main .main-benefits__heading {
     font-size: 2em;
   }
 }
-.main-benefits .advantages__accents {
+.main .main-benefits .advantages__accents {
   text-align: start;
   width: 100%;
   height: 80%;
   margin: 3%;
 }
-.main-benefits .accents__card {
+.main .main-benefits .accents__card {
   margin-top: 58px;
 }
-.main-benefits .card__paragraph {
+.main .main-benefits .card__paragraph {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -591,11 +627,11 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   color: #292929;
 }
 @media (max-width: 767px) {
-  .main-benefits .card__paragraph {
+  .main .main-benefits .card__paragraph {
     font-size: 1.5em;
   }
 }
-.main-benefits .card__title {
+.main .main-benefits .card__title {
   font-family: "Panton", Arial, Helvetica, sans-serif;
   font-size: 36px;
   font-weight: 700;
@@ -606,131 +642,122 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   margin: 7px 0px 7px 0px;
 }
 @media (max-width: 766px) {
-  .main-benefits .card__title {
+  .main .main-benefits .card__title {
     font-size: 2em;
   }
 }
-
-/*Конец блока 2 Анастасия Добровольская*/
-/*Начало блока Анна Мычко*/
-.doctitle {
+.main .doctitle {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
 }
-
-.doctitle__header {
+.main .doctitle__header {
   padding: 5% 0 1% 4%;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .doctitle__header {
+  .main .doctitle__header {
     font-size: 4vw;
     padding: 5% 0 2% 4%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .doctitle__header {
+  .main .doctitle__header {
     font-size: 6vw;
     padding: 5% 0 3% 5%;
   }
 }
 @media (max-width: 575px) {
-  .doctitle__header {
+  .main .doctitle__header {
     font-size: 7vw;
     padding: 5% 0 4% 6%;
   }
 }
-
-.doctitle__main {
+.main .doctitle__main {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5vw;
   padding: 0 3% 0 4%;
   width: 50%;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .doctitle__main {
+  .main .doctitle__main {
     font-size: 1.6vw;
     width: 50%;
     padding: 0 0 2% 4%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .doctitle__main {
+  .main .doctitle__main {
     font-size: 2.3vw;
     width: 70%;
     padding: 0 0 3% 5%;
   }
 }
 @media (max-width: 575px) {
-  .doctitle__main {
+  .main .doctitle__main {
     font-size: 2.7vw;
     width: 80%;
     padding: 0 0 4% 6%;
   }
 }
-
-.doctors__card-name {
+.main__card-name {
   font-family: "Panton", Arial, Helvetica, sans-serif;
   font-size: 1.7vw;
   max-width: 60%;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .doctors__card-name {
+  .main__card-name {
     font-size: 1.6vw;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .doctors__card-name {
+  .main__card-name {
     font-size: 3vw;
   }
 }
 @media (max-width: 575px) {
-  .doctors__card-name {
+  .main__card-name {
     font-size: 3vw;
   }
 }
-
-.doctors__card-prof {
+.main__card-prof {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1vw;
+  font-size: 1.25rem;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .doctors__card-prof {
+  .main__card-prof {
     font-size: 1.3vw;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .doctors__card-prof {
+  .main__card-prof {
     font-size: 2vw;
   }
 }
 @media (max-width: 575px) {
-  .doctors__card-prof {
+  .main__card-prof {
     font-size: 2.5vw;
   }
 }
-
-.doctors__card-experience {
+.main__card-experience {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1vw;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .doctors__card-experience {
+  .main__card-experience {
     font-size: 1.3vw;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .doctors__card-experience {
+  .main__card-experience {
     font-size: 2vw;
   }
 }
 @media (max-width: 575px) {
-  .doctors__card-experience {
+  .main__card-experience {
     font-size: 2.5vw;
   }
 }
-
-.doctors {
+.main .doctors {
   display: grid;
   gap: 4%;
   grid-template-columns: 0.1% 1fr 1fr 0.1%;
@@ -738,172 +765,171 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   max-width: 100vw;
 }
 @media (max-width: 767px) {
-  .doctors {
+  .main .doctors {
     grid-template-columns: 2% 1fr 2%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .doctors {
+  .main .doctors {
     grid-template-columns: 0.3% 1fr 0.3%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
 }
-.doctors .doctors__card {
+.main .doctors__card {
   display: grid;
   max-width: 70%;
   max-height: 50%;
   padding: 5% 0 0 5%;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .doctors .doctors__card {
+  .main .doctors__card {
     max-height: 60%;
     max-width: 60%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .doctors .doctors__card {
+  .main .doctors__card {
     max-height: 70%;
     max-width: 70%;
   }
 }
 @media (max-width: 575px) {
-  .doctors .doctors__card {
+  .main .doctors__card {
     max-height: 80%;
     max-width: 60%;
   }
 }
-.doctors .doctors__firstphoto {
+.main .doctors__firstphoto {
   grid-area: 1/2/2/3;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
 @media (max-width: 766px) {
-  .doctors .doctors__firstphoto {
+  .main .doctors__firstphoto {
     grid-area: 1/2/2/3;
   }
 }
-.doctors .doctors__firstcard {
+.main .doctors__firstcard {
   grid-area: 1/2/2/3;
 }
 @media (max-width: 766px) {
-  .doctors .doctors__firstcard {
+  .main .doctors__firstcard {
     grid-area: 1/2/2/3;
   }
 }
-.doctors .doctors__secondphoto {
+.main .doctors__secondphoto {
   grid-area: 1/3/2/4;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
 @media (max-width: 766px) {
-  .doctors .doctors__secondphoto {
+  .main .doctors__secondphoto {
     grid-area: 2/2/3/3;
   }
 }
-.doctors .doctors__secondcard {
+.main .doctors__secondcard {
   grid-area: 1/3/2/4;
 }
 @media (max-width: 766px) {
-  .doctors .doctors__secondcard {
+  .main .doctors__secondcard {
     grid-area: 2/2/3/3;
   }
 }
-.doctors .doctors__thirdphoto {
+.main .doctors__thirdphoto {
   grid-area: 2/2/3/3;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
 @media (max-width: 766px) {
-  .doctors .doctors__thirdphoto {
+  .main .doctors__thirdphoto {
     grid-area: 3/2/4/3;
   }
 }
-.doctors .doctors__thirdcard {
+.main .doctors__thirdcard {
   grid-area: 2/2/3/3;
 }
 @media (max-width: 766px) {
-  .doctors .doctors__thirdcard {
+  .main .doctors__thirdcard {
     grid-area: 3/2/4/3;
   }
 }
-.doctors .doctors__fourthphoto {
+.main .doctors__fourthphoto {
   grid-area: 2/3/3/4;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
 @media (max-width: 766px) {
-  .doctors .doctors__fourthphoto {
+  .main .doctors__fourthphoto {
     grid-area: 4/2/5/3;
   }
 }
-.doctors .doctors__fourthcard {
+.main .doctors__fourthcard {
   grid-area: 2/3/3/4;
 }
 @media (max-width: 766px) {
-  .doctors .doctors__fourthcard {
+  .main .doctors__fourthcard {
     grid-area: 4/2/5/3;
   }
 }
-.doctors .doctors__fifthphoto {
+.main .doctors__fifthphoto {
   grid-area: 3/2/4/3;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
 @media (max-width: 766px) {
-  .doctors .doctors__fifthphoto {
+  .main .doctors__fifthphoto {
     grid-area: 5/2/6/3;
   }
 }
-.doctors .doctors__fifthcard {
+.main .doctors__fifthcard {
   grid-area: 3/2/4/3;
 }
 @media (max-width: 766px) {
-  .doctors .doctors__fifthcard {
+  .main .doctors__fifthcard {
     grid-area: 5/2/6/3;
   }
 }
-
-.certificates {
+.main .certificates {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 25% 1fr 2fr;
   max-width: 100vw;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .certificates {
+  .main .certificates {
     grid-template-rows: 25% 1fr 2fr;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .certificates {
+  .main .certificates {
     grid-template-rows: 70% 1fr 2fr;
   }
 }
 @media (max-width: 575px) {
-  .certificates {
+  .main .certificates {
     grid-template-rows: 40% 1fr 2fr;
   }
 }
-.certificates .certificates__title {
+.main .certificates__title {
   display: grid;
   grid-row: 2/3;
   padding-left: 4%;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .certificates .certificates__title {
+  .main .certificates__title {
     font-size: 2rem;
     padding-left: 4%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .certificates .certificates__title {
+  .main .certificates__title {
     font-size: 2rem;
     padding-left: 5%;
   }
 }
 @media (max-width: 575px) {
-  .certificates .certificates__title {
+  .main .certificates__title {
     font-size: 2rem;
     padding-left: 8%;
   }
 }
-.certificates .certificates__carousel {
+.main .certificates__carousel {
   display: grid;
   grid-row: 3/4;
   grid-template-columns: 1fr 12fr 12fr 12fr 1fr;
@@ -913,62 +939,56 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   padding: 5% 0 5% 0;
 }
 @media (max-width: 576px) {
-  .certificates .certificates__carousel {
+  .main .certificates__carousel {
     grid-template-columns: 1fr 12fr 1fr;
     grid-template-rows: 1fr;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .certificates .certificates__carousel {
+  .main .certificates__carousel {
     grid-template-columns: 1fr 12fr 12fr 1fr;
     grid-template-rows: 1fr;
   }
 }
-
-.certificates__doc {
+.main__doc {
   display: grid;
   max-width: 100%;
 }
-
 @media (max-width: 576px) {
-  .certificates__docsecond {
+  .main__docsecond {
     display: none;
   }
 }
-
 @media (max-width: 767px) {
-  .certificates__docthird {
+  .main__docthird {
     display: none;
   }
 }
-
-.certificates__arrow {
+.main__arrow {
   display: grid;
   max-width: 100%;
 }
-
-.consultation__wrapper {
+.main .consultation__wrapper {
   display: grid;
   grid-template-rows: 5% 1fr;
   grid-template-columns: 1fr;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .consultation__wrapper {
+  .main .consultation__wrapper {
     grid-template-rows: 10% 1fr;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .consultation__wrapper {
+  .main .consultation__wrapper {
     grid-template-rows: 40% 1fr;
   }
 }
 @media (max-width: 575px) {
-  .consultation__wrapper {
+  .main .consultation__wrapper {
     grid-template-rows: 40% 1fr;
   }
 }
-
-.consultation {
+.main .consultation {
   display: grid;
   grid-row: 2/3;
   grid-template-columns: 1fr;
@@ -978,46 +998,46 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .consultation {
+  .main .consultation {
     background-color: #F2F3F5;
     grid-template-rows: 2fr 1fr 1fr 1fr;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .consultation {
+  .main .consultation {
     background-color: #F2F3F5;
     grid-template-rows: 2fr 1fr 1fr 1fr;
   }
 }
 @media (max-width: 575px) {
-  .consultation {
+  .main .consultation {
     grid-template-rows: 2fr 1fr 1fr 1fr;
     background-color: #F2F3F5;
   }
 }
-.consultation .consultation__title {
+.main .consultation__title {
   display: grid;
   max-width: 60%;
   padding: 10% 0 3% 4%;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .consultation .consultation__title {
+  .main .consultation__title {
     font-size: 4vw;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .consultation .consultation__title {
+  .main .consultation__title {
     padding-left: 5%;
     font-size: 4vw;
   }
 }
 @media (max-width: 575px) {
-  .consultation .consultation__title {
+  .main .consultation__title {
     font-size: 4vw;
     padding-left: 8%;
   }
 }
-.consultation .consultation__subtitle {
+.main .consultation__subtitle {
   display: grid;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1vw;
@@ -1026,60 +1046,64 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   color: #262626;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .consultation .consultation__subtitle {
+  .main .consultation__subtitle {
     max-width: 50%;
     font-size: 2vw;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .consultation .consultation__subtitle {
+  .main .consultation__subtitle {
     max-width: 55%;
     font-size: 2vw;
     padding-left: 5%;
   }
 }
 @media (max-width: 575px) {
-  .consultation .consultation__subtitle {
+  .main .consultation__subtitle {
     max-width: 60%;
     font-size: 2vw;
     padding-left: 8%;
   }
 }
-.consultation .consultation__subtitle .consultation__subtitle-number {
+.main .consultation__subtitle__subtitle-number {
   color: #0079FF;
   text-decoration: none;
 }
-.consultation .consultation__subtitle .consultation__subtitle-number:hover {
+.main .consultation__subtitle__subtitle-number:hover {
   color: #01678A;
 }
-.consultation .consultation__inputs {
+.main .consultation__inputs {
   display: grid;
   grid-template-columns: 2fr 4fr;
   grid-template-rows: 1fr;
   max-width: 50%;
   padding-left: 4%;
+  /*  .consultation__inputs-button {
+       padding-top: 4%;
+       max-width: 60%;
+   } */
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .consultation .consultation__inputs {
+  .main .consultation__inputs {
     max-width: 60%;
     padding-bottom: 3%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .consultation .consultation__inputs {
+  .main .consultation__inputs {
     max-width: 80%;
     padding-left: 5%;
     padding-bottom: 3%;
   }
 }
 @media (max-width: 575px) {
-  .consultation .consultation__inputs {
+  .main .consultation__inputs {
     max-width: 80%;
     padding-left: 8%;
     padding-bottom: 3%;
   }
 }
-.consultation .consultation__inputs .consultation__inputs-tel {
+.main .consultation__inputs__inputs-tel {
   border: none;
   max-width: 90%;
   color: #BBBBBB;
@@ -1088,11 +1112,7 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1vw;
 }
-.consultation .consultation__inputs .consultation__inputs-button {
-  padding-top: 4%;
-  max-width: 60%;
-}
-.consultation .consultation__agreement {
+.main .consultation__agreement {
   display: grid;
   max-width: 30%;
   font-family: Arial, Helvetica, sans-serif;
@@ -1101,33 +1121,33 @@ footer .polyci, footer .licence, .consultation .consultation__agreement, .consul
   margin-top: 1%;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .consultation .consultation__agreement {
+  .main .consultation__agreement {
     font-size: 2vw;
     max-width: 100%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .consultation .consultation__agreement {
+  .main .consultation__agreement {
     padding-left: 5%;
     font-size: 2vw;
     max-width: 100%;
   }
 }
 @media (max-width: 575px) {
-  .consultation .consultation__agreement {
+  .main .consultation__agreement {
     max-width: 100%;
     font-size: 2vw;
     padding-left: 8%;
   }
 }
-.consultation .consultation__agreement .consultation__agreement-href {
+.main .consultation__agreement__agreement-href {
   color: black;
 }
-.consultation .consultation__agreement .consultation__agreement-href:hover {
+.main .consultation__agreement__agreement-href:hover {
   color: #01678A;
 }
 
-footer {
+.footer {
   display: grid;
   grid-template-columns: 2% 2fr 5% 4fr 3% 2fr 5% 1fr 1%;
   grid-template-rows: 2fr 2fr 1fr;
@@ -1135,62 +1155,41 @@ footer {
   background-color: #F2F3F5;
 }
 @media (max-width: 767px) {
-  footer {
+  .footer {
     display: none;
   }
 }
-footer .nets {
+.footer .nets {
   display: grid;
   grid-area: 2/2/3/3;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   justify-content: center;
 }
-footer .licence {
+.footer .licence {
   display: grid;
   grid-area: 2/4/3/5;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1vw;
   text-align: center;
 }
-footer .polyci {
+.footer .polyci {
   display: grid;
   grid-area: 2/6/3/7;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1vw;
 }
-footer .polyci:hover {
+.footer .polyci:hover {
   color: #01678A;
 }
-footer .logo {
+.footer .logo {
   display: grid;
   grid-area: 2/8/3/9;
 }
 
 /*Конец блока Анна Мычко*/
 /*Начало блока Татьяна Семашко*/
-@font-face {
-  font-family: "Panton";
-  src: url("../fonts/Panton-Bold.ttf");
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-}
-
 .subtitle {
   width: 100%;
   padding-top: 35px;
@@ -1220,6 +1219,8 @@ html {
 .btn_size_big {
   font-size: 0.9rem;
   margin-left: 20px;
+  line-height: 129%;
+  min-height: 71px;
 }
 @media (max-width: 575px) {
   .btn_size_big {
@@ -1242,7 +1243,7 @@ html {
 }
 
 .tel:hover {
-  background-color: #FBFBFB;
+  background-color: #FFFFFF;
   color: #01678A;
   border-color: #01678A;
 }
@@ -1310,7 +1311,7 @@ html {
   }
 }
 .controlcontriner__contents__text {
-  color: #737373;
+  color: #AAAAAA;
 }
 .controlcontriner__contents__logoclin {
   color: #1A3444;
