@@ -503,7 +503,7 @@ footer .polyci, footer .licence, .main .consultation__agreement, .main .consulta
   }
 }
 .main .main-links .cards {
-  background-color: #D5D5D5;
+  background-color: #FBFBFB;
   border-radius: 5px;
   padding: 50px;
 }
@@ -920,16 +920,6 @@ footer .polyci, footer .licence, .main .consultation__agreement, .main .consulta
     grid-template-rows: 25% 1fr 2fr;
   }
 }
-@media (min-width: 576px) and (max-width: 767px) {
-  .main .certificates {
-    grid-template-rows: 70% 1fr 2fr;
-  }
-}
-@media (max-width: 575px) {
-  .main .certificates {
-    grid-template-rows: 40% 1fr 2fr;
-  }
-}
 .main .certificates__title {
   display: grid;
   grid-row: 2/3;
@@ -962,15 +952,15 @@ footer .polyci, footer .licence, .main .consultation__agreement, .main .consulta
   align-items: center;
   padding: 5% 0 5% 0;
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .main .certificates__carousel {
-    grid-template-columns: 1fr 12fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .main .certificates__carousel {
-    grid-template-columns: 1fr 12fr 12fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
 }
@@ -984,13 +974,23 @@ footer .polyci, footer .licence, .main .consultation__agreement, .main .consulta
   }
 }
 @media (max-width: 767px) {
-  .main__docthird {
+  .main .docthird {
     display: none;
   }
 }
-.main__arrow {
+.main .arrow {
   display: grid;
   max-width: 100%;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .main .arrow {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .main .arrow {
+    display: none;
+  }
 }
 .main .consultation__wrapper {
   display: grid;
@@ -1280,12 +1280,14 @@ footer .logo {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  width: 600px;
-  height: 600px;
+  width: 50%;
+  height: 130%;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .subtitle-img {
     display: none;
+    width: 0px;
+    height: 300px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1310,6 +1312,7 @@ footer .logo {
   font-size: 5vw;
   margin-top: 153px;
   margin-bottom: 153px;
+  padding-left: 5%;
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .controlcontriner {
@@ -1464,6 +1467,7 @@ footer .logo {
   padding-bottom: 62px;
   max-width: 100%;
   background-image: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
+  padding-left: 5%;
   margin-top: 153px;
 }
 @media (max-width: 575px) {
@@ -1507,13 +1511,30 @@ footer .logo {
 .link-pade {
   color: #4B4B4B;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .link-pade {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .link-pade {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 575px) {
+  .link-pade {
+    max-width: 100%;
+    font-size: 0.6rem;
+  }
+}
 
 .processing {
+  color: #4B4B4B;
   color: #4B4B4B;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .processing {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1524,7 +1545,7 @@ footer .logo {
 @media (max-width: 575px) {
   .processing {
     max-width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -1540,7 +1561,7 @@ footer .logo {
 }
 @media (max-width: 575px) {
   .textprioritet {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
 

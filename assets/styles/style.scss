@@ -603,7 +603,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         }
 
         .cards {
-            background-color: $lgray;
+            background-color:$white;
             border-radius: 5px;
             padding: 50px;
 
@@ -1078,11 +1078,11 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         }
 
         @media(min-width:576px) and (max-width:767px) {
-            grid-template-rows: 70% 1fr 2fr;
+            
         }
 
         @media (max-width:575px) {
-            grid-template-rows: 40% 1fr 2fr;
+           
         }
 
         &__title {
@@ -1117,15 +1117,17 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             padding: 5% 0 5% 0;
 
 
-            @media (max-width:576px) {
+            @media (max-width:575px) {
 
-                grid-template-columns: 1fr 12fr 1fr;
+                grid-template-columns: 1fr;
                 grid-template-rows: 1fr;
+              
             }
 
             @media(min-width:576px) and (max-width:767px) {
-                grid-template-columns: 1fr 12fr 12fr 1fr;
+                grid-template-columns: 1fr;
                 grid-template-rows: 1fr;
+               
             }
         }
     }
@@ -1143,16 +1145,23 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         }
     }
 
-    &__docthird {
+    .docthird {
         @media (max-width:767px) {
             display: none;
 
         }
     }
 
-    &__arrow {
+    .arrow {
         display: grid;
         max-width: 100%;
+        @media(min-width:576px) and (max-width:767px) {
+            display: none;
+        }
+
+        @media (max-width:575px) {
+           display: none;
+        }
     }
 
 
@@ -1489,13 +1498,15 @@ footer {
     position: absolute;
     bottom: 0px;
     right: 0px;
-    width: 600px;
-    height: 600px;
+    width:50%;
+    height:130% ;
 
     @media(min-width:768px) and (max-width:1199px) {
 
 
         display: none;
+        width:00px;
+    height: 300px;
     }
 
     @media(min-width:576px) and (max-width:767px) {
@@ -1524,6 +1535,7 @@ footer {
     font-size: 5vw;
     margin-top: 153px;
     margin-bottom: 153px;
+    padding-left: 5%;
 
     @media(min-width:768px) and (max-width:1199px) {}
 
@@ -1695,7 +1707,7 @@ footer {
     padding-bottom: 62px;
     max-width: 100%;
     background-image: $bacgrimg;
-
+    padding-left:5%;
     margin-top: 153px;
 
     @media (max-width:575px) {
@@ -1739,14 +1751,9 @@ footer {
 
 .link-pade {
     color: $bl1graylight2;
-}
-
-.processing {
-    color: $bl1graylight2;
-
     @media(min-width:768px) and (max-width:1199px) {
 
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     @media(min-width:576px) and (max-width:767px) {
@@ -1757,8 +1764,29 @@ footer {
     @media (max-width:575px) {
 
         max-width: 100%;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
+}
+
+.processing {
+    color: $bl1graylight2;
+    color: $bl1graylight2;
+    @media(min-width:768px) and (max-width:1199px) {
+
+        font-size: 1rem;
+    }
+
+    @media(min-width:576px) and (max-width:767px) {
+        font-size: 1rem;
+
+    }
+
+    @media (max-width:575px) {
+
+        max-width: 100%;
+        font-size: 0.6rem;
+    }
+   
 }
 
 .textprioritet {
@@ -1772,7 +1800,7 @@ footer {
     }
 
     @media (max-width:575px) {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 }
 
