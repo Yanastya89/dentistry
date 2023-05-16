@@ -14,7 +14,7 @@ html {
     font-size: 16px;
     font-weight: 400;
 }
-
+/* ------------------------ */
 $blue: #38BCEA;
 $white: #FFFFFF;
 $hover: #01678A;
@@ -28,6 +28,20 @@ $bl1gray: #4E4E4E;
 $bl1darkblue: #1A3444;
 $bl1graylight: #6F6F6F;
 $bl1graylight2: #4B4B4B;
+
+/* ------------------------ */
+$tel: #BBBBBB;
+$colorbutton: #38BCEA;
+$colorbuttongr: #F9F9F9;
+$bacgrimg: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
+$bacgrcont: #FBFBFB;
+@font-face {
+    font-family: 'Panton';
+    src: url('../fonts/Panton-Bold.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* ---------------------------------------------- */
 
 .btn {
     background-color: $blue;
@@ -797,7 +811,7 @@ $lgray: #D5D5D5;
 
 }
 
-.doctors__card-name {
+&__card-name {
     font-family: $fontpan;
     font-size: 1.7vw;
     @extend %font-align;
@@ -816,7 +830,7 @@ $lgray: #D5D5D5;
     }
 }
 
-.doctors__card-prof {
+&__card-prof {
     font-family: $fontarial;
     @extend %font-align;
     font-size: 1.25rem;
@@ -836,7 +850,7 @@ $lgray: #D5D5D5;
 
 }
 
-.doctors__card-experience {
+&__card-experience {
     font-family: $fontarial;
     font-size: 1vw;
     @extend %font-align;
@@ -874,7 +888,7 @@ $lgray: #D5D5D5;
 
 
 
-    .doctors__card {
+    &__card {
         display: grid;
         max-width: 70%;
         max-height: 50%;
@@ -899,7 +913,7 @@ $lgray: #D5D5D5;
 
 
 
-    .doctors__firstphoto {
+    &__firstphoto {
 
         grid-area: 1/2/2/3;
 
@@ -911,7 +925,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .doctors__firstcard {
+    &__firstcard {
         @extend %card-size;
         grid-area: 1/2/2/3;
 
@@ -922,7 +936,7 @@ $lgray: #D5D5D5;
 
     }
 
-    .doctors__secondphoto {
+    &__secondphoto {
         @extend %card-size;
         grid-area: 1/3/2/4;
 
@@ -933,7 +947,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .doctors__secondcard {
+    &__secondcard {
 
         grid-area: 1/3/2/4;
         @extend %card-size;
@@ -943,7 +957,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .doctors__thirdphoto {
+    &__thirdphoto {
         @extend %card-size;
         grid-area: 2/2/3/3;
 
@@ -954,7 +968,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .doctors__thirdcard {
+    &__thirdcard {
 
         grid-area: 2/2/3/3;
         @extend %card-size;
@@ -964,7 +978,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .doctors__fourthphoto {
+    &__fourthphoto {
         @extend %card-size;
         grid-area: 2/3/3/4;
 
@@ -975,7 +989,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .doctors__fourthcard {
+    &__fourthcard {
         @extend %card-size;
         grid-area: 2/3/3/4;
 
@@ -985,7 +999,7 @@ $lgray: #D5D5D5;
 
     }
 
-    .doctors__fifthphoto {
+    &__fifthphoto {
         @extend %card-size;
         grid-area: 3/2/4/3;
 
@@ -996,7 +1010,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .doctors__fifthcard {
+    &__fifthcard {
         @extend %card-size;
         grid-area: 3/2/4/3;
 
@@ -1025,7 +1039,7 @@ $lgray: #D5D5D5;
         grid-template-rows: 40% 1fr 2fr;
     }
 
-    .certificates__title {
+    &__title {
         display: grid;
         grid-row: 2/3;
         padding-left: 4%;
@@ -1047,7 +1061,7 @@ $lgray: #D5D5D5;
 
     }
 
-    .certificates__carousel {
+    &__carousel {
         display: grid;
         grid-row: 3/4;
         grid-template-columns: 1fr 12fr 12fr 12fr 1fr;
@@ -1071,26 +1085,26 @@ $lgray: #D5D5D5;
 }
 
 
-.certificates__doc {
+&__doc {
     display: grid;
     max-width: 100%;
 }
 
-.certificates__docsecond {
+&__docsecond {
     @media (max-width:576px) {
         display: none;
 
     }
 }
 
-.certificates__docthird {
+&__docthird {
     @media (max-width:767px) {
         display: none;
 
     }
 }
 
-.certificates__arrow {
+&__arrow {
     display: grid;
     max-width: 100%;
 }
@@ -1145,7 +1159,7 @@ $lgray: #D5D5D5;
 
 
 
-    .consultation__title {
+    &__title {
         display: grid;
 
         max-width: 60%;
@@ -1166,7 +1180,7 @@ $lgray: #D5D5D5;
         }
     }
 
-    .consultation__subtitle {
+    &__subtitle {
         display: grid;
 
         font-family: $fontarial;
@@ -1193,12 +1207,12 @@ $lgray: #D5D5D5;
             padding-left: 8%;
         }
 
-        .consultation__subtitle-number {
+        &__subtitle-number {
             color: #0079FF;
             text-decoration: none;
         }
 
-        .consultation__subtitle-number:hover {
+        &__subtitle-number:hover {
             color: $hover;
 
         }
@@ -1209,7 +1223,7 @@ $lgray: #D5D5D5;
 
 
 
-    .consultation__inputs {
+    &__inputs {
         display: grid;
         grid-template-columns: 2fr 4fr;
         grid-template-rows: 1fr;
@@ -1233,7 +1247,7 @@ $lgray: #D5D5D5;
             padding-bottom: 3%;
         }
 
-        .consultation__inputs-tel {
+        &__inputs-tel {
             border: none;
             max-width: 90%;
             color: #BBBBBB;
@@ -1251,7 +1265,7 @@ $lgray: #D5D5D5;
         } */
     }
 
-    .consultation__agreement {
+    &__agreement {
         display: grid;
 
         max-width: 30%;
@@ -1278,11 +1292,11 @@ $lgray: #D5D5D5;
             padding-left: 8%;
         }
 
-        .consultation__agreement-href {
+        &__agreement-href {
             color: black;
         }
 
-        .consultation__agreement-href:hover {
+        &__agreement-href:hover {
             color: $hover;
         }
     }
@@ -1291,16 +1305,13 @@ $lgray: #D5D5D5;
 }
 
 
-footer {
+.footer { 
     display: grid;
     grid-template-columns: 2% 2fr 5% 4fr 3% 2fr 5% 1fr 1%;
     grid-template-rows: 2fr 2fr 1fr;
     align-items: center;
-
-
     background-color:
         #F2F3F5;
-
 
     @media (max-width:767px) {
         display: none;
@@ -1354,36 +1365,6 @@ footer {
 /*Конец блока Анна Мычко*/
 /*Начало блока Татьяна Семашко*/
 
-@font-face {
-    font-family: 'Panton';
-    src: url('../fonts/Panton-Bold.ttf');
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-$tel: #BBBBBB;
-$colorbutton: #38BCEA;
-$colorbuttongr: #F9F9F9;
-$bacgrimg: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
-$bacgrcont: #FBFBFB;
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-html {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-}
 
 
 

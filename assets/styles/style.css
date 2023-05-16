@@ -17,6 +17,13 @@ html {
   font-weight: 400;
 }
 
+/* ------------------------ */
+/* ------------------------ */
+@font-face {
+  font-family: "Panton";
+  src: url("../fonts/Panton-Bold.ttf");
+}
+/* ---------------------------------------------- */
 .btn {
   background-color: #38BCEA;
   color: #FFFFFF;
@@ -35,12 +42,12 @@ html {
   border-color: #01678A;
 }
 
-footer .polyci, footer .licence, .main .consultation .consultation__agreement, .main .consultation .consultation__inputs .consultation__inputs-tel, .main .consultation .consultation__subtitle, .main .doctors__card-experience, .main .doctors__card-prof, .main .doctors__card-name, .main .doctitle__main {
+.footer .polyci, .footer .licence, .main .consultation__agreement, .main .consultation__inputs__inputs-tel, .main .consultation__subtitle, .main__card-experience, .main__card-prof, .main__card-name, .main .doctitle__main {
   line-height: 100%;
   vertical-align: top;
 }
 
-.main .doctors .doctors__fifthcard, .main .doctors .doctors__fifthphoto, .main .doctors .doctors__fourthcard, .main .doctors .doctors__fourthphoto, .main .doctors .doctors__thirdcard, .main .doctors .doctors__thirdphoto, .main .doctors .doctors__secondcard, .main .doctors .doctors__secondphoto, .main .doctors .doctors__firstcard, .main .doctors .doctors__firstphoto {
+.main .doctors__fifthcard, .main .doctors__fifthphoto, .main .doctors__fourthcard, .main .doctors__fourthphoto, .main .doctors__thirdcard, .main .doctors__thirdphoto, .main .doctors__secondcard, .main .doctors__secondphoto, .main .doctors__firstcard, .main .doctors__firstphoto {
   display: grid;
   max-width: 100%;
   border-radius: 2px;
@@ -692,61 +699,61 @@ footer .polyci, footer .licence, .main .consultation .consultation__agreement, .
     padding: 0 0 4% 6%;
   }
 }
-.main .doctors__card-name {
+.main__card-name {
   font-family: "Panton", Arial, Helvetica, sans-serif;
   font-size: 1.7vw;
   max-width: 60%;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .main .doctors__card-name {
+  .main__card-name {
     font-size: 1.6vw;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .main .doctors__card-name {
+  .main__card-name {
     font-size: 3vw;
   }
 }
 @media (max-width: 575px) {
-  .main .doctors__card-name {
+  .main__card-name {
     font-size: 3vw;
   }
 }
-.main .doctors__card-prof {
+.main__card-prof {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .main .doctors__card-prof {
+  .main__card-prof {
     font-size: 1.3vw;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .main .doctors__card-prof {
+  .main__card-prof {
     font-size: 2vw;
   }
 }
 @media (max-width: 575px) {
-  .main .doctors__card-prof {
+  .main__card-prof {
     font-size: 2.5vw;
   }
 }
-.main .doctors__card-experience {
+.main__card-experience {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1vw;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .main .doctors__card-experience {
+  .main__card-experience {
     font-size: 1.3vw;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .main .doctors__card-experience {
+  .main__card-experience {
     font-size: 2vw;
   }
 }
 @media (max-width: 575px) {
-  .main .doctors__card-experience {
+  .main__card-experience {
     font-size: 2.5vw;
   }
 }
@@ -769,112 +776,112 @@ footer .polyci, footer .licence, .main .consultation .consultation__agreement, .
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
 }
-.main .doctors .doctors__card {
+.main .doctors__card {
   display: grid;
   max-width: 70%;
   max-height: 50%;
   padding: 5% 0 0 5%;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .main .doctors .doctors__card {
+  .main .doctors__card {
     max-height: 60%;
     max-width: 60%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .main .doctors .doctors__card {
+  .main .doctors__card {
     max-height: 70%;
     max-width: 70%;
   }
 }
 @media (max-width: 575px) {
-  .main .doctors .doctors__card {
+  .main .doctors__card {
     max-height: 80%;
     max-width: 60%;
   }
 }
-.main .doctors .doctors__firstphoto {
+.main .doctors__firstphoto {
   grid-area: 1/2/2/3;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
 @media (max-width: 766px) {
-  .main .doctors .doctors__firstphoto {
+  .main .doctors__firstphoto {
     grid-area: 1/2/2/3;
   }
 }
-.main .doctors .doctors__firstcard {
+.main .doctors__firstcard {
   grid-area: 1/2/2/3;
 }
 @media (max-width: 766px) {
-  .main .doctors .doctors__firstcard {
+  .main .doctors__firstcard {
     grid-area: 1/2/2/3;
   }
 }
-.main .doctors .doctors__secondphoto {
+.main .doctors__secondphoto {
   grid-area: 1/3/2/4;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
 @media (max-width: 766px) {
-  .main .doctors .doctors__secondphoto {
+  .main .doctors__secondphoto {
     grid-area: 2/2/3/3;
   }
 }
-.main .doctors .doctors__secondcard {
+.main .doctors__secondcard {
   grid-area: 1/3/2/4;
 }
 @media (max-width: 766px) {
-  .main .doctors .doctors__secondcard {
+  .main .doctors__secondcard {
     grid-area: 2/2/3/3;
   }
 }
-.main .doctors .doctors__thirdphoto {
+.main .doctors__thirdphoto {
   grid-area: 2/2/3/3;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
 @media (max-width: 766px) {
-  .main .doctors .doctors__thirdphoto {
+  .main .doctors__thirdphoto {
     grid-area: 3/2/4/3;
   }
 }
-.main .doctors .doctors__thirdcard {
+.main .doctors__thirdcard {
   grid-area: 2/2/3/3;
 }
 @media (max-width: 766px) {
-  .main .doctors .doctors__thirdcard {
+  .main .doctors__thirdcard {
     grid-area: 3/2/4/3;
   }
 }
-.main .doctors .doctors__fourthphoto {
+.main .doctors__fourthphoto {
   grid-area: 2/3/3/4;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
 @media (max-width: 766px) {
-  .main .doctors .doctors__fourthphoto {
+  .main .doctors__fourthphoto {
     grid-area: 4/2/5/3;
   }
 }
-.main .doctors .doctors__fourthcard {
+.main .doctors__fourthcard {
   grid-area: 2/3/3/4;
 }
 @media (max-width: 766px) {
-  .main .doctors .doctors__fourthcard {
+  .main .doctors__fourthcard {
     grid-area: 4/2/5/3;
   }
 }
-.main .doctors .doctors__fifthphoto {
+.main .doctors__fifthphoto {
   grid-area: 3/2/4/3;
   box-shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 }
 @media (max-width: 766px) {
-  .main .doctors .doctors__fifthphoto {
+  .main .doctors__fifthphoto {
     grid-area: 5/2/6/3;
   }
 }
-.main .doctors .doctors__fifthcard {
+.main .doctors__fifthcard {
   grid-area: 3/2/4/3;
 }
 @media (max-width: 766px) {
-  .main .doctors .doctors__fifthcard {
+  .main .doctors__fifthcard {
     grid-area: 5/2/6/3;
   }
 }
@@ -899,30 +906,30 @@ footer .polyci, footer .licence, .main .consultation .consultation__agreement, .
     grid-template-rows: 40% 1fr 2fr;
   }
 }
-.main .certificates .certificates__title {
+.main .certificates__title {
   display: grid;
   grid-row: 2/3;
   padding-left: 4%;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .main .certificates .certificates__title {
+  .main .certificates__title {
     font-size: 2rem;
     padding-left: 4%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .main .certificates .certificates__title {
+  .main .certificates__title {
     font-size: 2rem;
     padding-left: 5%;
   }
 }
 @media (max-width: 575px) {
-  .main .certificates .certificates__title {
+  .main .certificates__title {
     font-size: 2rem;
     padding-left: 8%;
   }
 }
-.main .certificates .certificates__carousel {
+.main .certificates__carousel {
   display: grid;
   grid-row: 3/4;
   grid-template-columns: 1fr 12fr 12fr 12fr 1fr;
@@ -932,32 +939,32 @@ footer .polyci, footer .licence, .main .consultation .consultation__agreement, .
   padding: 5% 0 5% 0;
 }
 @media (max-width: 576px) {
-  .main .certificates .certificates__carousel {
+  .main .certificates__carousel {
     grid-template-columns: 1fr 12fr 1fr;
     grid-template-rows: 1fr;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .main .certificates .certificates__carousel {
+  .main .certificates__carousel {
     grid-template-columns: 1fr 12fr 12fr 1fr;
     grid-template-rows: 1fr;
   }
 }
-.main .certificates__doc {
+.main__doc {
   display: grid;
   max-width: 100%;
 }
 @media (max-width: 576px) {
-  .main .certificates__docsecond {
+  .main__docsecond {
     display: none;
   }
 }
 @media (max-width: 767px) {
-  .main .certificates__docthird {
+  .main__docthird {
     display: none;
   }
 }
-.main .certificates__arrow {
+.main__arrow {
   display: grid;
   max-width: 100%;
 }
@@ -1008,29 +1015,29 @@ footer .polyci, footer .licence, .main .consultation .consultation__agreement, .
     background-color: #F2F3F5;
   }
 }
-.main .consultation .consultation__title {
+.main .consultation__title {
   display: grid;
   max-width: 60%;
   padding: 10% 0 3% 4%;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .main .consultation .consultation__title {
+  .main .consultation__title {
     font-size: 4vw;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .main .consultation .consultation__title {
+  .main .consultation__title {
     padding-left: 5%;
     font-size: 4vw;
   }
 }
 @media (max-width: 575px) {
-  .main .consultation .consultation__title {
+  .main .consultation__title {
     font-size: 4vw;
     padding-left: 8%;
   }
 }
-.main .consultation .consultation__subtitle {
+.main .consultation__subtitle {
   display: grid;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1vw;
@@ -1039,33 +1046,33 @@ footer .polyci, footer .licence, .main .consultation .consultation__agreement, .
   color: #262626;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .main .consultation .consultation__subtitle {
+  .main .consultation__subtitle {
     max-width: 50%;
     font-size: 2vw;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .main .consultation .consultation__subtitle {
+  .main .consultation__subtitle {
     max-width: 55%;
     font-size: 2vw;
     padding-left: 5%;
   }
 }
 @media (max-width: 575px) {
-  .main .consultation .consultation__subtitle {
+  .main .consultation__subtitle {
     max-width: 60%;
     font-size: 2vw;
     padding-left: 8%;
   }
 }
-.main .consultation .consultation__subtitle .consultation__subtitle-number {
+.main .consultation__subtitle__subtitle-number {
   color: #0079FF;
   text-decoration: none;
 }
-.main .consultation .consultation__subtitle .consultation__subtitle-number:hover {
+.main .consultation__subtitle__subtitle-number:hover {
   color: #01678A;
 }
-.main .consultation .consultation__inputs {
+.main .consultation__inputs {
   display: grid;
   grid-template-columns: 2fr 4fr;
   grid-template-rows: 1fr;
@@ -1077,26 +1084,26 @@ footer .polyci, footer .licence, .main .consultation .consultation__agreement, .
    } */
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .main .consultation .consultation__inputs {
+  .main .consultation__inputs {
     max-width: 60%;
     padding-bottom: 3%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .main .consultation .consultation__inputs {
+  .main .consultation__inputs {
     max-width: 80%;
     padding-left: 5%;
     padding-bottom: 3%;
   }
 }
 @media (max-width: 575px) {
-  .main .consultation .consultation__inputs {
+  .main .consultation__inputs {
     max-width: 80%;
     padding-left: 8%;
     padding-bottom: 3%;
   }
 }
-.main .consultation .consultation__inputs .consultation__inputs-tel {
+.main .consultation__inputs__inputs-tel {
   border: none;
   max-width: 90%;
   color: #BBBBBB;
@@ -1105,7 +1112,7 @@ footer .polyci, footer .licence, .main .consultation .consultation__agreement, .
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1vw;
 }
-.main .consultation .consultation__agreement {
+.main .consultation__agreement {
   display: grid;
   max-width: 30%;
   font-family: Arial, Helvetica, sans-serif;
@@ -1114,33 +1121,33 @@ footer .polyci, footer .licence, .main .consultation .consultation__agreement, .
   margin-top: 1%;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .main .consultation .consultation__agreement {
+  .main .consultation__agreement {
     font-size: 2vw;
     max-width: 100%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .main .consultation .consultation__agreement {
+  .main .consultation__agreement {
     padding-left: 5%;
     font-size: 2vw;
     max-width: 100%;
   }
 }
 @media (max-width: 575px) {
-  .main .consultation .consultation__agreement {
+  .main .consultation__agreement {
     max-width: 100%;
     font-size: 2vw;
     padding-left: 8%;
   }
 }
-.main .consultation .consultation__agreement .consultation__agreement-href {
+.main .consultation__agreement__agreement-href {
   color: black;
 }
-.main .consultation .consultation__agreement .consultation__agreement-href:hover {
+.main .consultation__agreement__agreement-href:hover {
   color: #01678A;
 }
 
-footer {
+.footer {
   display: grid;
   grid-template-columns: 2% 2fr 5% 4fr 3% 2fr 5% 1fr 1%;
   grid-template-rows: 2fr 2fr 1fr;
@@ -1148,62 +1155,41 @@ footer {
   background-color: #F2F3F5;
 }
 @media (max-width: 767px) {
-  footer {
+  .footer {
     display: none;
   }
 }
-footer .nets {
+.footer .nets {
   display: grid;
   grid-area: 2/2/3/3;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   justify-content: center;
 }
-footer .licence {
+.footer .licence {
   display: grid;
   grid-area: 2/4/3/5;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1vw;
   text-align: center;
 }
-footer .polyci {
+.footer .polyci {
   display: grid;
   grid-area: 2/6/3/7;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1vw;
 }
-footer .polyci:hover {
+.footer .polyci:hover {
   color: #01678A;
 }
-footer .logo {
+.footer .logo {
   display: grid;
   grid-area: 2/8/3/9;
 }
 
 /*Конец блока Анна Мычко*/
 /*Начало блока Татьяна Семашко*/
-@font-face {
-  font-family: "Panton";
-  src: url("../fonts/Panton-Bold.ttf");
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-}
-
 .subtitle {
   width: 100%;
   padding-top: 35px;
