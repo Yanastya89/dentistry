@@ -1008,17 +1008,17 @@ $lgray: #D5D5D5;
         padding-left: 4%;
 
         @media(min-width:768px) and (max-width:1199px) {
-            font-size: 4vw;
+            font-size: 2rem;
             padding-left: 4%;
         }
 
         @media(min-width:576px) and (max-width:767px) {
-            font-size: 6vw;
+            font-size: 2rem;
             padding-left: 5%;
         }
 
         @media (max-width:575px) {
-            font-size: 7vw;
+            font-size: 2rem;
             padding-left: 8%;
         }
 
@@ -1086,7 +1086,7 @@ $lgray: #D5D5D5;
 
 
     @media(min-width:576px) and (max-width:767px) {
-        grid-template-rows: 90% 1fr;
+        grid-template-rows: 40% 1fr;
     }
 
 
@@ -1107,16 +1107,16 @@ $lgray: #D5D5D5;
 
     @media(min-width:768px) and (max-width:1199px) {
         background-color: #F2F3F5;
-        grid-template-rows: 3fr 2fr 1fr 2fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr;
     }
 
     @media(min-width:576px) and (max-width:767px) {
         background-color: #F2F3F5;
-        grid-template-rows: 3fr 2fr 1fr 2fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr;
     }
 
     @media (max-width:575px) {
-        grid-template-rows: 3fr 2fr 1fr 2fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr;
         background-color: #F2F3F5;
     }
 
@@ -1199,7 +1199,7 @@ $lgray: #D5D5D5;
         }
 
         @media(min-width:576px) and (max-width:767px) {
-            max-width: 70%;
+            max-width: 80%;
             padding-left: 5%;
             padding-bottom: 3%;
         }
