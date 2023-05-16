@@ -640,7 +640,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             opacity: 1px;
             display: block;
             position: absolute;
-            z-index: 100;
+            z-index: -1;
         }
 
         .cards__img_first:hover {
