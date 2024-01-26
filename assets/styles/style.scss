@@ -14,6 +14,8 @@ html {
     font-size: 16px;
     font-weight: 400;
 }
+
+/* ------------------------ */
 $blue: #38BCEA;
 $white: #FFFFFF;
 $hover: #01678A;
@@ -28,7 +30,7 @@ $bl1darkblue: #1A3444;
 $bl1graylight: #6F6F6F;
 $bl1graylight2: #4B4B4B;
 
-
+/* ------------------------ */
 $tel: #BBBBBB;
 $colorbutton: #38BCEA;
 $colorbuttongr: #F9F9F9;
@@ -42,6 +44,7 @@ $bacgrcont: #FBFBFB;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+/* ---------------------------------------------- */
 
 .btn {
     background-color: $blue;
@@ -79,9 +82,8 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     border-radius: 2px;
 }
 
-
+/* ------------------------------------------------------------ */
 .title {
-    width: 23rem;
     font-family: $fontpan;
     font-weight: 700;
     font-size: 3rem;
@@ -92,7 +94,10 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         font-size: 2rem;
     }
 
-
+    /*     @media screen and (max-width: 767px) {
+        font-size: 1.5rem;
+    } */
+}
 
 ._ibg {
     position: relative;
@@ -123,7 +128,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
     content: "";
     position: absolute;
-    width: 1650px;
+    width: 100vw;
     height: 100%;
     top: 0;
     background-color: white;
@@ -134,7 +139,6 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     position: fixed;
     top: 0;
     z-index: 50;
-    width: 1650px;
 
     &__container {
         position: relative;
@@ -162,9 +166,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         border: 1px solid $hover;
     }
 
-    &__social 
-    {
-        padding-right: 30px;
+    &__social {
         @media(max-width:575px) {
             display: none;
 
@@ -175,7 +177,6 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         }
 
         .social {
-            
             &__link {
                 border: 1px solid $transparent;
             }
@@ -214,7 +215,37 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
         }
     }
-   
+
+    &__address {
+        @media(max-width:767px) {
+            display: none;
+        }
+
+        max-width: 176px;
+        margin-left: 3rem;
+        color: $darkgray;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        gap: 9px;
+        font-family: Arial,
+        Helvetica,
+        sans-serif;
+        font-size: 15px;
+
+
+        .address {
+            &__link {
+                border: 1px solid $transparent;
+            }
+
+            &__link:hover {
+                border: 1px solid $hover;
+            }
+        }
+
+    }
 
     &__calendar {
         @media(max-width:1439px) {
@@ -292,6 +323,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
         }
     }
+
 }
 
 .main {
@@ -318,7 +350,10 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
                     line-height: 115%;
                     color: $bl1gray;
                     padding-bottom: 17px;
-             
+                    /*   @media screen and (max-width: 767px) {
+                    font-size: 1rem;
+                } */
+
                 }
 
                 &__item-2 {
@@ -379,7 +414,8 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         }
     }
 
-       .page__row {
+    /* --------------------------------------------------------------- */
+    .page__row {
         position: relative;
         z-index: 2;
         display: flex;
@@ -453,6 +489,9 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         }
     }
 
+
+
+    /*Начало блока 2 Анастасия Добровольская*/
     $darkblue: #12354B;
     $gray: #737373;
     $dark: #454545;
@@ -462,6 +501,8 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     $lightblack: #292929;
     $white: #FBFBFB;
     $lgray: #D5D5D5;
+
+
 
     .main-links {
         display: grid;
@@ -492,7 +533,6 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
         .text__price {
             font-family: Arial, Helvetica, sans-serif;
-            width: 30rem;
             font-size: 24px;
             font-weight: 400;
             line-height: 28px;
@@ -587,6 +627,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             }
         }
 
+        //Замена цвета картинки
         .cards__img_first,
         .cards__img_second {
             border: 2px solid transparent;
@@ -615,6 +656,10 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             max-width: 100%;
             min-height: 40%;
         }
+
+        //
+
+
         .cards:hover {
             background: $blue;
             box-shadow: 0 0 10px $blue;
@@ -750,6 +795,11 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
         }
     }
+
+    /*Конец блока 2 Анастасия Добровольская*/
+
+    /*Начало блока Анна Мычко*/
+
     .doctitle {
         display: grid;
         grid-template-columns: 1fr;
@@ -882,6 +932,8 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         }
 
+
+
         &__card {
             display: grid;
             max-width: 70%;
@@ -905,6 +957,8 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
 
         }
 
+
+
         &__firstphoto {
 
             grid-area: 1/2/2/3;
@@ -924,6 +978,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             @media (max-width:766px) {
                 grid-area: 1/2/2/3;
             }
+
 
         }
 
@@ -1109,6 +1164,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         }
     }
 
+
     .consultation__wrapper {
         display: grid;
         grid-template-rows: 5% 1fr;
@@ -1119,9 +1175,13 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             grid-template-rows: 10% 1fr;
         }
 
+
+
         @media(min-width:576px) and (max-width:767px) {
             grid-template-rows: 40% 1fr;
         }
+
+
 
         @media (max-width:575px) {
             grid-template-rows: 40% 1fr;
@@ -1151,6 +1211,8 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
             grid-template-rows: 2fr 1fr 1fr 1fr;
             background-color: #F2F3F5;
         }
+
+
 
         &__title {
             display: grid;
@@ -1212,6 +1274,10 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
         }
 
 
+
+
+
+
         &__inputs {
             display: grid;
             grid-template-columns: 2fr 4fr;
@@ -1248,6 +1314,10 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
                 @extend %font-align;
             }
 
+            /*  .consultation__inputs-button {
+            padding-top: 4%;
+            max-width: 60%;
+        } */
         }
 
         &__agreement {
@@ -1289,6 +1359,7 @@ $shadow: 0 13px 50px rgba(192, 192, 192, 0.2);
     }
 }
 
+
 footer {
     display: grid;
     grid-template-columns: 2% 2fr 5% 4fr 3% 2fr 5% 1fr 1%;
@@ -1300,6 +1371,7 @@ footer {
     @media (max-width:767px) {
         display: none;
     }
+
 
     .nets {
         display: grid;
@@ -1318,6 +1390,8 @@ footer {
         @extend %font-align;
         font-size: 1.1vw;
         text-align: center;
+
+
     }
 
     .polyci {
@@ -1328,6 +1402,7 @@ footer {
         @extend %font-align;
         font-size: 1.1vw;
 
+
     }
 
     .polyci:hover {
@@ -1337,8 +1412,19 @@ footer {
     .logo {
         display: grid;
         grid-area: 2/8/3/9;
+
+
     }
 }
+
+
+/*Конец блока Анна Мычко*/
+/*Начало блока Татьяна Семашко*/
+
+
+
+
+
 
 .subtitle {
     width: 100%;
@@ -1389,11 +1475,15 @@ footer {
     transition: 1s linear;
 
     @media (max-width:575px) {
+
         font-size: 0.5rem;
+
     }
+
 }
 
 .tel:hover {
+
     background-color: $white;
     color: $hover;
     border-color: $hover;
@@ -1420,6 +1510,7 @@ footer {
     }
 
     @media(min-width:576px) and (max-width:767px) {
+
 
         display: none;
     }
@@ -1484,6 +1575,8 @@ footer {
 
         }
 
+
+
         @media(min-width:576px) and (max-width:767px) {
             font-size: 1vw;
             grid-template-rows: 1fr 1fr 1fr;
@@ -1491,17 +1584,21 @@ footer {
             font-size: 1vw;
         }
 
+
         @media (max-width:575px) {
             font-size: 1vw;
         }
     }
 }
 
+
+
 .link-doc {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 20px;
     gap: 5px;
+
 
     @media (max-width:575px) {
 
@@ -1512,6 +1609,7 @@ footer {
     }
 
 }
+
 .links {
     text-decoration: none;
     background-color: $colorbuttongr;
@@ -1553,6 +1651,8 @@ footer {
         font-size: 2vw;
     }
 
+
+
     @media(min-width:576px) and (max-width:767px) {
         font-size: 2vw;
 
@@ -1563,16 +1663,20 @@ footer {
 
     }
 }
+
+
 .contents__bastitle {
     font-family: 'Panton';
     font-size: 50px;
 }
+
 .text {
     font-size: 28px;
 
     @media(min-width:768px) and (max-width:1199px) {
         font-size: 2vw;
     }
+
 
 
     @media(min-width:576px) and (max-width:767px) {
@@ -1596,6 +1700,7 @@ footer {
     padding: 10px 15px;
 }
 
+
 .title-pade {
     position: relative;
     padding-top: 62px;
@@ -1611,6 +1716,8 @@ footer {
         font-size: 1rem;
     }
 }
+
+
 .imgclinic {
     position: absolute;
     bottom: 100px;
@@ -1681,6 +1788,7 @@ footer {
     }
    
 }
+
 .textprioritet {
     @media(min-width:768px) and (max-width:1199px) {
         font-size: 1rem;
@@ -1728,6 +1836,7 @@ footer {
         font-size: 0.8rem;
     }
 }
+
 .logovoxel,
 .logoort,
 .logobisnes {
@@ -1736,4 +1845,5 @@ footer {
         max-width: 80%;
     }
 }
-}
+
+/*Конец блока Татьяна Семашко*/
